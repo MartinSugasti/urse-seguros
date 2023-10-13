@@ -339,6 +339,10 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     }
   }
 
+  #contact-form-button {
+    min-width: fit-content;
+  }
+
   button:disabled {
     cursor: not-allowed;
     pointer-events: all !important;
