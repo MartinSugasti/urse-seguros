@@ -30,10 +30,10 @@ const AccidentModal = () => (
         </div>
 
         <div className="modal-body">
-          <p className="bg-danger bg-opacity-25 border border-1 border-danger fw-semibold px-1 py-2 rounded">
+          <p className="bg-danger bg-opacity-25 border border-2 border-danger fw-semibold mb-2 mx-n2 px-2 py-2 rounded">
             Siempre realizar denuncia en la compañía de seguros en forma inmediata.
           </p>
-          <p>
+          <p className="mb-1">
             Si hay lesionados prestar asistencia médica y efectuar la denuncia policial.
           </p>
           <p>
