@@ -47,10 +47,10 @@ const LinkWithLoaderAndScrolling = ({
     // A 1 sec timeout is set in case the contact form is not in current page
     if (id.includes('contacto')) {
       if (section) {
-        document.querySelector('#contacto').scrollIntoView();
+        document.querySelector('#contacto').scrollIntoView(false);
       } else {
         setTimeout(() => {
-          document.querySelector('#contacto').scrollIntoView();
+          document.querySelector('#contacto').scrollIntoView(false);
         }, 1200);
       }
     }
