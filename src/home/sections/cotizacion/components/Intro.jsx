@@ -8,7 +8,7 @@ const Intro = () => (
           <h1 className="text-dark mb-0">Cotizador de Seguros</h1>
           <p className="text-muted mb-2 fst-italic">Envianos tu información y te responderemos a la brevedad</p>
         </div>
-        <div className="col-10 col-sm-8 col-md-6 order-md-1 text-center">
+        <div className="col-10 col-sm-8 col-md-5 order-md-1 text-center">
           <img src={calculatorImage} className="img-fluid" alt="calculator" />
         </div>
       </div>
