@@ -7,7 +7,7 @@ const Valores = () => (
             <div className="card-body p-2 d-flex d-sm-block justify-content-center align-items-center">
               <div>
                 <div className="mb-2">
-                  <i className="bi bi-check-circle fa-3x text-secondary" />
+                  <i className="bi bi-check-circle fa-3x text-primary" />
                 </div>
                 <div>
                   <h5 className="card-title">RESPONSABILIDAD</h5>
@@ -22,7 +22,7 @@ const Valores = () => (
             <div className="card-body p-2 d-flex d-sm-block justify-content-center align-items-center">
               <div>
                 <div className="mb-2">
-                  <i className="bi bi-check-circle fa-3x text-secondary" />
+                  <i className="bi bi-check-circle fa-3x text-primary" />
                 </div>
                 <div>
                   <h5 className="card-title">CONFIANZA</h5>
@@ -37,7 +37,7 @@ const Valores = () => (
             <div className="card-body p-2 d-flex d-sm-block justify-content-center align-items-center">
               <div>
                 <div className="mb-2">
-                  <i className="bi bi-check-circle fa-3x text-secondary" />
+                  <i className="bi bi-check-circle fa-3x text-primary" />
                 </div>
                 <div>
                   <h5 className="card-title">ÉTICA</h5>
@@ -52,7 +52,7 @@ const Valores = () => (
             <div className="card-body p-2 d-flex d-sm-block justify-content-center align-items-center">
               <div>
                 <div className="mb-2">
-                  <i className="bi bi-check-circle fa-3x text-secondary" />
+                  <i className="bi bi-check-circle fa-3x text-primary" />
                 </div>
                 <div>
                   <h5 className="card-title">EXCELENCIA</h5>
@@ -67,7 +67,7 @@ const Valores = () => (
             <div className="card-body p-2 d-flex d-sm-block justify-content-center align-items-center">
               <div>
                 <div className="mb-2">
-                  <i className="bi bi-check-circle fa-3x text-secondary" />
+                  <i className="bi bi-check-circle fa-3x text-primary" />
                 </div>
                 <div>
                   <h5 className="card-title">EQUIDAD</h5>
@@ -82,7 +82,7 @@ const Valores = () => (
             <div className="card-body p-2 d-flex d-sm-block justify-content-center align-items-center">
               <div>
                 <div className="mb-2">
-                  <i className="bi bi-check-circle fa-3x text-secondary" />
+                  <i className="bi bi-check-circle fa-3x text-primary" />
                 </div>
                 <div>
                   <h5 className="card-title">JUSTICIA</h5>
