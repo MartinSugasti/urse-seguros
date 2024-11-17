@@ -136,6 +136,10 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       transform: scale(1.03);
     }
   }
+
+  .navbar-toggler {
+    border: none;
+  }
 }
 
 #main-intro {
