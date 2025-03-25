@@ -1,8 +1,8 @@
 import TeamCard from './TeamCard';
 
 import generalImage from '../../../../assets/images/team/general.png';
-import JLImage from '../../../../assets/images/team/JL.png';
-import jimeImage from '../../../../assets/images/team/jime.png';
+import JLImage from '../../../../assets/images/team/JL_wo_bg.png';
+import jimeImage from '../../../../assets/images/team/jim_wo_bg_adjusted.png';
 
 const Team = () => (
   <section id="team">
