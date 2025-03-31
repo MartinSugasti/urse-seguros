@@ -8,7 +8,7 @@ const Intro = () => (
           <h1 className="text-dark mb-0">Sobre Nosotros</h1>
           <p className="text-muted mb-2 fst-italic">Conoce nuestra historia y nuestro equipo</p>
         </div>
-        <div className="col-10 col-sm-8 col-md-6 order-md-1 text-center">
+        <div className="col-10 col-sm-8 col-md-5 order-md-1 text-center">
           <img src={teamImage} className="img-fluid" alt="team" />
         </div>
       </div>
