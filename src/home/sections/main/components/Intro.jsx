@@ -9,7 +9,7 @@ const Intro = () => (
       <div className="row mx-0 g-4 justify-content-around align-items-center">
         <div className="col-md-6 text-center">
           <h1 className="text-dark mb-0">Especialistas en Seguros</h1>
-          <p className="text-muted mb-2 fst-italic">Lideres en Servicios desde 1987</p>
+          <p className="text-muted mb-2 fst-italic">Lideres en servicios desde 1987</p>
 
           <div className="links-container">
             <a href="#main-intro" className="accident-link btn btn-danger rounded-pill mt-2" alt="en-caso-de-accidente" data-bs-toggle="modal" data-bs-target="#accident-modal">

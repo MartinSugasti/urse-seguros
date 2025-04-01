@@ -42,7 +42,7 @@ const Companias = () => {
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
           <Slider {...settings}>
             <div>
-              <a href="https://bse.com.uy/" alt="link-to-company-page" target="_blank" rel="noreferrer">
+              <a href="https://www.bse.com.uy/portal-comercial/" alt="link-to-company-page" target="_blank" rel="noreferrer">
                 <img src={bseImage} className="m-auto" alt="bse-logo" />
               </a>
             </div>
@@ -97,7 +97,7 @@ const Companias = () => {
               </a>
             </div>
             <div>
-              <a href="https://www.urbanglobaltravel.com/en/home-ingles/" alt="link-to-company-page" target="_blank" rel="noreferrer">
+              <a href="https://www.urbanglobaltravel.com" alt="link-to-company-page" target="_blank" rel="noreferrer">
                 <img src={urbanImage} className="m-auto" alt="urban-logo" />
               </a>
             </div>

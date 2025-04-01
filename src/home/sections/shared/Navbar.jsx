@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom';
 
 import LinkWithLoaderAndScrolling from './LinkWithLoaderAndScrolling';
 
-import lightLogo from '../../../assets/images/logos/light.png';
-import darkLogo from '../../../assets/images/logos/dark.png';
+import lightLogo from '../../../assets/images/logos/all_white_without_subtitle.png';
+import darkLogo from '../../../assets/images/logos/logo.png';
 
 const useWindowSize = () => {
   const [size, setSize] = useState([0, 0]);

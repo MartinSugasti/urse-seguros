@@ -4,4 +4,4 @@ This repository contains the source code for UrseSeguros web page. The site allo
 
 There is a previous page that is still in use, so when you enter [https://www.urseseguros.com](https://www.urseseguros.com) you will be redirected to the previous page [https://www.urseseguros.com.uy](https://www.urseseguros.com.uy). In order to access the new page you must add one of the paths to the url. For example, [https://www.urseseguros.com/home](https://www.urseseguros.com/home)
 
-![alt text](https://github.com/MartinSugasti/urse-seguros/blob/main/src/assets/images/logos/logo_complete.png?raw=true)
+![alt text](https://github.com/MartinSugasti/urse-seguros/blob/main/src/assets/images/logos/color_with_white_bg_with_subtitle.png?raw=true)
