@@ -505,6 +505,14 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     top: 0;
     position: absolute;
   }
+
+  #horarios-modal {
+    .table {
+      th, td {
+        background-color: transparent;
+      }
+    }
+  }
 }
 
 #whatsapp-icon-container {

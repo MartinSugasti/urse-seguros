@@ -1,6 +1,6 @@
 import LinkWithLoaderAndScrolling from './LinkWithLoaderAndScrolling';
 
-import mainWithoutTextLogo from '../../../assets/images/logos/main_without_text.png';
+import mainWithoutTextLogo from '../../../assets/images/logos/color.png';
 import cuaproseLogo from '../../../assets/images/partners_logos/cuaprose.svg';
 import aproaseTextLogo from '../../../assets/images/partners_logos/aproase.png';
 
@@ -122,7 +122,7 @@ const Footer = () => (
               <button type="button" className="btn-close me-n3 mt-n5" data-bs-dismiss="modal" aria-label="Close" />
             </div>
             <div className="modal-body text-center mx-sm-5">
-              <table className="table table-striped table table-bordered">
+              <table className="table">
                 <thead className="thead">
                   <tr>
                     <th>Día</th>

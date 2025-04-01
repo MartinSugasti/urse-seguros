@@ -24,39 +24,65 @@ const AccidentModal = () => (
   <div className="modal fade" id="accident-modal" tabIndex="-1" aria-labelledby="modal-title" aria-hidden="true">
     <div className="modal-dialog modal-dialog-centered modal-lg">
       <div className="modal-content bg-light text-dark p-1 p-sm-2 p-lg-3">
-        <div className="modal-header border-0">
+        <div className="modal-header border-0 mb-n3">
           <h4 className="modal-title ms-auto" id="modal-contacto-companias-title">En caso de siniestro o auxilio mecánico:</h4>
           <button type="button" className="btn-close me-n3 mt-n5" data-bs-dismiss="modal" aria-label="Close" />
         </div>
 
         <div className="modal-body">
-          <p className="bg-danger bg-opacity-25 border border-2 border-danger fw-semibold mb-2 mx-n2 px-2 py-2 rounded">
-            Siempre realizar denuncia en la compañía de seguros en forma inmediata.
-          </p>
-          <p className="mb-1">
-            Si hay lesionados prestar asistencia médica y efectuar la denuncia policial.
-          </p>
-          <p>
-            Si viajas al exterior: llevar toda la documentación,
-            {' '}
-            incluido el Certificado Mercosur (carta verde).
+          <div className="">
+            <div className="bg-secondary-light bg-opacity-25 border border-2 border-secondary-dark rounded p-2">
+              <p className="mb-0">
+                1 - Si hay lesionados prestar asistencia médica y efectuar la denuncia policial
+              </p>
+            </div>
+
+            <div className="bg-secondary-light bg-opacity-25 border border-2 border-secondary-dark rounded p-2 mt-3">
+              <p className="mb-0">
+                2 - Realizar denuncia en la compañía de seguros en forma inmediata
+              </p>
+            </div>
+
+            <div className="bg-secondary-light bg-opacity-25 border border-2 border-secondary-dark rounded p-2 mt-3">
+              <p className="mb-0">
+                3 - En casos de existencia de personas lesionadas, robo o incendio de su vehículo, es imprescindible realizar la denuncia policial
+              </p>
+            </div>
+
+            <div className="bg-secondary-light bg-opacity-25 border border-2 border-secondary-dark rounded p-2 mt-3">
+              <p className="mb-0">
+                4 - Si hay terceros involucrados, recomendamos solicitar los siguientes datos: nombre, cédula, teléfono, matrícula y seguro del conductor
+              </p>
+            </div>
+          </div>
+
+          <p className="bg-warning-subtle bg-opacity-25 border border-2 border-warning-subtle rounded p-2 mt-3">
+            Si viajas al exterior recuerda llevar toda la documentación, incluido el Certificado Mercosur (carta verde).
           </p>
 
           <div className="mt-5">
             <div className="row align-items-center justify-content-center border border-1 border-end-0 border-start-0 border-top-0 pb-4 mb-4">
               <div className="d-flex justify-content-center col-6">
-                <a href="https://bse.com.uy/" alt="link-to-bse-page" target="_blank" rel="noreferrer">
+                <a href="https://www.bse.com.uy/portal-comercial/" alt="link-to-bse-page" target="_blank" rel="noreferrer">
                   <img src={bseImage} className="m-auto" alt="bse-logo" />
                 </a>
               </div>
 
               <div className="col-6 small text-center">
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:08001994">0800-1994 </a>
-                  o
-                  <a className="text-primary-dark" href="tel:*1994">*1994</a>
+                  <a className="text-primary-dark" href="tel:08001994">
+                    <i className="bi bi-telephone-fill me-1" />
+                    0800-1994
+                  </a>
+
+                  <br />
+
+                  <a className="text-primary-dark" href="https://wa.me/59898611998">
+                    <i className="bi bi-whatsapp me-1" />
+                    098-611-998
+                  </a>
                 </p>
-                <p className="mb-0">Desde el exterior:</p>
+                <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
                   <a className="text-primary-dark" href="tel:+59826141555">(+598) 2614-1555</a>
                 </p>
@@ -72,11 +98,22 @@ const AccidentModal = () => (
 
               <div className="col-6 small text-center">
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:08008500">0800-8500</a>
+                  <a className="text-primary-dark" href="tel:08008500">
+                    <i className="bi bi-telephone-fill me-1" />
+                    0800-8500
+                  </a>
+                  <br />
+                  <a className="text-primary-dark" href="https://wa.me/59893334000">
+                    <i className="bi bi-whatsapp me-1" />
+                    093-334-000
+                  </a>
                 </p>
-                <p className="mb-0">Desde el exterior:</p>
+                <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:+59826280444">(+598) 2628-0444</a>
+                  <a className="text-primary-dark" href="tel:+59826280444">
+                    <i className="bi bi-telephone-fill me-1" />
+                    (+598) 2628-0444
+                  </a>
                 </p>
               </div>
             </div>
@@ -90,13 +127,24 @@ const AccidentModal = () => (
 
               <div className="col-6 small text-center">
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:24878616">2487-8616 </a>
-                  o
-                  <a className="text-primary-dark" href="tel:*76786"> *76786</a>
+                  <a className="text-primary-dark" href="tel:24878616">
+                    <i className="bi bi-telephone-fill me-1" />
+                    2487-8616
+                  </a>
+
+                  <br />
+
+                  <a className="text-primary-dark" href="https://wa.me/59827093333">
+                    <i className="bi bi-whatsapp me-1" />
+                    2709-3333
+                  </a>
                 </p>
-                <p className="mb-0">Desde el exterior:</p>
+                <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:+59824878616">(+598) 2487-8616</a>
+                  <a className="text-primary-dark" href="tel:+59824878616">
+                    <i className="bi bi-telephone-fill me-1" />
+                    (+598) 2487-8616
+                  </a>
                 </p>
               </div>
             </div>
@@ -110,11 +158,17 @@ const AccidentModal = () => (
 
               <div className="col-6 small text-center">
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:08002777">0800-2777</a>
+                  <a className="text-primary-dark" href="tel:08002777">
+                    <i className="bi bi-telephone-fill me-1" />
+                    0800-2777
+                  </a>
                 </p>
-                <p className="mb-0">Desde el exterior:</p>
+                <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:+59826188000">(+598) 2618-8000</a>
+                  <a className="text-primary-dark" href="tel:+59826188000">
+                    <i className="bi bi-telephone-fill me-1" />
+                    (+598) 2618-8000
+                  </a>
                 </p>
               </div>
             </div>
@@ -128,11 +182,24 @@ const AccidentModal = () => (
 
               <div className="col-6 small text-center">
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:08008120">0800-8120</a>
+                  <a className="text-primary-dark" href="tel:08008120">
+                    <i className="bi bi-telephone-fill me-1" />
+                    0800-8120
+                  </a>
+
+                  <br />
+
+                  <a className="text-primary-dark" href="https://wa.me/59893670000">
+                    <i className="bi bi-whatsapp me-1" />
+                    093-670-000
+                  </a>
                 </p>
-                <p className="mb-0">Desde el exterior:</p>
+                <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:+59826059020">(+598) 2605-9020</a>
+                  <a className="text-primary-dark" href="tel:+59826059020">
+                    <i className="bi bi-telephone-fill me-1" />
+                    (+598) 2605-9020
+                  </a>
                 </p>
               </div>
             </div>
@@ -146,11 +213,24 @@ const AccidentModal = () => (
 
               <div className="col-6 small text-center">
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:08001320">0800-1320</a>
+                  <a className="text-primary-dark" href="tel:08001320">
+                    <i className="bi bi-telephone-fill me-1" />
+                    0800-1320
+                  </a>
+
+                  <br />
+
+                  <a className="text-primary-dark" href="https://wa.me/59827090089">
+                    <i className="bi bi-whatsapp me-1" />
+                    2709-0089
+                  </a>
                 </p>
-                <p className="mb-0">Desde el exterior:</p>
+                <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:+59829159671">(+598) 2915-9671</a>
+                  <a className="text-primary-dark" href="tel:+59829159671">
+                    <i className="bi bi-telephone-fill me-1" />
+                    (+598) 2915-9671
+                  </a>
                 </p>
               </div>
             </div>
@@ -164,11 +244,17 @@ const AccidentModal = () => (
 
               <div className="col-6 small text-center">
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:08008542">0800-8542</a>
+                  <a className="text-primary-dark" href="tel:08008542">
+                    <i className="bi bi-telephone-fill me-1" />
+                    0800-8542
+                  </a>
                 </p>
-                <p className="mb-0">Desde el exterior:</p>
+                <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:+59829040658">(+598) 2904-0658</a>
+                  <a className="text-primary-dark" href="tel:+59829040658">
+                    <i className="bi bi-telephone-fill me-1" />
+                    (+598) 2904-0658
+                  </a>
                 </p>
               </div>
             </div>
@@ -182,11 +268,24 @@ const AccidentModal = () => (
 
               <div className="col-6 small text-center">
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:08007424">0800-7424</a>
+                  <a className="text-primary-dark" href="tel:08007424">
+                    <i className="bi bi-telephone-fill me-1" />
+                    0800-7424
+                  </a>
+
+                  <br />
+
+                  <a className="text-primary-dark" href="https://wa.me/59893627373">
+                    <i className="bi bi-whatsapp me-1" />
+                    093-627-373
+                  </a>
                 </p>
-                <p className="mb-0">Desde el exterior:</p>
+                <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:+59829169245">(+598) 2916-9245</a>
+                  <a className="text-primary-dark" href="tel:+59829169245">
+                    <i className="bi bi-telephone-fill me-1" />
+                    (+598) 2916-9245
+                  </a>
                 </p>
               </div>
             </div>
@@ -200,11 +299,24 @@ const AccidentModal = () => (
 
               <div className="col-6 small text-center">
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:08008831">0800-8831</a>
+                  <a className="text-primary-dark" href="tel:08008831">
+                    <i className="bi bi-telephone-fill me-1" />
+                    0800-8831
+                  </a>
+
+                  <br />
+
+                  <a className="text-primary-dark" href="https://wa.me/59898029999">
+                    <i className="bi bi-whatsapp me-1" />
+                    98-029-999
+                  </a>
                 </p>
-                <p className="mb-0">Desde el exterior:</p>
+                <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:+59829029999">(+598) 2902-9999</a>
+                  <a className="text-primary-dark" href="tel:+59829029999">
+                    <i className="bi bi-telephone-fill me-1" />
+                    (+598) 2902-9999
+                  </a>
                 </p>
               </div>
             </div>
@@ -217,11 +329,21 @@ const AccidentModal = () => (
               </div>
 
               <div className="col-6 small text-center">
+                <br />
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:08000724">0800-0724 </a>
-                  o
-                  <a className="text-primary-dark" href="tel:094724724"> 094-724-724</a>
+                  <a className="text-primary-dark" href="tel:08000724">
+                    <i className="bi bi-telephone-fill me-1" />
+                    0800-0724
+                  </a>
+
+                  <br />
+
+                  <a className="text-primary-dark" href="https://wa.me/59894724724">
+                    <i className="bi bi-whatsapp me-1" />
+                    094-724-724
+                  </a>
                 </p>
+                <br />
               </div>
             </div>
           </div>

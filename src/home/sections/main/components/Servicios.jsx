@@ -12,10 +12,10 @@ const Servicios = () => (
             <div className="card-body">
               <div className="mb-4">
                 <i className="bi fa-2x bi-signpost-2" />
-                <h5 className="card-title">Gestión de siniestros</h5>
+                <h5 className="card-title">Siniestros</h5>
               </div>
               <div>
-                <p className="card-text">En caso de siniestro gestionamos y realizamos el seguimiento frente a las compañías, acompañándote en todo momento, hasta la finalización del mismo.</p>
+                <p className="card-text">En caso de siniestro, gestionamos y realizamos el seguimiento frente a las compañías acompañándote en todo momento hasta la finalización del mismo</p>
               </div>
             </div>
           </div>
@@ -25,10 +25,10 @@ const Servicios = () => (
             <div className="card-body">
               <div className="mb-4">
                 <i className="bi fa-2x bi-wallet2" />
-                <h5 className="card-title">Gestión de Cobranzas</h5>
+                <h5 className="card-title">Cobranzas</h5>
               </div>
               <div>
-                <p className="card-text">Frente a la posibilidad de no pago en fecha de los cupones y/o facturas, te haremos llegar un aviso para evitar el cese de cobertura.</p>
+                <p className="card-text">Frente a la posibilidad de no pago en fecha de los cupones y/o facturas, te haremos llegar un aviso para evitar el cese de cobertura</p>
               </div>
             </div>
           </div>
@@ -38,10 +38,10 @@ const Servicios = () => (
             <div className="card-body">
               <div className="mb-4">
                 <i className="bi fa-2x bi-arrow-clockwise" />
-                <h5 className="card-title">Gestión de las renovaciones</h5>
+                <h5 className="card-title">Renovaciones</h5>
               </div>
               <div>
-                <p className="card-text">Al llegar el vencimiento de la póliza cotizamos en todas las compañías asegurándote los mejores costos/beneficios.</p>
+                <p className="card-text">Al llegar el vencimiento de la póliza cotizamos en todas las compañías asegurándote los mejores costos/beneficios</p>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Servicios = () => (
                 <h5 className="card-title">Asesoramiento</h5>
               </div>
               <div>
-                <p className="card-text">Te informamos y asesoramos sobre todo tipo de seguros, productos y compañías que mejor se adapte a tus necesidades y posibilidades.</p>
+                <p className="card-text">Te informamos y asesoramos sobre todo tipo de seguros, productos y compañías que mejor se adapte a tus necesidades y posibilidades</p>
               </div>
             </div>
           </div>
@@ -63,11 +63,11 @@ const Servicios = () => (
           <div className="card bg-light rounded-4 text-center border-0 shadow-lg h-100">
             <div className="card-body">
               <div className="mb-4">
-                <i className="bi fa-2x bi-phone" />
-                <h5 className="card-title">App Móvil y Web</h5>
+                <i className="bi fa-2x bi-chat-dots" />
+                <h5 className="card-title">Comunicación</h5>
               </div>
               <div>
-                <p className="card-text">Puedes hacer tus consultas y solicitud de cotizaciones desde la comodidad de tu casa o desde donde te encuentres.</p>
+                <p className="card-text">Puedes hacer tus consultas desde donde te encuentres a través de la web, whatsapp, redes sociales o puedes acercarte a nuestro local</p>
               </div>
             </div>
           </div>

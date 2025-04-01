@@ -1,6 +1,6 @@
 import TeamCard from './TeamCard';
 
-import generalImage from '../../../../assets/images/team/general.png';
+import generalImage from '../../../../assets/images/team/profile.png';
 import JLImage from '../../../../assets/images/team/JL_wo_bg.png';
 import jimeImage from '../../../../assets/images/team/jim_wo_bg_adjusted.png';
 
