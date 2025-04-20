@@ -17,7 +17,8 @@ const ContactForm = ({
   insuranceType,
   handleInsuranceTypeSelection,
   template,
-  fieldsList
+  fieldsList,
+  showDropdown
 }) => {
   const recaptchaRef = useRef();
 
@@ -50,7 +51,7 @@ const ContactForm = ({
       name: event.target.name.value,
       email: event.target.email.value,
       mobile: event.target.mobile.value,
-      subject: event.target.subject.value,
+      subject: event.target.subject.value || 'Contacto',
       query: event.target.query.value,
       'g-recaptcha-response': recaptchaRef.current.getValue()
     };
@@ -101,17 +102,18 @@ const ContactForm = ({
               <input type="text" pattern="[0-9]+" name="mobile" id="mobile" className="form-control text-dark bg-light" placeholder="Número de Contacto" />
             </div>
 
-            <div className="mb-3 input-group">
-              <select className="form-select text-dark bg-light" id="subject" name="subject" defaultValue={insuranceType} onChange={handleInsuranceTypeSelection} required>
-                <option value="Seguros de Automóviles">Seguros de Automóviles</option>
-                <option value="Seguros de Viaje">Seguros de Viaje</option>
-                <option value="Seguros de Ahorro y Vida">Seguros de Ahorro y Vida</option>
-                <option value="Seguros para Comercios">Seguros para Comercios</option>
-                <option value="Seguros de Hogar">Seguros de Hogar</option>
-                <option value="Seguros Agropecuarios">Seguros Agropecuarios</option>
-                <option value="Otros">Otros</option>
-              </select>
-            </div>
+            {showDropdown && (
+              <div className="mb-3 input-group">
+                <select className="form-select text-dark bg-light" id="subject" name="subject" defaultValue={insuranceType} onChange={handleInsuranceTypeSelection} required>
+                  <option value="Seguros de Automóviles">Seguros de Automóviles</option>
+                  <option value="Seguros de Viaje">Seguros de Viaje</option>
+                  <option value="Seguros de Ahorro y Vida">Seguros de Ahorro y Vida</option>
+                  <option value="Seguros de Hogar">Seguros de Hogar</option>
+                  <option value="Seguros Empresariales">Seguros Empresariales</option>
+                  <option value="Otros">Otros</option>
+                </select>
+              </div>
+            )}
 
             {children}
 
@@ -167,7 +169,8 @@ ContactForm.propTypes = {
   insuranceType: PropTypes.string,
   handleInsuranceTypeSelection: PropTypes.func,
   template: PropTypes.string,
-  fieldsList: PropTypes.arrayOf(PropTypes.string)
+  fieldsList: PropTypes.arrayOf(PropTypes.string),
+  showDropdown: PropTypes.bool
 };
 
 ContactForm.defaultProps = {
@@ -178,7 +181,8 @@ ContactForm.defaultProps = {
   insuranceType: 'Seguros de Automóviles',
   handleInsuranceTypeSelection: () => {},
   template: 'contact',
-  fieldsList: []
+  fieldsList: [],
+  showDropdown: false
 };
 
 export default ContactForm;
