@@ -14,12 +14,8 @@ import 'slick-carousel/slick/slick-theme.css'
 
 import './stylesheets/index.scss'
 
-if (window.location.pathname === '' || window.location.pathname === '/') {
-  window.location.href = 'https://www.urseseguros.com.uy'
-} else {
-  ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-      <Home />
-    </React.StrictMode>
-  )
-}
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Home />
+  </React.StrictMode>
+)
