@@ -6,6 +6,7 @@ import businessImage from '../../../../assets/images/insurances/business.png';
 import homeImage from '../../../../assets/images/insurances/home.png';
 import agroImage from '../../../../assets/images/insurances/agro.png';
 import travelImage from '../../../../assets/images/insurances/travel.png';
+import othersImage from '../../../../assets/images/insurances/others.svg';
 
 const Seguros = () => (
   <section id="seguros">
@@ -15,8 +16,55 @@ const Seguros = () => (
         <p className="text-light mb-2 fst-italic text-light">Soluciones pensadas para tu tranquilidad</p>
       </div>
 
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-interval="40000">
         <div className="carousel-inner m-auto">
+          <CarouselCard image={carImage} insuranceType="Seguros de Automóviles">
+            <>
+              <h4 className="card-title text-center text-sm-start">Seguro de Automóviles</h4>
+              <p className="card-text small">Cotizamos su vehículo teniendo en cuenta el mejor costo-beneficio con las más importantes compañías aseguradoras instaladas en nuestro país.</p>
+              <p className="card-text small">Aseguramos cualquier tipo de vehículo de acuerdo a las coberturas correspondientes:</p>
+              <ul className="list ps-0">
+                <li>
+                  <i className="bi bi-check-lg me-1" />
+                  Seguro Obligatorio (SOA)
+                </li>
+                <li>
+                  <i className="bi bi-check-lg me-1" />
+                  Responsabilidad Civil
+                </li>
+                <li>
+                  <i className="bi bi-check-lg me-1" />
+                  Incendio
+                </li>
+                <li>
+                  <i className="bi bi-check-lg me-1" />
+                  Hurto
+                </li>
+                <li>
+                  <i className="bi bi-check-lg me-1" />
+                  Daño Propio
+                </li>
+                <li>
+                  <i className="bi bi-check-lg me-1" />
+                  Daños Mayores
+                </li>
+                <li>
+                  <i className="bi bi-check-lg me-1" />
+                  Pérdida Total
+                </li>
+              </ul>
+            </>
+          </CarouselCard>
+
+          <CarouselCard image={travelImage} insuranceType="Seguros de Viaje">
+            <>
+              <h4 className="card-title text-center text-sm-start">Seguros de Viaje</h4>
+              <p className="card-text small">
+                Cubre la asistencia médica en ocasión de un viaje, ya sea de placer, turismo o negocios
+              </p>
+            </>
+          </CarouselCard>
+
           <CarouselCard active image={familyLargeImage} insuranceType="Seguros de Ahorro y Vida">
             <>
               <h4 className="card-title text-center text-sm-start">Seguros de Ahorro y Vida</h4>
@@ -82,45 +130,7 @@ const Seguros = () => (
             </>
           </CarouselCard>
 
-          <CarouselCard image={carImage} insuranceType="Seguros de Automóviles">
-            <>
-              <h4 className="card-title text-center text-sm-start">Seguro de Automóviles</h4>
-              <p className="card-text small">Cotizamos su vehículo teniendo en cuenta el mejor costo-beneficio con las más importantes compañías aseguradoras instaladas en nuestro país.</p>
-              <p className="card-text small">Aseguramos cualquier tipo de vehículo de acuerdo a las coberturas correspondientes:</p>
-              <ul className="list ps-0">
-                <li>
-                  <i className="bi bi-check-lg me-1" />
-                  Seguro Obligatorio (SOA)
-                </li>
-                <li>
-                  <i className="bi bi-check-lg me-1" />
-                  Responsabilidad Civil
-                </li>
-                <li>
-                  <i className="bi bi-check-lg me-1" />
-                  Incendio
-                </li>
-                <li>
-                  <i className="bi bi-check-lg me-1" />
-                  Hurto
-                </li>
-                <li>
-                  <i className="bi bi-check-lg me-1" />
-                  Daño Propio
-                </li>
-                <li>
-                  <i className="bi bi-check-lg me-1" />
-                  Daños Mayores
-                </li>
-                <li>
-                  <i className="bi bi-check-lg me-1" />
-                  Pérdida Total
-                </li>
-              </ul>
-            </>
-          </CarouselCard>
-
-          <CarouselCard image={agroImage} insuranceType="Seguros Agropecuarios">
+          <CarouselCard image={agroImage} insuranceType="Seguros Empresariales">
             <>
               <h4 className="card-title text-center text-sm-start">Seguros Agropecuarios</h4>
               <h6 className="mb-1">
@@ -156,7 +166,7 @@ const Seguros = () => (
             </>
           </CarouselCard>
 
-          <CarouselCard image={businessImage} insuranceType="Seguros para Comercios">
+          <CarouselCard image={businessImage} insuranceType="Seguros Empresariales">
             <>
               <h4 className="card-title text-center text-sm-start">Seguros para Comercios</h4>
               <ul className="list ps-0">
@@ -196,14 +206,9 @@ const Seguros = () => (
             </>
           </CarouselCard>
 
-          <CarouselCard image={travelImage} insuranceType="Otros">
+          <CarouselCard image={othersImage} insuranceType="Otros">
             <>
               <h4 className="card-title text-center text-sm-start">Otros</h4>
-              <h6 className="mb-1">
-                <i className="bi bi-check-lg me-1" />
-                Seguro de Viaje
-              </h6>
-              <p className="card-text small">Cubre la asistencia médica en ocasión de un viaje, ya sea de placer, turismo o negocios</p>
               <h6 className="mb-1">
                 <i className="bi bi-check-lg me-1" />
                 Garantía de Alquiler

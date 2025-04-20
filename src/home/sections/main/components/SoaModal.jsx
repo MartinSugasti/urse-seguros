@@ -28,7 +28,7 @@ const SoaModal = () => (
 
         <div className="modal-body">
           <p>
-            Para acceder a tus certificados en algunas compañías tendrás que estar registrado
+            Para acceder a tus certificados en algunas compañías tendrás que estar registrado:
           </p>
 
           <div className="row mx-0 mt-4 mb-4 justify-content-center g-2">
