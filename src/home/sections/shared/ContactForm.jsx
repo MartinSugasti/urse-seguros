@@ -51,7 +51,7 @@ const ContactForm = ({
       name: event.target.name.value,
       email: event.target.email.value,
       mobile: event.target.mobile.value,
-      subject: event.target.subject.value || 'Contacto',
+      subject: event.target.subject?.value || 'Contacto',
       query: event.target.query.value,
       'g-recaptcha-response': recaptchaRef.current.getValue()
     };
@@ -178,7 +178,7 @@ ContactForm.defaultProps = {
   subtitle: 'Envianos tu consulta y te responderemos a la brevedad',
   theme: 'dark',
   children: null,
-  insuranceType: 'Seguros de Automóviles',
+  insuranceType: null,
   handleInsuranceTypeSelection: () => {},
   template: 'contact',
   fieldsList: [],

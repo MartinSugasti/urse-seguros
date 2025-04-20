@@ -80,6 +80,7 @@ const CarInsuranceFields = () => {
               <option value="Nafta">Nafta</option>
               <option value="Diesel">Diesel</option>
               <option value="Electrico">Eléctrico</option>
+              <option value="Hibrido">Híbrido</option>
               <option value="Otro">Otro</option>
             </select>
           </div>
