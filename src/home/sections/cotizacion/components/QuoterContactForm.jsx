@@ -21,7 +21,7 @@ const fieldsComponentMapping = {
 const fieldsListMapping = {
   'Seguros de Automóviles': ['marca', 'modelo', 'year', 'estado', 'location', 'fuel', 'category', 'antirrobo', 'motivo', 'company'],
   'Seguros de Viaje': ['destino', 'duracion', 'pasajeros'],
-  'Seguros de Ahorro y Vida': ['profesion', 'hobby', 'monto', 'proteccion'],
+  'Seguros de Ahorro y Vida': ['profesion', 'hobby', 'monto', 'birthday'],
   'Seguros de Hogar': ['location', 'tipo', 'destino'],
   'Seguros Empresariales': ['location', 'actividad'],
   Otros: []
