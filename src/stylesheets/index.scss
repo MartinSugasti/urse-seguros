@@ -266,45 +266,6 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       height: 260px !important;
     }
   }
-
-  .video-promocional {
-    padding: 0 2.7rem;
-
-    @media (min-width: 525px) {
-      padding: 0 3.2rem;
-    }
-
-    @media (min-width: 670px) {
-      padding: 0 4.2rem;
-    }
-
-    @media (min-width: 800px) {
-      padding: 0 8.9rem;
-    }
-
-    @media (min-width: 992px) {
-      padding: 0 10.2rem;
-    }
-
-    @media (min-width: 992px) {
-      padding: 0 17.9rem;
-    }
-
-    .video-wrapper{
-      position: relative;
-      padding-bottom: 62.5%;
-      padding-top: 25px;
-      height: 0;
-
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
 }
 
 #reviews {

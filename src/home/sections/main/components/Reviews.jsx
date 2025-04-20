@@ -30,29 +30,121 @@ const Reviews = () => {
           <div className="col-10 col-sm-8 col-md-6 bg-light rounded text-center slider-container pb-4 mt-4 mt-md-0">
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
             <Slider {...settings}>
-              <div className="text-center text-dark">
-                <q className="fst-italic">La amabilidad con la que fui atendida frente al reclamo por el choque de mi vehículo por parte de quien me atendió “Anabel”. La misma me mantuvo al tanto del seguimiento del proceso con muchísima paciencia frente a mis múltiples preguntas por desconocimiento de este tipo de situación teniendo la misma un resultado positivo a mi favor</q>
-                <p className="mt-4">Esteban Hernández</p>
+              {/* <div className="text-center text-dark">
+                <q className="fst-italic">La amabilidad con la que fui atendida frente al reclamo por el choque de mi vehículo por parte de quien me atendió, Anabel. La misma me mantuvo al tanto del seguimiento del proceso con muchísima paciencia frente a mis múltiples preguntas por desconocimiento de este tipo de situación teniendo la misma un resultado positivo a mi favor</q>
+                <p className="mt-4">
+                  Facundo Torradeflo
+                </p>
               </div>
+
               <div className="text-center text-dark">
                 <q className="fst-italic">Un seguimiento diario de mi expediente, que culminó en el pago del siniestro en tiempo y forma por parte del BSE</q>
-                <p className="mt-4">Florencia Pérez, Directora en Óptica del Sol</p>
-              </div>
+                <p className="mt-4">
+                  Federico Llambia
+                </p>
+              </div> */}
+
               <div className="text-center text-dark">
-                <q className="fst-italic">Tuve una experiencia muy buena tanto con el mecánico chófer de grúa y telefonista. Agradecida con todos ellos</q>
-                <p className="mt-4">Ramiro Martínez, Gerente en Céramicas Luiggi</p>
+                <q className="fst-italic">Lo mejor en corredores de seguros. José Luis y todos los colaboradores, personas excelentes.</q>
+                <p className="mt-4">
+                  Juan Jose Marizcurrena
+                  <br />
+                  <a
+                    href="https://g.co/kgs/ez1KSRm"
+                    target="_blank"
+                    className="text-dark fst-italic small text-decoration-none"
+                    rel="noreferrer"
+                  >
+                    (Ver original)
+                  </a>
+                </p>
               </div>
+
+              <div className="text-center text-dark">
+                <q className="fst-italic">Excelente atención de todos los funcionarios de Urse Seguros. Siempre están atentos y solucionando inconvenientes. Lo recomendaría siempre. Son excelentes!!</q>
+                <p className="mt-4">
+                  Andrea Ramon, Jardín Y Más Uy
+                  <br />
+                  <a
+                    href="https://g.co/kgs/Dr27qM5"
+                    target="_blank"
+                    className="text-dark fst-italic small text-decoration-none"
+                    rel="noreferrer"
+                  >
+                    (Ver original)
+                  </a>
+                </p>
+              </div>
+
+              <div className="text-center text-dark">
+                <q className="fst-italic">En Enero de 2022 viajamos a USA con mi señora y mis dos hijos de 11 y 15 años. Al llegar a Miami desde Utah mi señora se empezó a sentir mal, con fiebre por lo que al otro día todos nos hicimos un pcr para confirmar o descartar que fuera Covid 19. Lamentablemente al otro día se confirmó que los 4 estábamos positivos. Ahí se accionó el seguro de complemento Covid que habíamos contratado con Urse Seguros. Luego de un confinamiento de 5 días en los cuáles la única que la pasó un poco mal fue mi señora, pudimos retomar el paseo y luego de esperar 10 días desde el test, volver a Uruguay. Al llegar me hicieron la devolución de los gastos de alojamiento y comida como estaba pactado. Todo funcionó muy bien, sobretodo la atención de Jimena y Felipe que se preocuparon en todo momento y nos hicieron sentir respaldados y acompañados en esa difícil situación</q>
+                <p className="mt-4">
+                  Diego W.
+                </p>
+              </div>
+
+              <div className="text-center text-dark">
+                <q className="fst-italic">Un negocio que funciona en forma eficiente. El personal atento y dispuesto a solucionar. Me agrada ser su cliente.</q>
+                <p className="mt-4">
+                  Elizabeth Kelly
+                  <br />
+                  <a
+                    href="https://g.co/kgs/LqA3nnz"
+                    target="_blank"
+                    className="text-dark fst-italic small text-decoration-none"
+                    rel="noreferrer"
+                  >
+                    (Ver original)
+                  </a>
+                </p>
+              </div>
+
+              <div className="text-center text-dark">
+                <q className="fst-italic">Excelente atención, muy ejecutivos a la hora de responder al cliente con prontitud y certeza. Por los seguros contratados!</q>
+                <p className="mt-4">
+                  Anabela Alvarez, Anabela Alvarez Intercoiffure
+                  <br />
+                  <a
+                    href="https://g.co/kgs/Zx3oB2i"
+                    target="_blank"
+                    className="text-dark fst-italic small text-decoration-none"
+                    rel="noreferrer"
+                  >
+                    (Ver original)
+                  </a>
+                </p>
+              </div>
+
               <div className="text-center text-dark">
                 <q className="fst-italic">Excelente corredor de seguros que brindan información, atendiendo las inquietudes del cliente. Dejando siempre tiempo para procesar y dialogar en familia y contactarnos nuevamente para una respuesta</q>
-                <p className="mt-4">Marta González</p>
+                <p className="mt-4">
+                  Martin Sugasti
+                  <br />
+                  <a
+                    href="https://g.co/kgs/qDa6jup"
+                    target="_blank"
+                    className="text-dark fst-italic small text-decoration-none"
+                    rel="noreferrer"
+                  >
+                    (Ver original)
+                  </a>
+                </p>
               </div>
+
               <div className="text-center text-dark">
-                <q className="fst-italic">Excelente atención, muy ejecutivos a la hora de responder al cliente con prontitud y certeza</q>
-                <p className="mt-4">Martin Ramos</p>
-              </div>
-              <div className="text-center text-dark">
-                <q className="fst-italic">Excelente atención, especialmente, encargado de nuestros problemas, Maicol. Gracias por la atención y amabilidad así como también la rapidez en resolución de inquietudes</q>
-                <p className="mt-4">Agustina Rivero, Socio de Rivero Transportes</p>
+                <q className="fst-italic">Siempre he sido muy bien atendido cuando he tenido que pasar por sus oficinas.</q>
+                <p className="mt-4">
+                  Daniel Arizmendi
+                  <br />
+                  <a
+                    href="https://g.co/kgs/JgQEmZB"
+                    target="_blank"
+                    className="text-dark fst-italic small text-decoration-none"
+                    rel="noreferrer"
+                  >
+                    (Ver original)
+                  </a>
+                </p>
               </div>
             </Slider>
 

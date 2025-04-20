@@ -19,7 +19,7 @@ const Intro = () => (
             <br />
 
             <a href="#main-intro" className="soa-link btn btn-outline-primary-dark rounded-pill mt-2" alt="certificado-soa" data-bs-toggle="modal" data-bs-target="#soa-modal">
-              <p className="my-0">SOA Y Carta Verde</p>
+              <p className="my-0">SOA Y Certificado Mercosur</p>
             </a>
           </div>
         </div>

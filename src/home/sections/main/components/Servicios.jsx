@@ -28,7 +28,7 @@ const Servicios = () => (
                 <h5 className="card-title">Cobranzas</h5>
               </div>
               <div>
-                <p className="card-text">Frente a la posibilidad de no pago en fecha de los cupones y/o facturas, te haremos llegar un aviso para evitar el cese de cobertura</p>
+                <p className="card-text">Te haremos llegar un aviso para evitar el cese de la cobertura, en caso de no pagar en fecha</p>
               </div>
             </div>
           </div>
@@ -67,16 +67,10 @@ const Servicios = () => (
                 <h5 className="card-title">Comunicación</h5>
               </div>
               <div>
-                <p className="card-text">Puedes hacer tus consultas desde donde te encuentres a través de la web, whatsapp, redes sociales o puedes acercarte a nuestro local</p>
+                <p className="card-text">Puedes hacer tus consultas desde donde te encuentres a través de la web, whatsapp, redes sociales o puedes acercarte a nuestras oficinas</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="video-promocional mt-5">
-        <div className="video-wrapper">
-          <iframe title="video-promocional" src="https://www.youtube.com/embed/L7z1rL9KEeM" className="rounded" />
         </div>
       </div>
     </div>

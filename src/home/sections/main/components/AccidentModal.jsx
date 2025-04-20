@@ -57,7 +57,7 @@ const AccidentModal = () => (
           </div>
 
           <p className="bg-warning-subtle bg-opacity-25 border border-2 border-warning-subtle rounded p-2 mt-3">
-            Si viajas al exterior recuerda llevar toda la documentación, incluido el Certificado Mercosur (carta verde).
+            Si viajas al exterior recuerda llevar toda la documentación, incluido el Certificado Mercosur (carta verde)
           </p>
 
           <div className="mt-5">
