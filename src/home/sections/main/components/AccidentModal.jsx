@@ -33,7 +33,7 @@ const AccidentModal = () => (
           <div className="">
             <div className="bg-secondary-light bg-opacity-25 border border-2 border-secondary-dark rounded p-2">
               <p className="mb-0">
-                1 - Si hay lesionados prestar asistencia médica y efectuar la denuncia policial
+                1 - Si hay lesionados prestar asistencia médica
               </p>
             </div>
 

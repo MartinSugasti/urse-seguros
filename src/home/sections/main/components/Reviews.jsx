@@ -77,7 +77,7 @@ const Reviews = () => {
               </div>
 
               <div className="text-center text-dark">
-                <q className="fst-italic">En Enero de 2022 viajamos a USA con mi señora y mis dos hijos de 11 y 15 años. Al llegar a Miami desde Utah mi señora se empezó a sentir mal, con fiebre por lo que al otro día todos nos hicimos un pcr para confirmar o descartar que fuera Covid 19. Lamentablemente al otro día se confirmó que los 4 estábamos positivos. Ahí se accionó el seguro de complemento Covid que habíamos contratado con Urse Seguros. Luego de un confinamiento de 5 días en los cuáles la única que la pasó un poco mal fue mi señora, pudimos retomar el paseo y luego de esperar 10 días desde el test, volver a Uruguay. Al llegar me hicieron la devolución de los gastos de alojamiento y comida como estaba pactado. Todo funcionó muy bien, sobretodo la atención de Jimena y Felipe que se preocuparon en todo momento y nos hicieron sentir respaldados y acompañados en esa difícil situación</q>
+                <q className="fst-italic">En Enero de 2022 viajamos a USA con mi señora y mis dos hijos. Al llegar a Miami desde Utah mi señora se empezó a sentir mal. Lamentablemente al otro día se confirmó que los 4 estábamos positivos. Ahí se accionó el seguro de complemento Covid que habíamos contratado. Luego de un confinamiento de 5 días y de esperar 10 días desde el test, pudimos volver a Uruguay. Al llegar me hicieron la devolución de los gastos de alojamiento y comida como estaba pactado. Todo funcionó muy bien, sobretodo la atención de Jimena y Felipe que se preocuparon en todo momento y nos hicieron sentir respaldados y acompañados en esa difícil situación</q>
                 <p className="mt-4">
                   Diego W.
                 </p>

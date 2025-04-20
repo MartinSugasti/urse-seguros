@@ -118,7 +118,7 @@ const CarInsuranceFields = () => {
               <option value="" disabled>Motivo</option>
               <option value="Poliza Nueva">Póliza Nueva</option>
               <option value="Poliza Por Vencer">Póliza Por Vencer</option>
-              <option value="Cambio de Vehículo">Cambio de Vehículo</option>
+              <option value="Cambio de Vehículo">Cambio De Vehículo</option>
               <option value="Otro">Otro</option>
             </select>
           </div>
