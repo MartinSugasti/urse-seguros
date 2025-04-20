@@ -10,16 +10,16 @@ const Footer = () => (
       <div className="row mx-0 justify-content-around">
         <div className="col-12 col-sm-6 col-md-7 row mx-0 justify-content-center">
           <div className="bg-light partners-container text-dark row text-center mb-4 rounded p-3">
-            <p className="col-12 mb-3 mb-sm-0">Integrantes de</p>
+            <p className="col-12 mb-3 mb-sm-0">Somos integrantes de</p>
             <div className="col-12 row mx-0 justify-content-center">
-              <div className="col-6 col-sm-8 col-md-6 align-self-center mt-sm-3">
-                <a href="http://aproase.com.uy/" alt="link-to-aproase" target="_blank" rel="noreferrer">
-                  <img src={aproaseTextLogo} className="img-fluid logo aproase-img" alt="aproase-logo" />
+            <div className="col-6 col-sm-8 col-md-6 align-self-center mt-sm-3">
+                <a href="https://cuaprose.com.uy/" alt="link-to-cuaprose" target="_blank" rel="noreferrer">
+                  <img src={cuaproseLogo} className="img-fluid logo cuaprose-img" alt="cuaprose-logo" />
                 </a>
               </div>
               <div className="col-6 col-sm-8 col-md-6 align-self-center mt-sm-3">
-                <a href="https://cuaprose.com.uy/" alt="link-to-cuaprose" target="_blank" rel="noreferrer">
-                  <img src={cuaproseLogo} className="img-fluid logo cuaprose-img" alt="cuaprose-logo" />
+                <a href="http://aproase.com.uy/" alt="link-to-aproase" target="_blank" rel="noreferrer">
+                  <img src={aproaseTextLogo} className="img-fluid logo aproase-img" alt="aproase-logo" />
                 </a>
               </div>
             </div>
@@ -85,9 +85,6 @@ const Footer = () => (
             </a>
             <a href="https://www.instagram.com/urse_seguros/" alt="link-to-urseseguros-instagram" target="_blank" rel="noreferrer">
               <i className="text-light bi bi-instagram fa-2x me-3 me-md-4" />
-            </a>
-            <a href="https://twitter.com/UrseSeguros" alt="link-to-urseseguros-twitter" target="_blank" rel="noreferrer">
-              <i className="text-light bi bi-twitter fa-2x me-3 me-md-4" />
             </a>
             <a href="https://www.facebook.com/ursesegurosflorida" alt="link-to-urseseguros-facebook" target="_blank" rel="noreferrer">
               <i className="text-light bi bi-facebook fa-2x me-3 me-md-4" />
