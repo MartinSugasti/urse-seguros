@@ -13,9 +13,8 @@ const fieldsComponentMapping = {
   'Seguros de Automóviles': CarInsuranceFields,
   'Seguros de Viaje': TravelInsuranceFields,
   'Seguros de Ahorro y Vida': LifeAndSavingsInsuranceFields,
-  'Seguros para Comercios': BusinessInsuranceFields,
   'Seguros de Hogar': HomeInsuranceFields,
-  'Seguros Agropecuarios': OthersInsuranceFields,
+  'Seguros Empresariales': BusinessInsuranceFields,
   Otros: OthersInsuranceFields
 };
 
@@ -23,10 +22,18 @@ const fieldsListMapping = {
   'Seguros de Automóviles': ['marca', 'modelo', 'year', 'estado', 'location', 'fuel', 'category', 'antirrobo', 'motivo', 'company'],
   'Seguros de Viaje': ['destino', 'duracion', 'pasajeros'],
   'Seguros de Ahorro y Vida': ['profesion', 'hobby', 'monto', 'proteccion'],
-  'Seguros para Comercios': ['location', 'actividad'],
   'Seguros de Hogar': ['location', 'tipo', 'destino'],
-  'Seguros Agropecuarios': [],
+  'Seguros Empresariales': ['location', 'actividad'],
   Otros: []
+};
+
+const templateMapping = {
+  'Seguros de Automóviles': 'automoviles',
+  'Seguros de Viaje': 'viaje',
+  'Seguros de Ahorro y Vida': 'vida',
+  'Seguros de Hogar': 'hogar',
+  'Seguros Empresariales': 'empresariales',
+  Otros: 'contact'
 };
 
 const QuoterContactForm = () => {
@@ -34,6 +41,7 @@ const QuoterContactForm = () => {
   const [insuranceType, setInsuranceType] = useState(new URLSearchParams(search).get('insurance_type') || 'Seguros de Automóviles');
 
   const FieldsComponent = fieldsComponentMapping[insuranceType];
+  const template = templateMapping[insuranceType];
 
   const handleInsuranceTypeSelection = (event) => {
     setInsuranceType(event.target.value);
@@ -48,8 +56,9 @@ const QuoterContactForm = () => {
           theme="light"
           insuranceType={insuranceType}
           handleInsuranceTypeSelection={handleInsuranceTypeSelection}
-          template="quoter"
+          template={template}
           fieldsList={fieldsListMapping[insuranceType]}
+          showDropdown={true}
         >
           {insuranceType && <FieldsComponent /> }
         </ContactForm>
