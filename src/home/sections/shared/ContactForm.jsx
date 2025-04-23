@@ -82,29 +82,29 @@ const ContactForm = ({
         <div className="col-sm-10 col-md-8 col-xl-6">
           <form id="contact-form" className={`contact-form-${theme}`} onSubmit={handleSubmit}>
             <div className="input-group mb-3">
-              <span className="input-group-text">
+              <span className="input-group-text bg-white">
                 <i className="bi bi-person-fill text-dark" />
               </span>
-              <input type="text" name="name" id="name" className="form-control bg-light" placeholder="Nombre" required />
+              <input type="text" name="name" id="name" className="form-control bg-white" placeholder="Nombre" required />
             </div>
 
             <div className="mb-3 input-group">
-              <span className="input-group-text">
+              <span className="input-group-text bg-white">
                 <i className="bi bi-envelope-fill text-dark" />
               </span>
-              <input type="email" name="email" id="email" className="form-control text-dark bg-light" placeholder="Email" required />
+              <input type="email" name="email" id="email" className="form-control text-dark bg-white" placeholder="Email" required />
             </div>
 
             <div className="mb-3 input-group">
-              <span className="input-group-text">
+              <span className="input-group-text bg-white">
                 <i className="bi bi-phone-fill text-dark" />
               </span>
-              <input type="text" pattern="[0-9]+" name="mobile" id="mobile" className="form-control text-dark bg-light" placeholder="Número de Contacto" />
+              <input type="text" pattern="[0-9]+" name="mobile" id="mobile" className="form-control text-dark bg-white" placeholder="Número de Contacto" />
             </div>
 
             {showDropdown && (
               <div className="mb-3 input-group">
-                <select className="form-select text-dark bg-light" id="subject" name="subject" defaultValue={insuranceType} onChange={handleInsuranceTypeSelection} required>
+                <select className="form-select text-dark bg-white" id="subject" name="subject" defaultValue={insuranceType} onChange={handleInsuranceTypeSelection} required>
                   <option value="Seguros de Automóviles">Seguros de Automóviles</option>
                   <option value="Seguros de Viaje">Seguros de Viaje</option>
                   <option value="Seguros de Ahorro y Vida">Seguros de Ahorro y Vida</option>
@@ -118,7 +118,7 @@ const ContactForm = ({
             {children}
 
             <div className="mb-3 form-floating">
-              <textarea className="form-control text-dark bg-light" id="query" name="query" style={{ height: '140px' }} placeholder="Escribe tu mensaje.." required />
+              <textarea className="form-control text-dark bg-white" id="query" name="query" style={{ height: '140px' }} placeholder="Escribe tu mensaje.." required />
               <label htmlFor="query">Escribe tu mensaje...</label>
             </div>
 

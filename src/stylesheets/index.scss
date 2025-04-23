@@ -142,7 +142,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   }
 }
 
-#main-intro {
+#accidente, #soa {
   .links-container {
     margin: auto;
     width: fit-content;
@@ -166,7 +166,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     }
   }
 
-  #accident-modal {
+  #accident-modal, #soa-modal {
     img {
       @media (min-width: 400px) {
         height: 50px;
@@ -294,6 +294,10 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       align-items: center;
     }
   }
+}
+
+#accidente, #soa {
+  background: linear-gradient(172.78deg, $primary-dark 9.92%, $primary 87.35%);
 }
 
 #contact-form {

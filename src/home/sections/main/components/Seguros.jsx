@@ -16,7 +16,7 @@ const Seguros = () => (
         <p className="text-light mb-2 fst-italic text-light">Soluciones pensadas para tu tranquilidad</p>
       </div>
 
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div id="carouselExampleControls" className="carousel slide my-n3" data-bs-ride="carousel" data-bs-interval="4000">
         <div className="carousel-inner m-auto">
           <CarouselCard image={carImage} insuranceType="Seguros de Automóviles">
             <>
@@ -158,11 +158,6 @@ const Seguros = () => (
                 Maquinaria Agrícola y Forestal
               </h6>
               <p className="card-text mb-2 small">Cubre los posibles daños que sufran tus maquinarias</p>
-              <h6 className="mb-1">
-                <i className="bi bi-check-lg me-1" />
-                Otras Coberturas
-              </h6>
-              <p className="card-text mb-2 small">Seguro Apícola, Silos de Poliuretano, etc.</p>
             </>
           </CarouselCard>
 
