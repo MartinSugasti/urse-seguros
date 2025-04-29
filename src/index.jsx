@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './home'
+import App from './app'
 
 import '@fortawesome/fontawesome-free/css/all.css'
 
@@ -16,6 +16,6 @@ import './stylesheets/index.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home />
+    <App />
   </React.StrictMode>
 )

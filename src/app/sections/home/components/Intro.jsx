@@ -1,4 +1,4 @@
-import familyImage from '../../../../assets/images/others/family.png';
+import familyImage from '../../../../assets/images/others/family.svg';
 
 const Intro = () => (
   <section id="main-intro" className="bg-light">

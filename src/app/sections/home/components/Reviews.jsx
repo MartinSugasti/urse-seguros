@@ -1,6 +1,6 @@
 import Slider from 'react-slick';
 
-import reviewsImage from '../../../../assets/images/others/reviews.png';
+import reviewsImage from '../../../../assets/images/others/reviews.svg';
 
 const Reviews = () => {
   const settings = {

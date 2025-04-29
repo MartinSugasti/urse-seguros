@@ -4,20 +4,18 @@ import Servicios from './components/Servicios';
 import Companias from './components/Companias';
 import Contacto from './components/Contacto';
 import Reviews from './components/Reviews';
-import Accidente from './components/Accidente';
-import Soa from './components/Soa';
+import Asistencia from './components/Asistencia';
 
-const Main = () => (
+const Home = () => (
   <>
     <Intro />
     <Seguros />
     <Companias />
     <Servicios />
     <Reviews />
-    <Accidente />
+    <Asistencia />
     <Contacto />
-    <Soa />
   </>
 );
 
-export default Main;
+export default Home;

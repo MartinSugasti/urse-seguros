@@ -1,4 +1,4 @@
-import teamImage from '../../../../assets/images/others/team.png';
+import teamImage from '../../../../assets/images/others/team.svg';
 
 const Intro = () => (
   <section id="about-us-intro" className="bg-light">
