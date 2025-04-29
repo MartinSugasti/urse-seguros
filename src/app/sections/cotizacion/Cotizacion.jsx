@@ -1,6 +1,6 @@
 import Intro from './components/Intro';
 import QuoterContactForm from './components/QuoterContactForm';
-import Reviews from '../main/components/Reviews';
+import Reviews from '../home/components/Reviews';
 
 const Cotizacion = () => (
   <>

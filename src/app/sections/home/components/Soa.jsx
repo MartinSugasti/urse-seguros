@@ -5,8 +5,8 @@ import soaImage from '../../../../assets/images/others/soa.svg';
 const Soa = () => (
   <section id="soa">
     <div className="container-lg">
-      <div className="row mx-0 g-4 justify-content-around align-items-center">
-        <div className="col-12 col-md-6 text-center mt-5 mt-md-0">
+      <div className="row mx-0 justify-content-around align-items-center">
+        <div className="col-12 col-md-4 text-center mt-5 mt-md-0">
           <h2 className="text-light mb-0">¿Viajas al exterior?</h2>
 
           <div className="links-container">
@@ -16,7 +16,7 @@ const Soa = () => (
           </div>
         </div>
 
-        <div className="col-8 col-md-4 text-center mt-0 order-md-first">
+        <div className="col-8 col-sm-6 col-md-4 text-center mt-0 order-md-first">
           <img src={soaImage} className="img-fluid" alt="soa" />
         </div>
       </div>

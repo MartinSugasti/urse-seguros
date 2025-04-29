@@ -1,4 +1,4 @@
-import calculatorImage from '../../../../assets/images/others/calculator.png';
+import calculatorImage from '../../../../assets/images/others/calculator.svg';
 
 const Intro = () => (
   <section id="cotizacion-intro" className="bg-light">

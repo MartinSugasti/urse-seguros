@@ -1,16 +1,16 @@
 import LinkWithLoaderAndScrolling from './LinkWithLoaderAndScrolling';
 
 import mainWithoutTextLogo from '../../../assets/images/logos/color.png';
-import cuaproseLogo from '../../../assets/images/partners_logos/cuaprose.svg';
-import aproaseTextLogo from '../../../assets/images/partners_logos/aproase.png';
+import cuaproseLogo from '../../../assets/images/partners_logos/cuaprose_white.svg';
+import aproaseTextLogo from '../../../assets/images/partners_logos/aproase_white.png';
 
 const Footer = () => (
   <section id="footer" className="bg-dark">
     <div className="container-lg pt-5 pb-3">
       <div className="row mx-0 justify-content-around">
         <div className="col-12 col-sm-6 col-md-7 row mx-0 justify-content-center">
-          <div className="bg-light partners-container text-dark row text-center mb-4 rounded p-3">
-            <p className="col-12 mb-3 mb-sm-0">Somos integrantes de</p>
+          <div className="partners-container row text-center mb-4 rounded p-3">
+            <p className="col-12 mb-3 mb-sm-0 text-light">Somos integrantes de</p>
             <div className="col-12 row mx-0 justify-content-center">
             <div className="col-6 col-sm-8 col-md-6 align-self-center mt-sm-3">
                 <a href="https://cuaprose.com.uy/" alt="link-to-cuaprose" target="_blank" rel="noreferrer">

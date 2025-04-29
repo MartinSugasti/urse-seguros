@@ -142,7 +142,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   }
 }
 
-#accidente, #soa {
+#asistencia {
   .links-container {
     margin: auto;
     width: fit-content;
@@ -182,7 +182,6 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 }
 
 #seguros {
-  // background-image: linear-gradient(to right, $primary , $primary-dark);
   background: linear-gradient(172.78deg, $primary, $primary-dark);
 
   .list {
@@ -226,8 +225,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 }
 
 #servicios {
-  // background-image: linear-gradient(to right, $primary-dark , $primary);
-  background: linear-gradient(172.78deg, $primary-dark, $primary);
+  background: linear-gradient(172.78deg, $primary, $primary-dark);
 
   .card {
     height: 300px !important;
@@ -296,8 +294,8 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   }
 }
 
-#accidente, #soa {
-  background: linear-gradient(172.78deg, $primary-dark 9.92%, $primary 87.35%);
+#asistencia {
+  background: linear-gradient(172.78deg, $primary-dark, $primary);
 }
 
 #contact-form {
@@ -503,8 +501,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 }
 
 #nuestra-historia {
-  // background: linear-gradient(172.78deg, $secondary-light 9.92%, $secondary 87.35%)
-  background: linear-gradient(172.78deg, $primary 9.92%, $primary-dark 87.35%);
+  background: linear-gradient(172.78deg, $primary, $primary-dark);
 }
 
 #valores {
@@ -558,9 +555,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 }
 
 #mision {
-  // background: linear-gradient(172.78deg, $secondary 9.92%, $secondary-light 87.35%);
-  background: linear-gradient(172.78deg, $primary-dark 9.92%, $primary 87.35%);
-
+  background: linear-gradient(172.78deg, $primary-dark, $primary);
 
   .accordion-button::after {
     background-image: initial;
@@ -708,8 +703,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 }
 
 #team {
-  // background: linear-gradient(172.78deg, $secondary-light 9.92%, $secondary 87.35%);
-  background: linear-gradient(172.78deg, $primary 9.92%, $primary-dark 87.35%);
+  background: linear-gradient(172.78deg, $primary, $primary-dark);
 
   .hover {
     overflow: hidden;
@@ -790,6 +784,5 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 }
 
 #quoter-form {
-  // background: linear-gradient(172.78deg, $secondary 9.92%, $secondary-light 87.35%);
   background: linear-gradient(172.78deg, $primary, $primary-dark);
 }
