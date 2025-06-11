@@ -61,21 +61,48 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
           <ul className="navbar-nav">
-            <LinkWithLoaderAndScrolling to="/home" className={classForLinks} sectionId="main-intro">
-              INICIO
-            </LinkWithLoaderAndScrolling>
+            <li className="nav-item">
+              <LinkWithLoaderAndScrolling to="/home" className={classForLinks} sectionId="main-intro">
+                INICIO
+              </LinkWithLoaderAndScrolling>
+            </li>
 
-            <LinkWithLoaderAndScrolling to="/cotizacion" className={classForLinks} sectionId="cotizacion-intro">
-              COTIZAR
-            </LinkWithLoaderAndScrolling>
+            <li className="nav-item">
+              <LinkWithLoaderAndScrolling to="/cotizacion" className={classForLinks} sectionId="cotizacion-intro">
+                COTIZAR
+              </LinkWithLoaderAndScrolling>
+            </li>
 
-            <LinkWithLoaderAndScrolling to="/about" className={classForLinks} sectionId="about-us-intro">
-              NOSOTROS
-            </LinkWithLoaderAndScrolling>
+            <li className="nav-item dropdown">
+              <a className={`${classForLinks} dropdown-toggle`} href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CONTRATAR
+              </a>
 
-            <LinkWithLoaderAndScrolling to="/home#contacto" className={classForLinks} sectionId="contacto">
-              CONTACTO
-            </LinkWithLoaderAndScrolling>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <LinkWithLoaderAndScrolling to="/about" className="dropdown-item text-dark" sectionId="about-us-intro">
+                    VIAJE
+                  </LinkWithLoaderAndScrolling>
+                </li>
+                <li>
+                  <LinkWithLoaderAndScrolling to="/about" className="dropdown-item text-dark" sectionId="about-us-intro">
+                    SOA MOTOS
+                  </LinkWithLoaderAndScrolling>
+                </li>
+              </ul>
+            </li>
+
+            <li className="nav-item">
+              <LinkWithLoaderAndScrolling to="/about" className={classForLinks} sectionId="about-us-intro">
+                NOSOTROS
+              </LinkWithLoaderAndScrolling>
+            </li>
+
+            <li className="nav-item">
+              <LinkWithLoaderAndScrolling to="/home#contacto" className={classForLinks} sectionId="contacto">
+                CONTACTO
+              </LinkWithLoaderAndScrolling>
+            </li>
           </ul>
         </div>
       </div>

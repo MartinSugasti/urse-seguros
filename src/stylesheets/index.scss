@@ -143,6 +143,8 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 }
 
 #asistencia {
+  background: linear-gradient(172.78deg, $primary-dark, $primary);
+
   .links-container {
     margin: auto;
     width: fit-content;
@@ -292,10 +294,6 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       align-items: center;
     }
   }
-}
-
-#asistencia {
-  background: linear-gradient(172.78deg, $primary-dark, $primary);
 }
 
 #contact-form {
