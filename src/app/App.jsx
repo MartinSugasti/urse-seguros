@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Navbar from './sections/shared/Navbar';
-import Home from './sections/home/Home';
-import About from './sections/about/About';
-import Cotizacion from './sections/cotizacion/Cotizacion';
-import Footer from './sections/shared/Footer';
-import WhatsappIcon from './sections/shared/WhatsappIcon';
-import ScrollToTop from './sections/shared/ScrollToTop';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import WhatsappIcon from './components/WhatsappIcon';
+import ScrollToTop from './components/ScrollToTop';
+import Home from './pages/home';
+import About from './pages/about';
+import Cotizacion from './pages/cotizacion';
+import Viaje from './pages/viaje';
 
 const App = () => (
   <BrowserRouter>
@@ -16,6 +17,7 @@ const App = () => (
     <Routes>
       <Route exact path="/about" element={<About />} />
       <Route exact path="/cotizacion" element={<Cotizacion />} />
+      <Route exact path="/viaje" element={<Viaje />} />
       <Route path="/*" element={<Home />} />
     </Routes>
 

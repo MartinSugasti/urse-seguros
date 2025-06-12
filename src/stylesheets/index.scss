@@ -22,6 +22,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 @import 'bootstrap/scss/bootstrap';
 
+// Element that will show app after loader
 .smoothly-show-page {
   opacity: 0;
 
@@ -31,6 +32,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   }
 }
 
+// Shared elements
 #loader {
   display: flex;
   flex-direction: column;
@@ -139,215 +141,6 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
   .navbar-toggler {
     border: none;
-  }
-}
-
-#asistencia {
-  background: linear-gradient(172.78deg, $primary-dark, $primary);
-
-  .links-container {
-    margin: auto;
-    width: fit-content;
-
-    a {
-      width: -webkit-fill-available;
-    }
-  }
-
-  #accident-modal, #soa-modal {
-    img {
-      height: 25px;
-    }
-
-    a {
-    text-decoration: none;
-
-      &:hover {
-        text-decoration: underline $primary-dark;
-      }
-    }
-  }
-
-  #accident-modal, #soa-modal {
-    img {
-      @media (min-width: 400px) {
-        height: 50px;
-      }
-    }
-  }
-
-  #soa-modal {
-    a:hover {
-      transform: scale(1.05);
-    }
-  }
-}
-
-#seguros {
-  background: linear-gradient(172.78deg, $primary, $primary-dark);
-
-  .list {
-    list-style-type: none;
-  }
-
-  .carousel-inner {
-    display: flex;
-    align-items: center;
-    width: 85%;
-    height: 1000px;
-
-    @media (min-width: 400px) {
-      height: 965px;
-    }
-
-    @media (min-width: 570px) {
-      height: 1073px;
-    }
-
-    @media (min-width: 768px) {
-      height: 690px;
-    }
-
-    @media (min-width: 900px) {
-      height: 650px;
-    }
-
-    @media (min-width: 1000px) {
-      height: 590px;
-    }
-  }
-}
-
-#companias {
-  .slider-container {
-    img {
-      height: 50px;
-    }
-  }
-}
-
-#servicios {
-  background: linear-gradient(172.78deg, $primary, $primary-dark);
-
-  .card {
-    height: 300px !important;
-    border-bottom-right-radius: 3em !important;
-    border-top-left-radius: 3em !important;
-
-    @media (min-width: 385px) {
-      height: 280px !important;
-    }
-
-    @media (min-width: 454px) {
-      height: 260px !important;
-    }
-
-    @media (min-width: 550px) {
-      height: 240px !important;
-    }
-
-    @media (min-width: 576px) {
-      height: 340px !important;
-    }
-
-    @media (min-width: 650px) {
-      height: 320px !important;
-    }
-
-    @media (min-width: 752px) {
-      height: 300px !important;
-    }
-
-    @media (min-width: 934px) {
-      height: 280px !important;
-    }
-
-    @media (min-width: 1400px) {
-      height: 260px !important;
-    }
-  }
-}
-
-#reviews {
-  .slider-container {
-    .slick-slider {
-      min-height: 200px;
-      align-items: center !important;
-      display: flex !important;
-    }
-
-    .slick-dots {
-      button:before {
-        font-size: 12px;
-        color: $secondary;
-      }
-
-      .slick-active {
-        button:before {
-          color: $secondary-dark;
-        }
-      }
-    }
-
-    .slick-track {
-      display: flex;
-      align-items: center;
-    }
-  }
-}
-
-#contact-form {
-  &.contact-form-dark {
-    .form-control:focus, .form-select:focus {
-      border-color: $primary-light;
-      outline: 0;
-      box-shadow: 0 0 0 0.25rem rgba(0, 186, 124, 0.25);
-    }
-  }
-
-  &.contact-form-light {
-    .form-control:focus, .form-select:focus {
-      border-color: $secondary-light;
-      outline: 0;
-      box-shadow: 0 0 0 0.25rem rgba(13, 169, 221, 0.616);
-    }
-  }
-
-  #contact-form-button {
-    min-width: fit-content;
-  }
-
-  button:disabled {
-    cursor: not-allowed;
-    pointer-events: all !important;
-  }
-
-  .privacy-policy-link {
-    text-decoration: none;
-
-    &:hover {
-      &.privacy-policy-link-light {
-        text-decoration: underline $light;
-      }
-
-      &.privacy-policy-link-dark {
-        text-decoration: underline $dark;
-      }
-    }
-  }
-
-  .Toastify__toast {
-    background-color: $light;
-  }
-
-  .Toastify__toast-icon {
-    svg {
-      fill: $primary !important;
-    }
-  }
-
-  .Toastify__progress-bar {
-    background: $primary !important;
   }
 }
 
@@ -496,6 +289,220 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       color: $dark;
     }
   }
+}
+
+// Sections
+#seguros {
+  background: linear-gradient(172.78deg, $primary, $primary-dark);
+
+  .list {
+    list-style-type: none;
+  }
+
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 1000px;
+
+    @media (min-width: 400px) {
+      height: 965px;
+    }
+
+    @media (min-width: 570px) {
+      height: 1073px;
+    }
+
+    @media (min-width: 768px) {
+      height: 690px;
+    }
+
+    @media (min-width: 900px) {
+      height: 650px;
+    }
+
+    @media (min-width: 1000px) {
+      height: 590px;
+    }
+  }
+}
+
+#companias {
+  .slider-container {
+    img {
+      height: 50px;
+    }
+  }
+}
+
+#servicios {
+  background: linear-gradient(172.78deg, $primary, $primary-dark);
+
+  .card {
+    height: 300px !important;
+    border-bottom-right-radius: 3em !important;
+    border-top-left-radius: 3em !important;
+
+    @media (min-width: 385px) {
+      height: 280px !important;
+    }
+
+    @media (min-width: 454px) {
+      height: 260px !important;
+    }
+
+    @media (min-width: 550px) {
+      height: 240px !important;
+    }
+
+    @media (min-width: 576px) {
+      height: 340px !important;
+    }
+
+    @media (min-width: 650px) {
+      height: 320px !important;
+    }
+
+    @media (min-width: 752px) {
+      height: 300px !important;
+    }
+
+    @media (min-width: 934px) {
+      height: 280px !important;
+    }
+
+    @media (min-width: 1400px) {
+      height: 260px !important;
+    }
+  }
+}
+
+#reviews {
+  .slider-container {
+    .slick-slider {
+      min-height: 200px;
+      align-items: center !important;
+      display: flex !important;
+    }
+
+    .slick-dots {
+      button:before {
+        font-size: 12px;
+        color: $secondary;
+      }
+
+      .slick-active {
+        button:before {
+          color: $secondary-dark;
+        }
+      }
+    }
+
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+#asistencia {
+  background: linear-gradient(172.78deg, $primary-dark, $primary);
+
+  .links-container {
+    margin: auto;
+    width: fit-content;
+
+    a {
+      width: -webkit-fill-available;
+    }
+  }
+
+  #accident-modal, #soa-modal {
+    img {
+      height: 25px;
+    }
+
+    a {
+    text-decoration: none;
+
+      &:hover {
+        text-decoration: underline $primary-dark;
+      }
+    }
+  }
+
+  #accident-modal, #soa-modal {
+    img {
+      @media (min-width: 400px) {
+        height: 50px;
+      }
+    }
+  }
+
+  #soa-modal {
+    a:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+#contact-form {
+  &.contact-form-dark {
+    .form-control:focus, .form-select:focus {
+      border-color: $primary-light;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgba(0, 186, 124, 0.25);
+    }
+  }
+
+  &.contact-form-light {
+    .form-control:focus, .form-select:focus {
+      border-color: $secondary-light;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgba(13, 169, 221, 0.616);
+    }
+  }
+
+  #contact-form-button {
+    min-width: fit-content;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+  }
+
+  .privacy-policy-link {
+    text-decoration: none;
+
+    &:hover {
+      &.privacy-policy-link-light {
+        text-decoration: underline $light;
+      }
+
+      &.privacy-policy-link-dark {
+        text-decoration: underline $dark;
+      }
+    }
+  }
+
+  .Toastify__toast {
+    background-color: $light;
+  }
+
+  .Toastify__toast-icon {
+    svg {
+      fill: $primary !important;
+    }
+  }
+
+  .Toastify__progress-bar {
+    background: $primary !important;
+  }
+}
+
+#quoter-contact-form {
+  background: linear-gradient(172.78deg, $primary, $primary-dark);
 }
 
 #nuestra-historia {
@@ -779,8 +786,4 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       opacity: 1;
     }
   }
-}
-
-#quoter-form {
-  background: linear-gradient(172.78deg, $primary, $primary-dark);
 }
