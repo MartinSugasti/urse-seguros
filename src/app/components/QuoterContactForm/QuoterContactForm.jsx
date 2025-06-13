@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 
 import ContactForm from '../shared/ContactForm';
 import CarInsuranceFields from './CarInsuranceFields';
-import TravelInsuranceFields from './TravelInsuranceFields';
 import HomeInsuranceFields from './HomeInsuranceFields';
 import BusinessInsuranceFields from './BusinessInsuranceFields';
 import OthersInsuranceFields from './OthersInsuranceFields';
@@ -11,7 +10,6 @@ import LifeAndSavingsInsuranceFields from './LifeAndSavingsInsuranceFields';
 
 const fieldsComponentMapping = {
   'Seguros de Automóviles': CarInsuranceFields,
-  'Seguros de Viaje': TravelInsuranceFields,
   'Seguros de Ahorro y Vida': LifeAndSavingsInsuranceFields,
   'Seguros de Hogar': HomeInsuranceFields,
   'Seguros Empresariales': BusinessInsuranceFields,
@@ -20,7 +18,6 @@ const fieldsComponentMapping = {
 
 const fieldsListMapping = {
   'Seguros de Automóviles': ['marca', 'modelo', 'year', 'estado', 'location', 'fuel', 'category', 'antirrobo', 'motivo', 'company'],
-  'Seguros de Viaje': ['destino', 'duracion', 'pasajeros'],
   'Seguros de Ahorro y Vida': ['profesion', 'hobby', 'monto', 'birthday'],
   'Seguros de Hogar': ['location', 'tipo', 'destino'],
   'Seguros Empresariales': ['location', 'actividad'],
@@ -29,7 +26,6 @@ const fieldsListMapping = {
 
 const templateMapping = {
   'Seguros de Automóviles': 'automoviles',
-  'Seguros de Viaje': 'viaje',
   'Seguros de Ahorro y Vida': 'vida',
   'Seguros de Hogar': 'hogar',
   'Seguros Empresariales': 'empresariales',

@@ -1,10 +1,10 @@
 import IntroViaje from '../../components/IntroViaje';
-import QuoterContactForm from '../../components/QuoterContactForm';
+import ContratarViajeContactForm from '../../components/ContratarViajeContactForm';
 
 const Viaje = () => (
   <>
     <IntroViaje />
-    <QuoterContactForm />
+    <ContratarViajeContactForm />
   </>
 );
 

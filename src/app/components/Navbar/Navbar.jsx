@@ -98,11 +98,11 @@ const Navbar = () => {
               </LinkWithLoaderAndScrolling>
             </li>
 
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <LinkWithLoaderAndScrolling to="/home#contacto" className={classForLinks} sectionId="contacto">
                 CONTACTO
               </LinkWithLoaderAndScrolling>
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>

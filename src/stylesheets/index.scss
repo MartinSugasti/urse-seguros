@@ -501,7 +501,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   }
 }
 
-#quoter-contact-form {
+#quoter-contact-form, #contratar-viaje-contact-form {
   background: linear-gradient(172.78deg, $primary, $primary-dark);
 }
 

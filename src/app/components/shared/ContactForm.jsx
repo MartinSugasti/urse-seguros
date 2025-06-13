@@ -106,7 +106,6 @@ const ContactForm = ({
               <div className="mb-3 input-group">
                 <select className="form-select text-dark bg-white" id="subject" name="subject" defaultValue={insuranceType} onChange={handleInsuranceTypeSelection} required>
                   <option value="Seguros de Automóviles">Seguros de Automóviles</option>
-                  <option value="Seguros de Viaje">Seguros de Viaje</option>
                   <option value="Seguros de Ahorro y Vida">Seguros de Ahorro y Vida</option>
                   <option value="Seguros de Hogar">Seguros de Hogar</option>
                   <option value="Seguros Empresariales">Seguros Empresariales</option>
