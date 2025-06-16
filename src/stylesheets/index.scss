@@ -325,6 +325,35 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       height: 590px;
     }
   }
+
+
+  .tooltipy {
+    position: relative;
+  }
+
+  .bi-info-circle ~ .tooltiptext {
+    visibility: hidden;
+    background-color: $light;
+    color: $dark;
+    border-radius: 6px;
+    padding: 15px 20px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .bi-info-circle:hover::before {
+    transform: scale(1.3);
+  }
+
+  .bi-info-circle:hover ~ .tooltiptext {
+    visibility: visible;
+  }
+
+  .bi-info-circle::before:hover ~ .tooltiptext {
+    visibility: visible;
+  }
 }
 
 #companias {
@@ -790,5 +819,12 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       bottom: 0.5rem;
       opacity: 1;
     }
+  }
+}
+
+#instagram {
+  img {
+    width: 320px;
+    height: 400px;
   }
 }
