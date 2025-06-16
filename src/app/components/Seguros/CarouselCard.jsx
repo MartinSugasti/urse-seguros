@@ -17,13 +17,35 @@ const CarouselCard = ({
         <div className="card-body d-inline-block text-start">
           {children}
           <div className="text-center">
-            <LinkWithLoaderAndScrolling
-              to={insuranceType ? `/cotizacion?insurance_type=${insuranceType}` : '/cotizacion'}
-              sectionId="intro-cotizacion"
-              className="btn btn-outline-light rounded-pill w-50 mt-3"
-            >
-              Cotizar
-            </LinkWithLoaderAndScrolling>
+            {insuranceType === 'Seguros de Viaje' && (
+              <LinkWithLoaderAndScrolling
+                to="viaje"
+                sectionId="contratar-viaje-contact-form"
+                className="btn btn-outline-light rounded-pill w-50 mt-3"
+              >
+                Contratar
+              </LinkWithLoaderAndScrolling>
+            )}
+
+            {insuranceType === 'Seguros de Motos' && (
+              <LinkWithLoaderAndScrolling
+                to="motos"
+                sectionId="contratar-motos-contact-form"
+                className="btn btn-outline-light rounded-pill w-50 mt-3"
+              >
+                Contratar
+              </LinkWithLoaderAndScrolling>
+            )}
+
+            {insuranceType !== 'Seguros de Viaje' && insuranceType !== 'Seguros de Motos' && (
+              <LinkWithLoaderAndScrolling
+                to={insuranceType ? `/cotizacion?insurance_type=${insuranceType}` : '/cotizacion'}
+                sectionId="quoter-contact-form"
+                className="btn btn-outline-light rounded-pill w-50 mt-3"
+              >
+                Cotizar
+              </LinkWithLoaderAndScrolling>
+            )}
           </div>
         </div>
       </div>

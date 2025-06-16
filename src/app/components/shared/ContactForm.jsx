@@ -14,11 +14,8 @@ const ContactForm = ({
   subtitle,
   theme,
   children,
-  insuranceType,
-  handleInsuranceTypeSelection,
   template,
-  fieldsList,
-  showDropdown
+  fieldsList
 }) => {
   const recaptchaRef = useRef();
 
@@ -102,19 +99,6 @@ const ContactForm = ({
               <input type="text" pattern="[0-9]+" name="mobile" id="mobile" className="form-control text-dark bg-white" placeholder="Número de Contacto" />
             </div>
 
-            {showDropdown && (
-              <div className="mb-3 input-group">
-                <select className="form-select text-dark bg-white" id="subject" name="subject" defaultValue={insuranceType} onChange={handleInsuranceTypeSelection} required>
-                  <option value="Seguros de Automóviles">Seguros de Automóviles</option>
-                  <option value="Seguros de Viaje">Seguros de Viaje</option>
-                  <option value="Seguros de Ahorro y Vida">Seguros de Ahorro y Vida</option>
-                  <option value="Seguros de Hogar">Seguros de Hogar</option>
-                  <option value="Seguros Empresariales">Seguros Empresariales</option>
-                  <option value="Otros">Otros</option>
-                </select>
-              </div>
-            )}
-
             {children}
 
             <div className="mb-3 form-floating">
@@ -166,11 +150,8 @@ ContactForm.propTypes = {
   subtitle: PropTypes.string,
   theme: PropTypes.string,
   children: PropTypes.node,
-  insuranceType: PropTypes.string,
-  handleInsuranceTypeSelection: PropTypes.func,
   template: PropTypes.string,
-  fieldsList: PropTypes.arrayOf(PropTypes.string),
-  showDropdown: PropTypes.bool
+  fieldsList: PropTypes.arrayOf(PropTypes.string)
 };
 
 ContactForm.defaultProps = {
@@ -178,11 +159,8 @@ ContactForm.defaultProps = {
   subtitle: 'Envianos tu consulta y te responderemos a la brevedad',
   theme: 'dark',
   children: null,
-  insuranceType: null,
-  handleInsuranceTypeSelection: () => {},
   template: 'contact',
-  fieldsList: [],
-  showDropdown: false
+  fieldsList: []
 };
 
 export default ContactForm;
