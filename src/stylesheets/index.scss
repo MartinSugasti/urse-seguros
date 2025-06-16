@@ -501,8 +501,13 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   }
 }
 
-#quoter-contact-form, #contratar-viaje-contact-form {
+#contacto {
+  scroll-margin-top: 70px;
+}
+
+#quoter-contact-form, #contratar-viaje-contact-form, #contratar-motos-contact-form {
   background: linear-gradient(172.78deg, $primary, $primary-dark);
+  scroll-margin-top: 70px;
 }
 
 #nuestra-historia {

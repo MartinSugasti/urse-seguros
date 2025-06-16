@@ -27,7 +27,17 @@ const CarouselCard = ({
               </LinkWithLoaderAndScrolling>
             )}
 
-            {insuranceType !== 'Seguros de Viaje' && (
+            {insuranceType === 'Seguros de Motos' && (
+              <LinkWithLoaderAndScrolling
+                to="motos"
+                sectionId="contratar-motos-contact-form"
+                className="btn btn-outline-light rounded-pill w-50 mt-3"
+              >
+                Contratar
+              </LinkWithLoaderAndScrolling>
+            )}
+
+            {insuranceType !== 'Seguros de Viaje' && insuranceType !== 'Seguros de Motos' && (
               <LinkWithLoaderAndScrolling
                 to={insuranceType ? `/cotizacion?insurance_type=${insuranceType}` : '/cotizacion'}
                 sectionId="quoter-contact-form"

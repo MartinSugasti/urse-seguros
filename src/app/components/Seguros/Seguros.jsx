@@ -1,11 +1,13 @@
 import CarouselCard from './CarouselCard';
 
-import carImage from '../../../assets/images/insurances/car.png';
-import familyLargeImage from '../../../assets/images/insurances/family.png';
-import businessImage from '../../../assets/images/insurances/business.png';
-import homeImage from '../../../assets/images/insurances/home.png';
-import agroImage from '../../../assets/images/insurances/agro.png';
-import travelImage from '../../../assets/images/insurances/travel.png';
+import carImage from '../../../assets/images/insurances/car.svg';
+import travelImage from '../../../assets/images/insurances/travel.svg';
+import motosImage from '../../../assets/images/insurances/motos.svg';
+import familyLargeImage from '../../../assets/images/insurances/life.svg';
+import homeImage from '../../../assets/images/insurances/home.svg';
+import agroImage from '../../../assets/images/insurances/agro.svg';
+import businessImage from '../../../assets/images/insurances/business.svg';
+
 import othersImage from '../../../assets/images/insurances/others.svg';
 
 const Seguros = () => (
@@ -16,7 +18,8 @@ const Seguros = () => (
         <p className="text-light mb-2 fst-italic text-light">Soluciones pensadas para tu tranquilidad</p>
       </div>
 
-      <div id="carouselExampleControls" className="carousel slide my-n3" data-bs-ride="carousel" data-bs-interval="4000">
+      {/* <div id="carouselExampleControls" className="carousel slide my-n3" data-bs-ride="carousel" data-bs-interval="4000"> */}
+      <div id="carouselExampleControls" className="carousel slide my-n3" data-bs-interval="4000">
         <div className="carousel-inner m-auto">
           <CarouselCard image={carImage} insuranceType="Seguros de Automóviles">
             <>
@@ -65,7 +68,16 @@ const Seguros = () => (
             </>
           </CarouselCard>
 
-          <CarouselCard active image={familyLargeImage} insuranceType="Seguros de Ahorro y Vida">
+          <CarouselCard active image={motosImage} insuranceType="Seguros de Motos">
+            <>
+              <h4 className="card-title text-center text-sm-start">Seguros de Motos</h4>
+              <p className="card-text small">
+                Contrata tu seguro obligatorio SOA de forma sencilla y ágil. También puedes consultarnos por seguros extras.
+              </p>
+            </>
+          </CarouselCard>
+
+          <CarouselCard image={familyLargeImage} insuranceType="Seguros de Ahorro y Vida">
             <>
               <h4 className="card-title text-center text-sm-start">Seguros de Ahorro y Vida</h4>
               <h6 className="mb-1">

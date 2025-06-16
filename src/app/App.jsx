@@ -8,6 +8,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Cotizacion from './pages/cotizacion';
 import Viaje from './pages/viaje';
+import Motos from './pages/motos';
 
 const App = () => (
   <BrowserRouter>
@@ -18,6 +19,7 @@ const App = () => (
       <Route exact path="/about" element={<About />} />
       <Route exact path="/cotizacion" element={<Cotizacion />} />
       <Route exact path="/viaje" element={<Viaje />} />
+      <Route exact path="/motos" element={<Motos />} />
       <Route path="/*" element={<Home />} />
     </Routes>
 

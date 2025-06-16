@@ -63,7 +63,7 @@ const Reviews = () => {
               <div className="text-center text-dark">
                 <q className="fst-italic">Excelente atención de todos los funcionarios de Urse Seguros. Siempre están atentos y solucionando inconvenientes. Lo recomendaría siempre. Son excelentes!!</q>
                 <p className="mt-4">
-                  Andrea Ramon, Jardín Y Más Uy
+                  Andrea Ramon, <a href="https://jardinymas.uy/">Jardín Y Más</a>
                   <br />
                   <a
                     href="https://g.co/kgs/Dr27qM5"
@@ -102,7 +102,7 @@ const Reviews = () => {
               <div className="text-center text-dark">
                 <q className="fst-italic">Excelente atención, muy ejecutivos a la hora de responder al cliente con prontitud y certeza. Por los seguros contratados!</q>
                 <p className="mt-4">
-                  Anabela Alvarez, Anabela Alvarez Intercoiffure
+                  Anabela Alvarez, <a href="https://www.anabelaalvarez.com.uy/">Anabela Alvarez Intercoiffure</a>
                   <br />
                   <a
                     href="https://g.co/kgs/Zx3oB2i"

@@ -10,26 +10,26 @@ import LifeAndSavingsInsuranceFields from './LifeAndSavingsInsuranceFields';
 
 const fieldsComponentMapping = {
   'Seguros de Automóviles': CarInsuranceFields,
+  'Seguros Empresariales': BusinessInsuranceFields,
   'Seguros de Ahorro y Vida': LifeAndSavingsInsuranceFields,
   'Seguros de Hogar': HomeInsuranceFields,
-  'Seguros Empresariales': BusinessInsuranceFields,
   Otros: OthersInsuranceFields
 };
 
 const fieldsListMapping = {
   'Seguros de Automóviles': ['marca', 'modelo', 'year', 'estado', 'location', 'fuel', 'category', 'antirrobo', 'motivo', 'company'],
+  'Seguros Empresariales': ['location', 'actividad'],
   'Seguros de Ahorro y Vida': ['profesion', 'hobby', 'monto', 'birthday'],
   'Seguros de Hogar': ['location', 'tipo', 'destino'],
-  'Seguros Empresariales': ['location', 'actividad'],
   Otros: []
 };
 
 const templateMapping = {
   'Seguros de Automóviles': 'automoviles',
-  'Seguros de Ahorro y Vida': 'vida',
-  'Seguros de Hogar': 'hogar',
   'Seguros Empresariales': 'empresariales',
-  Otros: 'contact'
+  'Seguros de Ahorro y Vida': 'otros',
+  'Seguros de Hogar': 'otros',
+  Otros: 'otros'
 };
 
 const QuoterContactForm = () => {
@@ -50,13 +50,22 @@ const QuoterContactForm = () => {
           title="Cotizar"
           subtitle="Completa los datos y te responderemos a la brevedad"
           theme="light"
-          insuranceType={insuranceType}
-          handleInsuranceTypeSelection={handleInsuranceTypeSelection}
           template={template}
           fieldsList={fieldsListMapping[insuranceType]}
-          showDropdown={true}
         >
-          {insuranceType && <FieldsComponent /> }
+          <>
+            <div className="mb-3 input-group">
+              <select className="form-select text-dark bg-white" id="subject" name="subject" defaultValue={insuranceType} onChange={handleInsuranceTypeSelection} required>
+                <option value="Seguros de Automóviles">Seguros de Automóviles</option>
+                <option value="Seguros Empresariales">Seguros Empresariales</option>
+                <option value="Seguros de Ahorro y Vida">Seguros de Ahorro y Vida</option>
+                <option value="Seguros de Hogar">Seguros de Hogar</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>
+
+            <FieldsComponent />
+          </>
         </ContactForm>
       </div>
     </section>

@@ -85,7 +85,7 @@ const Navbar = () => {
                   </LinkWithLoaderAndScrolling>
                 </li>
                 <li>
-                  <LinkWithLoaderAndScrolling to="/about" className="dropdown-item text-dark" sectionId="intro-about">
+                  <LinkWithLoaderAndScrolling to="/motos" className="dropdown-item text-dark" sectionId="intro-motos">
                     SOA MOTOS
                   </LinkWithLoaderAndScrolling>
                 </li>
