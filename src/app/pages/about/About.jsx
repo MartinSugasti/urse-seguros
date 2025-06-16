@@ -4,6 +4,7 @@ import Valores from '../../components/Valores';
 import Mision from '../../components/Mision';
 import PoliticaDeCalidad from '../../components/PoliticaDeCalidad';
 import Team from '../../components/Team';
+import Instagram from '../../components/Instagram';
 
 const About = () => (
   <>
@@ -13,6 +14,7 @@ const About = () => (
     <Mision />
     <PoliticaDeCalidad />
     <Team />
+    <Instagram />
   </>
 );
 
