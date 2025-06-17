@@ -142,6 +142,11 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   .navbar-toggler {
     border: none;
   }
+
+  // .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  //   display: block;
+  //   margin-top: 1px;
+  // }
 }
 
 #footer {
@@ -824,7 +829,11 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 #instagram {
   img {
-    width: 320px;
-    height: 400px;
+    max-width: 100%;
+    aspect-ratio: 4/5;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }

@@ -54,7 +54,7 @@ const ContactForm = ({
     };
 
     fieldsList.forEach((field) => {
-      data[field] = event.target[field].value;
+      data[field] = event.target[field]?.value;
     });
 
     sendEmailJSform(template, data)

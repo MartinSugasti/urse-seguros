@@ -80,12 +80,12 @@ const Navbar = () => {
 
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <LinkWithLoaderAndScrolling to="/viaje" className="dropdown-item text-dark" sectionId="intro-viaje">
+                  <LinkWithLoaderAndScrolling to="/viaje" className="dropdown-item" sectionId="intro-viaje">
                     VIAJE
                   </LinkWithLoaderAndScrolling>
                 </li>
                 <li>
-                  <LinkWithLoaderAndScrolling to="/motos" className="dropdown-item text-dark" sectionId="intro-motos">
+                  <LinkWithLoaderAndScrolling to="/motos" className="dropdown-item" sectionId="intro-motos">
                     SOA MOTOS
                   </LinkWithLoaderAndScrolling>
                 </li>

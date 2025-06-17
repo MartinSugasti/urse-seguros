@@ -11,34 +11,34 @@ const Instagram = () => (
         <p className="text-dark mb-2 fst-italic">Enterate de las últimas novedades por nuestras redes sociales</p>
       </div>
 
-      <div className="row mt-4">
-        <div className="col-3">
+      <div className="row gx-3 mt-4">
+        <div className="col-6 col-sm-3">
           <a href="https://www.instagram.com/urse_seguros/" target="_blank" rel="noreferrer">
-            <img src={feed1} alt="Instagram post 1" />
+            <img src={feed1} className="rounded-1 shadow-lg" alt="Instagram post 1" />
           </a>
         </div>
 
-        <div className="col-3">
+        <div className="col-6 col-sm-3">
           <a href="https://www.instagram.com/urse_seguros/" target="_blank" rel="noreferrer">
-            <img src={feed2} alt="Instagram post 2" />
+            <img src={feed2} className="rounded-1 shadow-lg" alt="Instagram post 2" />
           </a>
         </div>
 
-        <div className="col-3">
+        <div className="col-6 col-sm-3 mt-3 mt-sm-0">
           <a href="https://www.instagram.com/urse_seguros/" target="_blank" rel="noreferrer">
-            <img src={feed3} alt="Instagram post 3" />
+            <img src={feed3} className="rounded-1 shadow-lg" alt="Instagram post 3" />
           </a>
         </div>
 
-        <div className="col-3">
+        <div className="col-6 col-sm-3 mt-3 mt-sm-0">
           <a href="https://www.instagram.com/urse_seguros/" target="_blank" rel="noreferrer">
-            <img src={feed4} alt="Instagram post 4" />
+            <img src={feed4} className="rounded-1 shadow-lg" alt="Instagram post 4" />
           </a>
         </div>
       </div>
 
       <div className="text-center mt-5">
-        <a href="https://www.instagram.com/urse_seguros/" target="_blank" rel="noreferrer" className="btn btn-primary-dark rounded-pill px-5">Más</a>
+        <a href="https://www.instagram.com/urse_seguros/" target="_blank" rel="noreferrer" className="btn btn-primary rounded-pill text-light px-5">Más</a>
       </div>
     </div>
   </section>

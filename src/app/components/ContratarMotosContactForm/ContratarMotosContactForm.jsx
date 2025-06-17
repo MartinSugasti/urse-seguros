@@ -21,7 +21,7 @@ const ContratarMotosContactForm = () => {
           subtitle="Completa los datos y contrata tu seguro SOA de motos"
           theme="light"
           template="motos"
-          fieldsList={['marca', 'modelo', 'year', 'estado']}
+          fieldsList={['marca', 'modelo', 'year', 'estado', 'location', 'fuel', 'category', 'antirrobo', 'motivo', 'company']}
         >
           <div className="row mx-0">
             <div className="col-12 col-md-6 ps-0 pe-0 pe-md-1">
@@ -32,7 +32,7 @@ const ContratarMotosContactForm = () => {
 
             <div className="col-12 col-md-6 ps-0 ps-md-1 pe-0">
               <div className="mb-3 input-group">
-                <input type="text" name="modelo" id="modelo" className="form-control bg-light" placeholder="Modelo" required />
+                <input type="text" name="modelo" id="modelo" className="form-control bg-light" placeholder="Modelo" />
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ const ContratarMotosContactForm = () => {
           <div className="row mx-0">
             <div className="col-12 col-md-6 ps-0 pe-0 pe-md-1">
               <div className="mb-3 input-group">
-                <input type="number" name="year" className="form-control bg-light" min="1900" max="2099" step="1" placeholder="Año" required />
+                <input type="number" name="year" className="form-control bg-light" min="1900" max="2099" step="1" placeholder="Año" />
               </div>
             </div>
 
