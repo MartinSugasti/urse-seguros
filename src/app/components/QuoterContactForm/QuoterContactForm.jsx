@@ -29,7 +29,7 @@ const templateMapping = {
   'Seguros de Ahorro y Vida': 'otros',
   'Seguros de Hogar': 'otros',
   'Seguros Empresariales': 'empresariales',
-  Otros: 'otros'
+  Otros: 'contact' // parece ilogico que no use el template 'otros', pero ese lo estoy usando para combinar Ahorro y Vida, y Hogar. El template 'contact' no tiene nada mas alla de la query, por lo que viene bien para este caso
 };
 
 const QuoterContactForm = () => {

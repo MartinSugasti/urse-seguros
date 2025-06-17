@@ -17,13 +17,15 @@ const LifeAndSavingsInsuranceFields = () => (
     <div className="row mx-0">
       <div className="col-12 col-md-6 ps-0 pe-0 pe-md-1">
         <div className="mb-3 input-group">
-          <input type="number" name="monto" className="form-control bg-light" step="1" placeholder="Monto Mensual Dispuesto a Pagar" />
+          <input type="number" name="monto" className="form-control bg-light" step="1" placeholder="Monto Mensual En USD Dispuesto a Pagar" />
         </div>
       </div>
 
       <div className="col-12 col-md-6 ps-0 ps-md-1 pe-0">
         <div className="mb-3 input-group">
-          <input type="date" id="birthday" name="birthday" className="form-control bg-light" placeholder="Fecha de Nacimiento" required />
+          {/* <input type="date" id="birthday" name="birthday" className="form-control bg-light" placeholder="Fecha de Nacimiento" required /> */}
+
+          <input type="text" id="birthday" name="birthday" className="form-control bg-light" placeholder="Fecha de Nacimiento" required onFocus={(e) => (e.target.type = "date")} onBlur={(e) => (e.target.type = "text")} />
         </div>
       </div>
     </div>
