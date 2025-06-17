@@ -308,26 +308,46 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     display: flex;
     align-items: center;
     width: 85%;
-    height: 1000px;
+    height: 700px;
 
     @media (min-width: 400px) {
-      height: 965px;
+      height: 730px;
     }
 
-    @media (min-width: 570px) {
-      height: 1073px;
+    @media (min-width: 500px) {
+      height: 800px;
+    }
+
+    @media (min-width: 600px) {
+      height: 870px;
+    }
+
+    @media (min-width: 700px) {
+      height: 930px;
     }
 
     @media (min-width: 768px) {
-      height: 690px;
+      height: 400px;
+    }
+
+    @media (min-width: 800px) {
+      height: 450px;
     }
 
     @media (min-width: 900px) {
-      height: 650px;
+      height: 450px;
     }
 
     @media (min-width: 1000px) {
-      height: 590px;
+      height: 470px;
+    }
+
+    @media (min-width: 1024px) {
+      height: 490px;
+    }
+
+    @media (min-width: 1400px) {
+      height: 600px;
     }
   }
 
