@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <div id="loader" class="sk-cube-wrapper">
+    <div id="loader" class="sk-cube-wrapper hidden">
       <div class="sk-cube-grid">
         <div class="sk-cube sk-cube1"></div>
         <div class="sk-cube sk-cube2"></div>
@@ -43,15 +43,19 @@
     </div>
 
     <script>
-      window.onload = setTimeout(function (event) {
-        document.querySelector('#loader').classList.add('hidden');
+      // If I want to show loader on first render, uncomment next script +
+      // Remove hidden class from #loader and non-hidden class from #root
 
-        // Add smoothly-show-page class to the element that will show app after loader
-        document.querySelector('.smoothly-show-page').classList.add('non-hidden');
-      }, 1200);
+      // window.onload = setTimeout(function (event) {
+      //   console.log('loading page');
+      //   document.querySelector('#loader').classList.add('hidden');
+
+      //   // Add smoothly-show-page class to the element that will show app after loader
+      //   document.querySelector('.smoothly-show-page').classList.add('non-hidden');
+      // }, 1200);
     </script>
 
-    <div id="root" class="smoothly-show-page"></div>
+    <div id="root" class="smoothly-show-page non-hidden"></div>
 
     <script type="module" src="/src/index.jsx"></script>
   </body>
