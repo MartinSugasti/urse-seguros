@@ -25,6 +25,7 @@ const LinkWithLoaderAndScrolling = ({
 
     // If section is not found, it means we are navigating to a new path,
     // so loader should show up
+    // Be careful to not repeat contact sections in different pages, because this may end up in not showing the loader
     if (!section) {
       document.querySelector('#loader').classList.remove('hidden');
       document.querySelector('.smoothly-show-page').classList.remove('non-hidden');
