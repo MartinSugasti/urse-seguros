@@ -18,8 +18,8 @@ const Seguros = () => (
         <p className="text-light mb-2 fst-italic text-light">Soluciones pensadas para tu tranquilidad</p>
       </div>
 
-      <div id="carouselExampleControls" className="carousel slide my-n3">
-        <div className="carousel-inner m-auto">
+      <div id="carouselExampleControls" className="carousel slide my-n3" data-bs-ride="carousel" data-bs-interval="4000">
+        <div className="carousel-inner m-auto overflow-visible">
           <CarouselCard active image={carImage} insuranceType="Seguros de Automóviles">
             <>
               <h4 className="card-title text-center text-sm-start text-light">Seguro de Automóviles</h4>
