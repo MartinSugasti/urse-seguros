@@ -9,7 +9,7 @@ const IntroHome = () => (
           <p className="text-muted mb-2 fst-italic">Lideres en servicios desde 1987</p>
         </div>
 
-        <div className="col-6 col-md-4 text-center">
+        <div className="col-8 col-sm-6 col-md-4 text-center">
           <img src={familyImage} className="img-fluid" alt="family" />
         </div>
       </div>
