@@ -1,0 +1,21 @@
+{
+  "name": "Urse Seguros",
+  "short_name": "Urse Seguros",
+  "description": "Especialistas en seguros. Líderes en servicio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4a90e2",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
