@@ -4,8 +4,8 @@
   "description": "Especialistas en seguros. Líderes en servicio",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#4a90e2",
+  "background_color": "#f8f8f8",
+  "theme_color": "#f8f8f8",
   "icons": [
     {
       "src": "/favicon-192x192.png",
