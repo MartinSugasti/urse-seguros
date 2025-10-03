@@ -306,6 +306,79 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 #seguros {
   background: linear-gradient(172.78deg, $primary, $primary-dark);
 
+  .slick-slider {
+    .slick-dots {
+      button:before {
+        font-size: 12px;
+        color: $light;
+      }
+
+      .slick-active {
+        button:before {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .slick-slide {
+    &> div {
+      height: 590px;
+
+      @media (min-width: 401px) {
+        height: 625px;
+      }
+
+      @media (min-width: 480px) {
+        height: 715px;
+      }
+
+      @media (min-width: 540px) {
+        height: 792px;
+      }
+
+      @media (min-width: 601px) {
+        height: 650px;
+      }
+
+      @media (min-width: 770px) {
+        height: 720px;
+      }
+
+      @media (min-width: 874px) {
+        height: 660px;
+      }
+
+      @media (min-width: 992px) {
+        height: 720px;
+      }
+
+      @media (min-width: 1200px) {
+        height: 670px;
+      }
+
+      @media (min-width: 1400px) {
+        height: 650px;
+      }
+    }
+
+    .image-section {
+      height: 50% !important;
+    }
+
+    .text-section {
+      height: 50% !important;
+
+      h5 {
+        height: 10% !important;
+      }
+
+      .children-section-content {
+        height: 65% !important;
+      }
+    }
+  }
+
   .list {
     list-style-type: none;
   }
@@ -356,7 +429,6 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       height: 600px;
     }
   }
-
 
   .tooltipy {
     position: relative;
