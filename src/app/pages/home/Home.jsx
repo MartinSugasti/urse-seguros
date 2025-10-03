@@ -11,9 +11,9 @@ const Home = () => (
     <IntroHome />
     <Seguros />
     <Companias />
-    <Servicios />
-    <Reviews />
     <Asistencia />
+    <Reviews />
+    <Servicios />
     <Contacto />
   </>
 );
