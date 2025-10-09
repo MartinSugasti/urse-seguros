@@ -11,7 +11,7 @@ const Servicios = () => (
           <div className="card bg-light rounded-4 text-center border-0 shadow-lg h-100">
             <div className="card-body d-flex flex-column">
               <div>
-                <i className="bi fa-2x bi-signpost-2" />
+                <i className="bi fa-2x bi-car-front" />
                 <h5 className="card-title">Siniestros</h5>
               </div>
               <div className="my-auto">
@@ -37,7 +37,7 @@ const Servicios = () => (
           <div className="card bg-light rounded-4 text-center border-0 shadow-lg h-100">
             <div className="card-body d-flex flex-column">
               <div>
-                <i className="bi fa-2x bi-arrow-clockwise" />
+                <i className="bi fa-2x bi-calendar-event" />
                 <h5 className="card-title">Renovaciones</h5>
               </div>
               <div className="my-auto">

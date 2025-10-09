@@ -32,6 +32,18 @@ const Cards = () => {
   return (
     <Slider {...settings}>
       <Card
+        img={travelImage}
+        title="Seguros de Viaje"
+        to="/viaje"
+        sectionId="contratar-viaje-contact-form"
+        buttonText="Contratar"
+      >
+        <p className="mb-0">
+          Cubre la asistencia médica en ocasión de un viaje, ya sea de placer, turismo o negocios. Atrevete a descubrir cada rincón del planeta, respaldado por las mejores pólizas de seguro de viaje, que te protegen en cada momento.
+        </p>
+      </Card>
+
+      <Card
         img={carImage}
         title="Seguro de Automóviles"
         to="/cotizacion?insurance_type=Seguros de Automóviles"
@@ -60,18 +72,6 @@ const Cards = () => {
       </Card>
 
       <Card
-        img={travelImage}
-        title="Seguros de Viaje"
-        to="/viaje"
-        sectionId="contratar-viaje-contact-form"
-        buttonText="Contratar"
-      >
-        <p className="mb-0">
-          Cubre la asistencia médica en ocasión de un viaje, ya sea de placer, turismo o negocios. Atrevete a descubrir cada rincón del planeta, respaldado por las mejores pólizas de seguro de viaje, que te protegen en cada momento.
-        </p>
-      </Card>
-
-      <Card
         img={homeImage}
         title="Seguros de Hogar"
         to="/cotizacion?insurance_type=Seguros de Hogar"
@@ -80,18 +80,6 @@ const Cards = () => {
       >
         <p className="mb-0">
           El clima, la inseguridad y los accidentes son peligros latentes. A partir de US$100 anuales puedes asegurar tu casa y objetos contra incendios, inclemencias climáticas, daños eléctricos y más.
-        </p>
-      </Card>
-
-      <Card
-        img={motosImage}
-        title="Seguros de Motos"
-        to="/motos"
-        sectionId="contratar-motos-contact-form"
-        buttonText="Contratar"
-      >
-        <p className="mb-0">
-          Contrata tu seguro obligatorio SOA de forma sencilla y ágil. También puedes consultarnos por seguros extras
         </p>
       </Card>
 
@@ -132,6 +120,18 @@ const Cards = () => {
           <i className="bi bi-info-circle ms-2" />
           <br />
           <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Brinda la posibilidad de complementar la cobertura de salud en caso de tener el diagnóstico de enfermedades graves</span>
+        </p>
+      </Card>
+
+      <Card
+        img={motosImage}
+        title="Seguros de Motos"
+        to="/motos"
+        sectionId="contratar-motos-contact-form"
+        buttonText="Contratar"
+      >
+        <p className="mb-0">
+          Contrata tu seguro obligatorio SOA de forma sencilla y ágil. También puedes consultarnos por seguros extras
         </p>
       </Card>
 
