@@ -110,28 +110,28 @@ const Cards = () => {
           Ahorro y Vida
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Elegís el ahorro que querés cobrar al ﬁnal del período y en caso de fallecimiento le paga el capital a los beneﬁciarios</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Elegís el ahorro que querés cobrar al ﬁnal del período y en caso de fallecimiento le paga el capital a los beneﬁciarios</span>
         </p>
 
         <p className="mt-1 mb-0 tooltipy">
           Renta
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Te aseguras recibir una renta mensual a partir de la fecha que elegís al momento de contratarlo. También tenés la opción de retirar el capital generado al contado</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Te aseguras recibir una renta mensual a partir de la fecha que elegís al momento de contratarlo. También tenés la opción de retirar el capital generado al contado</span>
         </p>
 
         <p className="mt-1 mb-0 tooltipy">
           Accidente
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Esta solución busca protegerte en todo momento ante eventos inesperados, situaciones que te impiden seguir tu día a día con normalidad</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Esta solución busca protegerte en todo momento ante eventos inesperados, situaciones que te impiden seguir tu día a día con normalidad</span>
         </p>
 
         <p className="mt-1 mb-0 tooltipy">
           Salud
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Brinda la posibilidad de complementar la cobertura de salud en caso de tener el diagnóstico de enfermedades graves</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Brinda la posibilidad de complementar la cobertura de salud en caso de tener el diagnóstico de enfermedades graves</span>
         </p>
       </Card>
 
@@ -150,35 +150,35 @@ const Cards = () => {
           Agrícola
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Coberturas que garantizan indemnización por daños sufridos por factores climáticos</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Coberturas que garantizan indemnización por daños sufridos por factores climáticos</span>
         </p>
 
         <p className="mt-1 mb-0 tooltipy">
           Vida Animal
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Ganado vacuno, ovinos y suinos, equinos, animales de pedigree y toros de cabaña</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Ganado vacuno, ovinos y suinos, equinos, animales de pedigree y toros de cabaña</span>
         </p>
 
         <p className="mt-1 mb-0 tooltipy">
           Forestación
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Coberturas de los riesgos de producción desde la etapa de vivero hasta el retiro de la madera</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Coberturas de los riesgos de producción desde la etapa de vivero hasta el retiro de la madera</span>
         </p>
 
         <p className="mt-1 mb-0 tooltipy">
           Responsabilidad Civil
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Por explotación agropecuaria, por cruce y arreo de ganado y escape de animales</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Por explotación agropecuaria, por cruce y arreo de ganado y escape de animales</span>
         </p>
 
         <p className="mt-1 mb-0 tooltipy">
           Maquinaria
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Cubre los posibles daños que sufran tus maquinarias</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Cubre los posibles daños que sufran tus maquinarias</span>
         </p>
       </Card>
 
@@ -209,21 +209,21 @@ const Cards = () => {
           Garantía de Alquiler
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Este seguro es una garantía de arrendamiento para quien alquila una casa, apartamento o local comercial, protegiéndose a sí mismo y al propietario del inmueble del posible incumplimiento en el pago del alquiler</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Este seguro es una garantía de arrendamiento para quien alquila una casa, apartamento o local comercial, protegiéndose a sí mismo y al propietario del inmueble del posible incumplimiento en el pago del alquiler</span>
         </p>
 
         <p className="mt-1 mb-0 tooltipy">
           Vehículos Náuticos
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Seguro destinado a cubrir motos náuticas, jet sky, gomones, kayaks, etc.</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Seguro destinado a cubrir motos náuticas, jet sky, gomones, kayaks, etc.</span>
         </p>
 
         <p className="mt-1 mb-0 tooltipy">
           Embarcaciones
           <i className="bi bi-info-circle ms-2" />
           <br />
-          <span className="tooltiptext mt-2">Este seguro está destinado a cubrir todos aquellos barcos que sean utilizados sin fines de lucro (veleros, lanchas, botes, etc.)</span>
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow">Este seguro está destinado a cubrir todos aquellos barcos que sean utilizados sin fines de lucro (veleros, lanchas, botes, etc.)</span>
         </p>
       </Card>
     </Slider>

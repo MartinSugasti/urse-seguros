@@ -383,53 +383,6 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     list-style-type: none;
   }
 
-  .carousel-inner {
-    display: flex;
-    align-items: center;
-    width: 85%;
-    height: 700px;
-
-    @media (min-width: 400px) {
-      height: 730px;
-    }
-
-    @media (min-width: 500px) {
-      height: 800px;
-    }
-
-    @media (min-width: 600px) {
-      height: 870px;
-    }
-
-    @media (min-width: 700px) {
-      height: 930px;
-    }
-
-    @media (min-width: 768px) {
-      height: 400px;
-    }
-
-    @media (min-width: 800px) {
-      height: 450px;
-    }
-
-    @media (min-width: 900px) {
-      height: 450px;
-    }
-
-    @media (min-width: 1000px) {
-      height: 470px;
-    }
-
-    @media (min-width: 1024px) {
-      height: 490px;
-    }
-
-    @media (min-width: 1400px) {
-      height: 600px;
-    }
-  }
-
   .tooltipy {
     position: relative;
   }
@@ -438,12 +391,11 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     visibility: hidden;
     background-color: $light;
     color: $dark;
-    border-radius: 6px;
-    padding: 15px 20px;
 
-    /* Position the tooltip */
+    /* Position the tooltip on top */
     position: absolute;
-    z-index: 1;
+    bottom: 100%;
+    left: 0;
   }
 
   .bi-info-circle:hover::before {
