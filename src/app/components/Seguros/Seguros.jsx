@@ -1,5 +1,4 @@
 import Cards from './Cards';
-import Carousel from './Carousel';
 
 const Seguros = () => (
   <section id="seguros">
@@ -10,8 +9,6 @@ const Seguros = () => (
       </div>
 
       <Cards />
-
-      {/* <Carousel /> */}
     </div>
   </section>
 );
