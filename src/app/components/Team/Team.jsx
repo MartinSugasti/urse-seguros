@@ -1,8 +1,13 @@
 import TeamCard from './TeamCard';
 
-import generalImage from '../../../assets/images/team/profile.png';
-import JLImage from '../../../assets/images/team/JL_wo_bg.png';
-import jimeImage from '../../../assets/images/team/jim_wo_bg_adjusted.png';
+import joseLuisImage from '../../../assets/images/team/jose_luis.png';
+import jimeImage from '../../../assets/images/team/jime.png';
+import anabelImage from '../../../assets/images/team/anabel.png';
+import andreinaImage from '../../../assets/images/team/andreina.png';
+import javierImage from '../../../assets/images/team/javier.png';
+import brunoImage from '../../../assets/images/team/bruno.png';
+import santiagoImage from '../../../assets/images/team/santiago.png';
+import matiasImage from '../../../assets/images/team/matias.png';
 
 const Team = () => (
   <section id="team">
@@ -16,79 +21,74 @@ const Team = () => (
           <TeamCard
             name="Jose Luis Urse"
             position="Director"
-            image={JLImage}
+            image={joseLuisImage}
             email="jlurse@urseseguros.com.uy"
-            linkedinUrl="https://www.linkedin.com/company/urse-seguros/"
+            linkedinUrl="https://www.linkedin.com/in/jose-luis-urse-7702b015/"
           />
         </div>
 
         <div className="col-6 col-sm-5 col-xl-3">
           <TeamCard
             name="Jimena Urse"
-            position="Coordinación General"
+            position="Co-Directora"
             image={jimeImage}
             email="jimenaurse@urseseguros.com.uy"
-            linkedinUrl="https://www.linkedin.com/company/urse-seguros/"
+            linkedinUrl="https://www.linkedin.com/in/jimena-urse-0aba3955/"
           />
         </div>
 
         <div className="col-6 col-sm-5 col-xl-3 me-xl-1">
           <TeamCard
             name="Anabel Buffa"
-            position="Siniestros"
-            image={generalImage}
+            position="Ejecutiva Siniestros"
+            image={anabelImage}
             email="abuffa@urseseguros.com.uy"
-            linkedinUrl="https://www.linkedin.com/company/urse-seguros/"
           />
         </div>
 
         <div className="col-6 col-sm-5 col-xl-3">
           <TeamCard
             name="Andreina Navarro"
-            position="Seguros de Viajeros y SOA"
-            image={generalImage}
+            position="Ejecutiva Comercial y Cobranzas"
+            image={andreinaImage}
             email="anavarro@urseseguros.com.uy"
-            linkedinUrl="https://www.linkedin.com/company/urse-seguros/"
           />
         </div>
 
         <div className="col-6 col-sm-5 col-xl-3">
           <TeamCard
             name="Javier Osvalde"
-            position="Cobranzas"
-            image={generalImage}
+            position="Ejecutivo Comercial y Cobranzas"
+            image={javierImage}
             email="josvalde@urseseguros.com.uy"
-            linkedinUrl="https://www.linkedin.com/company/urse-seguros/"
           />
         </div>
 
         <div className="col-6 col-sm-5 col-xl-3 me-xl-1">
           <TeamCard
             name="Maicol Bruno"
-            position="Comercial"
-            image={generalImage}
+            position="Ejecutivo Comercial"
+            image={brunoImage}
             email="mbruno@urseseguros.com.uy"
-            linkedinUrl="https://www.linkedin.com/company/urse-seguros/"
+            linkedinUrl="https://www.linkedin.com/in/maicol-bruno-martinez-0a23212aa"
           />
         </div>
 
         <div className="col-6 col-sm-5 col-xl-3">
           <TeamCard
             name="Santiago Ippes"
-            position="Comercial"
-            image={generalImage}
+            position="Ejecutivo Comercial"
+            image={santiagoImage}
             email="sippes@urseseguros.com.uy"
-            linkedinUrl="https://www.linkedin.com/company/urse-seguros/"
           />
         </div>
 
         <div className="col-6 col-sm-5 col-xl-3">
           <TeamCard
             name="Matias Luengo"
-            position="Comercial"
-            image={generalImage}
+            position="Ejecutivo Comercial"
+            image={matiasImage}
             email="mluengo@urseseguros.com.uy"
-            linkedinUrl="https://www.linkedin.com/company/urse-seguros/"
           />
         </div>
       </div>
