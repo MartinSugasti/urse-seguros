@@ -852,7 +852,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
       }
     }
 
-    h5 {
+    h5, h6 {
       font-size: 0.8rem !important;
 
       @media (min-width: 400px) {
