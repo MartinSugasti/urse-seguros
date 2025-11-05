@@ -14,7 +14,7 @@ const Mision = () => (
                 </button>
               </h2>
               <div id="flush-collapseOne" className="accordion-collapse collapse panel-collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body text-light py-0 px-2 fst-italic">Somos una empresa con una amplia trayectoria en el medio, que desde 1987 se dedica al asesoramiento y venta de seguros.</div>
+                <div className="accordion-body text-light py-0 px-2 fst-italic">Somos una empresa con una amplia trayectoria en el medio que, desde 1987, se dedica al asesoramiento y venta de seguros.</div>
                 <div className="accordion-body text-light px-2 fst-italic">Trabajamos con todas las compañías de seguros contando por parte de éstas con el respaldo y el aval suficiente, merced a nuestro trabajo profesional a lo largo de todos estos años. Ofrecemos soluciones confiables, a la medida de cada uno de nuestros clientes,  brindando  un servicio personalizado, responsable y de calidad.</div>
               </div>
             </div>

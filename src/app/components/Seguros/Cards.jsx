@@ -25,7 +25,7 @@ const Cards = () => {
     pauseOnHover: true,
     responsive: [
       { breakpoint: 769, settings: { slidesToShow: 2, slidesToScroll: 2 } },
-      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }
+      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1, autoplaySpeed: 3000 } }
     ]
   };
 
