@@ -1,7 +1,7 @@
-import feed1 from '../../../assets/images/feeds/feed_1.jpeg';
-import feed2 from '../../../assets/images/feeds/feed_3.jpeg';
-import feed3 from '../../../assets/images/feeds/feed_2.jpeg';
-import feed4 from '../../../assets/images/feeds/feed_4.jpeg';
+import feed1 from '../../../assets/images/feeds/feed_1.jpg';
+import feed2 from '../../../assets/images/feeds/feed_2.jpg';
+import feed3 from '../../../assets/images/feeds/feed_3.jpg';
+import feed4 from '../../../assets/images/feeds/feed_4.jpg';
 
 const Instagram = () => (
   <section id="instagram" className="bg-light">
