@@ -35,7 +35,7 @@ const Cards = () => {
         img={travelImage}
         title="Seguros de Viaje"
         to="/viaje"
-        sectionId="contratar-viaje-contact-form"
+        sectionId="contratar-viaje"
         buttonText="Contratar"
       >
         <p className="mb-0">
