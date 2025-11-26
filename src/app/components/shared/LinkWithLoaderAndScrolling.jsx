@@ -44,9 +44,10 @@ const LinkWithLoaderAndScrolling = ({
     }
 
     // If id contains the word 'contact', it means we are navigating to a contact form,
+    // or id contains the word 'contratar', it means we are navigating to a contract section,
     // so page should scroll to that section
     // A 1 sec timeout is set in case the contact form is not in current page
-    if (id.includes('contact')) {
+    if (id.includes('contact') || id.includes('contratar')) {
       if (section) {
         document.querySelector(`#${id}`).scrollIntoView(true);
       } else {
