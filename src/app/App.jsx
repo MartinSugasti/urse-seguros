@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsappIcon from './components/WhatsappIcon';
 import ScrollToTop from './components/ScrollToTop';
+import TravelModal from './components/TravelModal';
 import Home from './pages/home';
 import About from './pages/about';
 import Cotizacion from './pages/cotizacion';
@@ -25,6 +26,7 @@ const App = () => (
 
     <Footer />
     <WhatsappIcon />
+    <TravelModal />
   </BrowserRouter>
 );
 
