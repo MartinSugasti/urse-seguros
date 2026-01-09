@@ -79,16 +79,14 @@ const ContratarViaje = () => (
       </div>
 
       <div className="mt-4 p-3 rounded-3 bg-dark bg-opacity-50">
-        <p className="mb-0 text-center">
-          Accede a un 10% de descuento con el código
-          <br />
-          <p className="tooltipy mb-0">
+        <div className="mb-0 text-center">
+          <p className="mb-0">Accede a un 10% de descuento con el código</p>
+          <div className="tooltipy mb-0">
             <span className="text-uppercase fw-bold">PROMOWEB</span>
             <i className="bi bi-info-circle ms-2" />
-            {/* <br /> */}
             <span className="tooltiptext ms-2 px-3 py-2 mb-2 rounded-2 shadow">Debes utilizarlo en la página de pago</span>
-          </p>
-        </p>
+          </div>
+        </div>
       </div>
 
       <div className="mt-4 text-center">
