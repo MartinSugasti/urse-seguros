@@ -1,10 +1,10 @@
 import bseImage from '../../../assets/images/companies_logos/bse.svg';
-import hdiImage from '../../../assets/images/companies_logos/hdi.svg';
 import mapfreImage from '../../../assets/images/companies_logos/mapfre.svg';
 import portoImage from '../../../assets/images/companies_logos/porto.svg';
 import sancorImage from '../../../assets/images/companies_logos/sancor.svg';
 import suraImage from '../../../assets/images/companies_logos/sura.svg';
 import surcoImage from '../../../assets/images/companies_logos/surco.png';
+import barbussImage from '../../../assets/images/companies_logos/barbuss.png';
 
 // For opening the modal, parent component needs an element like the following:
 // <a
@@ -58,9 +58,9 @@ const SoaModal = () => (
               </div>
             </a>
 
-            <a href="https://www.hdi.com.uy/descargue-su-poliza/" alt="link-to-company-page" target="_blank" rel="noreferrer" className="col-9 col-sm-5 d-flex justify-content-center border m-2 p-3 rounded-2 shadow">
+            <a href="https://www2.hdi.com.uy/descargue-su-poliza/" alt="link-to-company-page" target="_blank" rel="noreferrer" className="col-9 col-sm-5 d-flex justify-content-center border m-2 p-3 rounded-2 shadow">
               <div>
-                <img src={hdiImage} className="m-auto" alt="hdi-logo" />
+                <img src={barbussImage} className="m-auto" alt="barbuss-logo" />
               </div>
             </a>
 

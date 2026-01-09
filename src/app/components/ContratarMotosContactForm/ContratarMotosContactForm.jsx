@@ -114,14 +114,14 @@ const ContratarMotosContactForm = () => {
                 <div className="mb-3 input-group">
                   <select className="form-select text-dark bg-light" id="company" name="company" defaultValue="" required>
                     <option value="" disabled>Compañía Actual</option>
+                    <option value="Barbuss">Barbuss (Ex HDI)</option>
                     <option value="Berkley">Berkley</option>
                     <option value="BSE">BSE</option>
-                    <option value="HDI">HDI</option>
                     <option value="Mapfre">Mapfre</option>
                     <option value="Porto">Porto</option>
-                    <option value="SBI">SBI</option>
                     <option value="San Cristobal">San Cristobal</option>
                     <option value="Sancor">Sancor</option>
+                    <option value="SBI">SBI</option>
                     <option value="Sura">Sura</option>
                     <option value="Surco">Surco</option>
                     <option value="Otra">Otra</option>
