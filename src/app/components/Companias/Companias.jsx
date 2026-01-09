@@ -1,7 +1,6 @@
 import Slider from 'react-slick';
 
 import bseImage from '../../../assets/images/companies_logos/bse.svg';
-import hdiImage from '../../../assets/images/companies_logos/hdi.svg';
 import mapfreImage from '../../../assets/images/companies_logos/mapfre.svg';
 import portoImage from '../../../assets/images/companies_logos/porto.svg';
 import sanCristobalImage from '../../../assets/images/companies_logos/san_cristobal.svg';
@@ -13,6 +12,7 @@ import berkleyImage from '../../../assets/images/companies_logos/berkley.png';
 import bestDoctorsImage from '../../../assets/images/companies_logos/best_doctors.png';
 import vumiImage from '../../../assets/images/companies_logos/vumi.png';
 import urbanImage from '../../../assets/images/companies_logos/urban.png';
+import barbussImage from '../../../assets/images/companies_logos/barbuss.png';
 
 const Companias = () => {
   const settings = {
@@ -52,8 +52,13 @@ const Companias = () => {
               </a>
             </div>
             <div>
-              <a href="https://www.hdi.com.uy/" alt="link-to-company-page" target="_blank" rel="noreferrer">
-                <img src={hdiImage} className="m-auto" alt="hdi-logo" />
+              <a href="https://www.urbanglobaltravel.com" alt="link-to-company-page" target="_blank" rel="noreferrer">
+                <img src={urbanImage} className="m-auto" alt="urban-logo" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www2.hdi.com.uy/" alt="link-to-company-page" target="_blank" rel="noreferrer">
+                <img src={barbussImage} className="m-auto p-2" alt="barbuss-logo" />
               </a>
             </div>
             <div>
@@ -94,11 +99,6 @@ const Companias = () => {
             <div>
               <a href="https://www.sbi.uy/" alt="link-to-company-page" target="_blank" rel="noreferrer">
                 <img src={sbiImage} className="m-auto" alt="sbi-logo" />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.urbanglobaltravel.com" alt="link-to-company-page" target="_blank" rel="noreferrer">
-                <img src={urbanImage} className="m-auto" alt="urban-logo" />
               </a>
             </div>
             <div>

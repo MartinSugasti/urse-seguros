@@ -1,5 +1,4 @@
 import bseImage from '../../../assets/images/companies_logos/bse.svg';
-import hdiImage from '../../../assets/images/companies_logos/hdi.svg';
 import mapfreImage from '../../../assets/images/companies_logos/mapfre.svg';
 import portoImage from '../../../assets/images/companies_logos/porto.svg';
 import sanCristobalImage from '../../../assets/images/companies_logos/san_cristobal.svg';
@@ -8,6 +7,7 @@ import suraImage from '../../../assets/images/companies_logos/sura.svg';
 import sbiImage from '../../../assets/images/companies_logos/sbi.svg';
 import surcoImage from '../../../assets/images/companies_logos/surco.png';
 import berkleyImage from '../../../assets/images/companies_logos/berkley.png';
+import barbussImage from '../../../assets/images/companies_logos/barbuss.png';
 
 // For opening the modal, parent component needs an element like the following:
 // <a
@@ -151,8 +151,8 @@ const AccidentModal = () => (
 
             <div className="row align-items-center justify-content-center border border-1 border-end-0 border-start-0 border-top-0 pb-4 mb-4">
               <div className="d-flex justify-content-center col-6">
-                <a href="https://www.hdi.com.uy/" alt="link-to-hdi-page" target="_blank" rel="noreferrer">
-                  <img src={hdiImage} className="m-auto" alt="hdi-logo" />
+                <a href="https://www2.hdi.com.uy/" alt="link-to-barbuss-page" target="_blank" rel="noreferrer">
+                  <img src={barbussImage} className="m-auto" alt="barbuss-logo" />
                 </a>
               </div>
 
@@ -165,9 +165,9 @@ const AccidentModal = () => (
                 </p>
                 <p className="mb-0 mt-3">Desde el exterior:</p>
                 <p className="mb-0">
-                  <a className="text-primary-dark" href="tel:+59826188000">
+                  <a className="text-primary-dark" href="tel:+59829086093">
                     <i className="bi bi-telephone-fill me-1" />
-                    (+598) 2618-8000
+                    (+598) 2908-6093
                   </a>
                 </p>
               </div>
