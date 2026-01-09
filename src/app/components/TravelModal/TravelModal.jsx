@@ -11,7 +11,7 @@ const TravelModal = () => {
   useEffect(() => {
     // Check if user came from urbanglobaltravel
     const referrer = document.referrer.toLowerCase();
-    const isFromUrbantravel = referrer.includes('urbanglobaltravel') || true;
+    const isFromUrbantravel = referrer.includes('urbanglobaltravel');
 
     // Expiration time in milliseconds (1 minute)
     const EXPIRATION_TIME = 60 * 1000;
