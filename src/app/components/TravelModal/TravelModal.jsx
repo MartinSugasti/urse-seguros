@@ -14,29 +14,8 @@ const TravelModal = () => {
     console.log(referrer)
     const isFromUrbantravel = referrer.includes('urbanglobaltravel');
 
-    // Expiration time in milliseconds (1 minute)
-    const EXPIRATION_TIME = 60 * 1000;
-
-    // Check if modal has already been shown and if it hasn't expired
-    const modalShownData = sessionStorage.getItem('travelModalShown');
-    let hasBeenShown = false;
-
-    if (modalShownData) {
-      try {
-        const { timestamp } = JSON.parse(modalShownData);
-        const now = Date.now();
-        // Check if expiration time has passed
-        if (now - timestamp < EXPIRATION_TIME) {
-          hasBeenShown = true;
-        } else {
-          // Expired, remove the old data
-          sessionStorage.removeItem('travelModalShown');
-        }
-      } catch (error) {
-        // If parsing fails, treat as not shown
-        sessionStorage.removeItem('travelModalShown');
-      }
-    }
+    // Check if modal has already been shown (persists for the entire session)
+    const hasBeenShown = sessionStorage.getItem('travelModalShown') === 'true';
 
     // Initialize modal instance
     const modalElement = modalRef.current;
@@ -72,9 +51,8 @@ const TravelModal = () => {
         if (bootstrapModalRef.current && modalElement) {
           bootstrapModalRef.current.show();
 
-          // Mark as shown in sessionStorage with timestamp
-          const timestamp = Date.now();
-          sessionStorage.setItem('travelModalShown', JSON.stringify({ timestamp }));
+          // Mark as shown in sessionStorage (persists for the entire session)
+          sessionStorage.setItem('travelModalShown', 'true');
         }
       }, 100);
     }
