@@ -297,7 +297,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 }
 
 // Sections
-#intro-home, #intro-cotizacion, #intro-viaje, #intro-motos, #intro-about {
+#intro-home, #intro-cotizacion, #intro-viaje, #intro-motos, #intro-about, #intro-movilidad, #intro-bicicletas {
   min-height: calc(100vh - 4rem); /* 100vh minus navbar height (pt-2 + pb-2 + content) */
   display: flex;
   align-items: center;

@@ -89,6 +89,16 @@ const Navbar = () => {
                     SOA MOTOS
                   </LinkWithLoaderAndScrolling>
                 </li>
+                <li>
+                  <LinkWithLoaderAndScrolling to="/bicicletas" className="dropdown-item" sectionId="intro-bicicletas">
+                    BICICLETAS
+                  </LinkWithLoaderAndScrolling>
+                </li>
+                <li>
+                  <LinkWithLoaderAndScrolling to="/movilidad" className="dropdown-item" sectionId="intro-movilidad">
+                    MOVILIDAD
+                  </LinkWithLoaderAndScrolling>
+                </li>
               </ul>
             </li>
 
