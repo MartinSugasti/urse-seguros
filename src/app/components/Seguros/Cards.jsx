@@ -10,6 +10,7 @@ import homeImage from '../../../assets/images/insurances/home.svg';
 import agroImage from '../../../assets/images/insurances/agro.svg';
 import businessImage from '../../../assets/images/insurances/business.svg';
 import movilidadImage from '../../../assets/images/insurances/movilidad.svg';
+import bicicletaImage from '../../../assets/images/insurances/bicicleta.svg';
 import othersImage from '../../../assets/images/insurances/others.svg';
 
 const Cards = () => {
@@ -196,6 +197,37 @@ const Cards = () => {
       >
         <p className="mb-0">
           Realiza tu actividad comercial con tranquilidad con los diferentes tipos de seguros para comercios, incluyendo flota de vehículos, transporte de mercaderías, riesgos operativos, créditos a la exportación, etc.
+        </p>
+      </Card>
+
+      <Card
+        img={bicicletaImage}
+        title="Seguros de Bicicletas"
+        to="/bicicletas"
+        sectionId="intro-bicicletas"
+        buttonText="Contratar"
+      >
+        <p className="mb-0">
+          Seguros de Bicicletas
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Hurto
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Incendio
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Accidentes Personales
+          <i className="bi bi-info-circle ms-2" />
+          <br />
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">De 16 a 65 años</span>
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Responsabilidad Civil
         </p>
       </Card>
 

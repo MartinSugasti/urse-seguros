@@ -1,4 +1,4 @@
-import movilidadImage from '../../../assets/images/others/movilidad.svg';
+import bicicletasImage from '../../../assets/images/others/bicicletas.svg';
 
 const IntroBicicletas = () => (
   <section id="intro-bicicletas" className="bg-light">
@@ -9,7 +9,7 @@ const IntroBicicletas = () => (
           <p className="text-muted mb-2 fst-italic">Contrata tu seguro de bicicletas de forma sencilla y ágil</p>
         </div>
         <div className="col-10 col-sm-8 col-md-5 order-md-1 text-center">
-          <img src={movilidadImage} className="img-fluid" alt="calculator" />
+          <img src={bicicletasImage} className="img-fluid" alt="calculator" />
         </div>
       </div>
     </div>
