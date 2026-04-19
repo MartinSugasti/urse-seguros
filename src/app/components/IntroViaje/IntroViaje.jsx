@@ -1,4 +1,4 @@
-import travelImage from '../../../assets/images/others/travel.svg';
+import travelImage from '../../../assets/images/intros/travel.svg';
 
 const IntroViaje = () => (
   <section id="intro-viaje" className="bg-light">

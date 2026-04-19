@@ -1,4 +1,4 @@
-import movilidadImage from '../../../assets/images/others/movilidad.svg';
+import movilidadImage from '../../../assets/images/intros/movilidad.svg';
 
 const IntroMovilidad = () => (
   <section id="intro-movilidad" className="bg-light">
