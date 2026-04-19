@@ -1,4 +1,4 @@
-import teamImage from '../../../assets/images/others/team.svg';
+import teamImage from '../../../assets/images/intros/team.svg';
 
 const IntroAbout = () => (
   <section id="intro-about" className="bg-light">

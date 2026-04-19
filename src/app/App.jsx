@@ -10,6 +10,8 @@ import About from './pages/about';
 import Cotizacion from './pages/cotizacion';
 import Viaje from './pages/viaje';
 import Motos from './pages/motos';
+import Bicicletas from './pages/bicicletas';
+import Movilidad from './pages/movilidad';
 
 const App = () => (
   <BrowserRouter>
@@ -21,6 +23,8 @@ const App = () => (
       <Route exact path="/cotizacion" element={<Cotizacion />} />
       <Route exact path="/viaje" element={<Viaje />} />
       <Route exact path="/motos" element={<Motos />} />
+      <Route exact path="/bicicletas" element={<Bicicletas />} />
+      <Route exact path="/movilidad" element={<Movilidad />} />
       <Route path="/*" element={<Home />} />
     </Routes>
 

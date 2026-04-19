@@ -1,4 +1,4 @@
-import motorbikeImage from '../../../assets/images/others/moto.svg';
+import motorbikeImage from '../../../assets/images/intros/moto.svg';
 
 const IntroMotos = () => (
   <section id="intro-motos" className="bg-light">
