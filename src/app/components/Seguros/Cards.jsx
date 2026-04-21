@@ -2,25 +2,26 @@ import Slider from 'react-slick';
 
 import Card from './Card';
 
-import carImage from '../../../assets/images/insurances/car.svg';
 import travelImage from '../../../assets/images/insurances/travel.svg';
-import motosImage from '../../../assets/images/insurances/motos.svg';
-import familyLargeImage from '../../../assets/images/insurances/life.svg';
+import carImage from '../../../assets/images/insurances/car.svg';
 import homeImage from '../../../assets/images/insurances/home.svg';
+import familyLargeImage from '../../../assets/images/insurances/life.svg';
+import motosImage from '../../../assets/images/insurances/motos.svg';
+// import movilidadImage from '../../../assets/images/insurances/movilidad.svg';
 import agroImage from '../../../assets/images/insurances/agro.svg';
 import businessImage from '../../../assets/images/insurances/business.svg';
-import movilidadImage from '../../../assets/images/insurances/movilidad.svg';
-import bicicletaImage from '../../../assets/images/insurances/bicicleta.svg';
+// import bicicletaImage from '../../../assets/images/insurances/bicicleta.svg';
 import othersImage from '../../../assets/images/insurances/others.svg';
 
 const Cards = () => {
   const settings = {
+    className: "center",
     arrows: false,
     autoplay: true,
     dots: true,
     infinite: true,
     speed: 2000,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 4000000,
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
@@ -141,6 +142,68 @@ const Cards = () => {
         </p>
       </Card>
 
+      {/* <Card
+        img={movilidadImage}
+        title="Seguros de Movilidad Alternativa"
+        to="/movilidad"
+        sectionId="intro-movilidad"
+        buttonText="Contratar"
+      >
+        <p className="mb-0">
+          Seguros de Movilidad Alternativa
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Hurto
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Incendio
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Accidentes Personales
+          <i className="bi bi-info-circle ms-2" />
+          <br />
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">De 16 a 65 años</span>
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Responsabilidad Civil
+        </p>
+      </Card> */}
+
+      {/* <Card
+        img={bicicletaImage}
+        title="Seguros de Bicicletas"
+        to="/bicicletas"
+        sectionId="intro-bicicletas"
+        buttonText="Contratar"
+      >
+        <p className="mb-0">
+          Seguros de Bicicletas
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Hurto
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Incendio
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Accidentes Personales
+          <i className="bi bi-info-circle ms-2" />
+          <br />
+          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">De 16 a 65 años</span>
+        </p>
+
+        <p className="mt-1 mb-0 tooltipy">
+          Responsabilidad Civil
+        </p>
+      </Card> */}
+
       <Card
         img={agroImage}
         title="Seguros Agropecuarios"
@@ -197,68 +260,6 @@ const Cards = () => {
       >
         <p className="mb-0">
           Realiza tu actividad comercial con tranquilidad con los diferentes tipos de seguros para comercios, incluyendo flota de vehículos, transporte de mercaderías, riesgos operativos, créditos a la exportación, etc.
-        </p>
-      </Card>
-
-      <Card
-        img={bicicletaImage}
-        title="Seguros de Bicicletas"
-        to="/bicicletas"
-        sectionId="intro-bicicletas"
-        buttonText="Contratar"
-      >
-        <p className="mb-0">
-          Seguros de Bicicletas
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Hurto
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Incendio
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Accidentes Personales
-          <i className="bi bi-info-circle ms-2" />
-          <br />
-          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">De 16 a 65 años</span>
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Responsabilidad Civil
-        </p>
-      </Card>
-
-      <Card
-        img={movilidadImage}
-        title="Seguros de Movilidad Alternativa"
-        to="/movilidad"
-        sectionId="intro-movilidad"
-        buttonText="Contratar"
-      >
-        <p className="mb-0">
-          Seguros de Movilidad Alternativa
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Hurto
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Incendio
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Accidentes Personales
-          <i className="bi bi-info-circle ms-2" />
-          <br />
-          <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">De 16 a 65 años</span>
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Responsabilidad Civil
         </p>
       </Card>
 
