@@ -1,5 +1,5 @@
-import condicionesPdf from '../../../assets/docs/condiciones.pdf';
-import guiaCoberturaPdf from '../../../assets/docs/guia_cobertura.pdf';
+import condicionesPdf from '../../../assets/docs/viaje_condiciones.pdf';
+import guiaCoberturaPdf from '../../../assets/docs/viaje_guia_cobertura.pdf';
 
 const ContratarViaje = () => (
   <section id="contratar-viaje">
@@ -7,19 +7,6 @@ const ContratarViaje = () => (
       <div className="text-center">
         <h1 className="text-light mb-0">Contratar</h1>
         <p className="text-light mb-2 fst-italic">Información importante antes de contratar</p>
-      </div>
-
-      <div className="justify-content-center mt-4 px-2 px-sm-4 py-3 py-sm-4 rounded-3 text-dark bg-warning-subtle border border-2 border-warning">
-        <p>
-          Si tienes condiciones pre-existentes como enfermedades crónicas recuerda que las mismas están cubiertas si han estado
-          estables en los últimos 6 meses, lo que implica:
-        </p>
-
-        <ul className="mb-0">
-          <li>No haber tenido cambios en el tratamiento</li>
-          <li>No haber presentado síntomas nuevos</li>
-          <li>No haber necesitado hospitalizaciones, urgencias o ajustes de medicamentos</li>
-        </ul>
       </div>
 
       <div className="row mx-0 gy-4 justify-content-center mt-0">
@@ -90,10 +77,6 @@ const ContratarViaje = () => (
       </div>
 
       <div className="mt-4 text-center">
-        <p className="mb-0">Seras redirigido a la página de Urban Global Travel para continuar con el proceso</p>
-      </div>
-
-      <div className="mt-4 text-center">
         <a
           href="https://app.urbanglobaltravel.com/cotizadorweb/URSE-SEGUROS?datakey="
           target="_blank"
@@ -102,6 +85,20 @@ const ContratarViaje = () => (
         >
           Contratar
         </a>
+        <p className="mt-1 mb-0 small fst-italic">Seras redirigido a la página de Urban Global Travel para continuar con el proceso</p>
+      </div>
+
+      <div className="justify-content-center mt-4 px-2 px-sm-4 py-3 py-sm-4 rounded-3 text-dark bg-warning-subtle border border-2 border-warning">
+        <p>
+          Si tienes condiciones pre-existentes como enfermedades crónicas recuerda que las mismas están cubiertas si han estado
+          estables en los últimos 6 meses, lo que implica:
+        </p>
+
+        <ul className="mb-0">
+          <li>No haber tenido cambios en el tratamiento</li>
+          <li>No haber presentado síntomas nuevos</li>
+          <li>No haber necesitado hospitalizaciones, urgencias o ajustes de medicamentos</li>
+        </ul>
       </div>
     </div>
   </section>

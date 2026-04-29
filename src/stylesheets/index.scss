@@ -530,7 +530,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   }
 }
 
-#contact-form {
+#contact-form, #contratar-movilidad {
   &.contact-form-dark {
     .form-control:focus, .form-select:focus {
       border-color: $primary-light;
@@ -589,7 +589,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   scroll-margin-top: 70px;
 }
 
-#quoter-contact-form, #contratar-motos-contact-form, #contratar-viaje {
+#quoter-contact-form, #contratar-motos-contact-form, #contratar-viaje, #contratar-movilidad {
   background: linear-gradient(172.78deg, $primary, $primary-dark);
   scroll-margin-top: 70px;
 }
@@ -659,46 +659,46 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     background-image: initial;
   };
 
-  button:hover, button:focus{
+  button:hover, button:focus {
     text-decoration: none !important;
     outline: none !important;
   };
 
-  .panel-group .panel{
+  .panel-group .panel {
     background-color: $light;
     border:none;
     box-shadow:none;
     border-radius: 10px;
-    margin-bottom:11px;
+    margin-bottom: 11px;
   };
 
-  .panel .panel-heading{
+  .panel .panel-heading {
     padding: 0;
     border-radius:10px;
     border: none;
   };
 
-  .panel-heading button{
+  .panel-heading button {
     display: block;
-    border:none;
-    padding:20px 35px 20px;
+    border: none;
+    padding: 20px 35px 20px;
     font-size: 20px;
-    background-color:$light;
-    font-weight:600;
+    background-color: $light;
+    font-weight: 600;
     position: relative;
-    color:$light;
-    box-shadow:none;
-    transition:all 0.1s ease 0;
+    color: $light;
+    box-shadow: none;
+    transition: all 0.1s ease 0;
   };
 
-  .panel-heading button:after, .panel-heading button.collapsed:after{
+  .panel-heading button:after, .panel-heading button.collapsed:after {
     content: "\f068";
     font-family: fontawesome;
     text-align: center;
     position: absolute;
     left:-20px;
     top: 10px;
-    color: $secondary !important;
+    color: $primary-dark !important;
     background-color:$light;
     border: 5px solid $light;
     font-size: 15px;
@@ -710,15 +710,15 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   };
 
   .panel-heading:hover button:after,
-  .panel-heading:hover button.collapsed:after{
+  .panel-heading:hover button.collapsed:after {
     transform:rotate(360deg);
   };
 
-  .panel-heading button.collapsed:after{
+  .panel-heading button.collapsed:after {
     content: "\f067";
   };
 
-  #accordion .panel-body{
+  #accordion .panel-body {
     background-color: $light;
     color:#8C8C8C;
     line-height: 25px;
@@ -728,72 +728,67 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     position: relative;
   };
 
-  .text-white{
-    color: $light;
-    text-transform: uppercase;
-  };
+  // .loader {
+  //   display: inline-block;
+  //   width: 30px;
+  //   height: 30px;
+  //   position: relative;
+  //   border: 4px solid $light;
+  //   top: 50%;
+  //   animation: loader 2s infinite ease;
+  // };
 
-  .loader {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    border: 4px solid $light;
-    top: 50%;
-    animation: loader 2s infinite ease;
-  };
+  // .loader-inner {
+  //   vertical-align: top;
+  //   display: inline-block;
+  //   width: 100%;
+  //   background-color: $light;
+  //   animation: loader-inner 2s infinite ease-in;
+  // };
 
-  .loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: $light;
-    animation: loader-inner 2s infinite ease-in;
-  };
+  // @keyframes loader {
+  //   0% {
+  //     transform: rotate(0deg);
+  //   }
 
-  @keyframes loader {
-    0% {
-      transform: rotate(0deg);
-    }
+  //   25% {
+  //     transform: rotate(180deg);
+  //   }
 
-    25% {
-      transform: rotate(180deg);
-    }
+  //   50% {
+  //     transform: rotate(180deg);
+  //   }
 
-    50% {
-      transform: rotate(180deg);
-    }
+  //   75% {
+  //     transform: rotate(360deg);
+  //   }
 
-    75% {
-      transform: rotate(360deg);
-    }
+  //   100% {
+  //     transform: rotate(360deg);
+  //   }
+  // };
 
-    100% {
-      transform: rotate(360deg);
-    }
-  };
+  // @keyframes loader-inner {
+  //   0% {
+  //     height: 0%;
+  //   }
 
-  @keyframes loader-inner {
-    0% {
-      height: 0%;
-    }
+  //   25% {
+  //     height: 0%;
+  //   }
 
-    25% {
-      height: 0%;
-    }
+  //   50% {
+  //     height: 100%;
+  //   }
 
-    50% {
-      height: 100%;
-    }
+  //   75% {
+  //     height: 100%;
+  //   }
 
-    75% {
-      height: 100%;
-    }
-
-    100% {
-      height: 0%;
-    }
-  };
+  //   100% {
+  //     height: 0%;
+  //   }
+  // };
 }
 
 #team {
@@ -916,4 +911,83 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     border-bottom-right-radius: 3em !important;
     border-top-left-radius: 3em !important;
   }
+}
+
+#contratar-movilidad {
+  .accordion-button::after {
+    background-image: initial;
+  };
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: initial;
+  };
+
+  button:hover, button:focus {
+    text-decoration: none !important;
+    outline: none !important;
+  };
+
+  .panel-group .panel {
+    background-color: $light;
+    border:none;
+    box-shadow:none;
+    border-radius: 10px;
+    margin-bottom: 11px;
+  };
+
+  .panel .panel-heading {
+    padding: 0;
+    border-radius:10px;
+    border: none;
+  };
+
+  .panel-heading button {
+    display: block;
+    border: none;
+    padding: 15px 20px 15px;
+    font-size: 16px;
+    background-color: $light;
+    font-weight: 500;
+    position: relative;
+    color: $light;
+    box-shadow: none;
+    transition: all 0.1s ease 0;
+  };
+
+  .panel-heading button:after, .panel-heading button.collapsed:after {
+    content: "\f068";
+    font-family: fontawesome;
+    text-align: center;
+    position: absolute;
+    left:-20px;
+    top: 5px;
+    color: $primary-dark !important;
+    background-color:$light;
+    border: 5px solid $light;
+    font-size: 15px;
+    width: 40px;
+    height:40px;
+    line-height: 30px;
+    border-radius: 50%;
+    transition:all 0.3s ease 0s;
+  };
+
+  .panel-heading:hover button:after,
+  .panel-heading:hover button.collapsed:after {
+    transform:rotate(360deg);
+  };
+
+  .panel-heading button.collapsed:after {
+    content: "\f067";
+  };
+
+  #accordion .panel-body {
+    background-color: $light;
+    color:#8C8C8C;
+    line-height: 25px;
+    padding: 10px 25px 20px 35px ;
+    border-top:none;
+    font-size:14px;
+    position: relative;
+  };
 }

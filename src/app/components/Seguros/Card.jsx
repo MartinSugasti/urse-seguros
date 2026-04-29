@@ -10,7 +10,7 @@ const Card = ({
   sectionId,
   buttonText
 }) => (
-  <div className="d-flex flex-column h-100 text-center text-light">
+  <div className="d-flex flex-column h-100 text-center text-light p-4">
     <div className="image-section d-flex align-items-center justify-content-center">
       <img src={img} className="img-fluid" alt="" />
     </div>

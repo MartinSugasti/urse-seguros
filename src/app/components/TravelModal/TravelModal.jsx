@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { Modal } from 'bootstrap';
 
-import condicionesPdf from '../../../assets/docs/condiciones.pdf';
-import guiaCoberturaPdf from '../../../assets/docs/guia_cobertura.pdf';
+import condicionesPdf from '../../../assets/docs/viaje_condiciones.pdf';
+import guiaCoberturaPdf from '../../../assets/docs/viaje_guia_cobertura.pdf';
 
 const TravelModal = () => {
   const modalRef = useRef(null);
