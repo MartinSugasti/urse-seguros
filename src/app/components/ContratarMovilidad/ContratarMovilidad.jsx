@@ -33,6 +33,8 @@ const fileToBase64 = (file) => new Promise((resolve, reject) => {
   reader.readAsDataURL(file);
 });
 
+const MAX_FACTURA_FILE_SIZE_BYTES = 10 * 1024 * 1024;
+
 const URUGUAY_DEPARTAMENTOS = [
   'Artigas',
   'Canelones',
@@ -56,13 +58,13 @@ const URUGUAY_DEPARTAMENTOS = [
 ];
 
 const PAQUETES_VALOR_VEHICULO_DISPOSITIVO = [
-  { id: '0e274bcb-df5e-481e-8c7f-d1e5ac33453a', nombre: 'Valor desde USD 0 a 400', valorAsegurado: 400, precio: 89.09 },
-  { id: 'c9eb9dfb-850c-49ca-8318-997d8a7badc6', nombre: 'Valor desde USD 401 a 700', valorAsegurado: 700, precio: 106.7 },
-  { id: 'f30fcc0f-9efe-4ac2-8809-adfcace8227e', nombre: 'Valor desde USD 701 a 1.000', valorAsegurado: 1000, precio: 119.76 },
-  { id: '021e4098-0b5b-4cf9-b016-d3138c86b1f5', nombre: 'Valor desde USD 1.001 a 1.300', valorAsegurado: 1300, precio: 177.1 },
-  { id: '90632121-4a82-4ade-9f74-543598b1ab57', nombre: 'Valor desde USD 1.301 a 1.600', valorAsegurado: 1600, precio: 218.9 },
-  { id: '8bd68a52-4057-4bd0-9696-c0f480e57c3a', nombre: 'Valor entre USD 1.601 a 2.000', valorAsegurado: 2000, precio: 263.99 },
-  { id: 'f49a994a-5063-4686-878e-949fbf99170f', nombre: 'Valor entre USD 2.001 a 2.500', valorAsegurado: 2500, precio: 318.91 }
+  { id: '0e274bcb-df5e-481e-8c7f-d1e5ac33453a', nombre: 'Valor desde USD 0 a 400', valorAsegurado: 400, precio: 62.36 },
+  { id: 'c9eb9dfb-850c-49ca-8318-997d8a7badc6', nombre: 'Valor desde USD 401 a 700', valorAsegurado: 700, precio: 74.69 },
+  { id: 'f30fcc0f-9efe-4ac2-8809-adfcace8227e', nombre: 'Valor desde USD 701 a 1.000', valorAsegurado: 1000, precio: 83.83 },
+  { id: '021e4098-0b5b-4cf9-b016-d3138c86b1f5', nombre: 'Valor desde USD 1.001 a 1.300', valorAsegurado: 1300, precio: 123.97 },
+  { id: '90632121-4a82-4ade-9f74-543598b1ab57', nombre: 'Valor desde USD 1.301 a 1.600', valorAsegurado: 1600, precio: 153.23 },
+  { id: '8bd68a52-4057-4bd0-9696-c0f480e57c3a', nombre: 'Valor entre USD 1.601 a 2.000', valorAsegurado: 2000, precio: 184.79 },
+  { id: 'f49a994a-5063-4686-878e-949fbf99170f', nombre: 'Valor entre USD 2.001 a 2.500', valorAsegurado: 2500, precio: 223.24 }
 ];
 
 const ContratarMovilidad = () => {
@@ -116,6 +118,11 @@ const ContratarMovilidad = () => {
     if (!file) {
       setLoading(false);
       toast.error('Debe adjuntar la factura de compra.', { position: 'bottom-left', theme: 'light' });
+      return;
+    }
+    if (file.size > MAX_FACTURA_FILE_SIZE_BYTES) {
+      setLoading(false);
+      toast.error('La factura no puede superar los 10 MB.', { position: 'bottom-left', theme: 'light' });
       return;
     }
 
@@ -402,26 +409,31 @@ const ContratarMovilidad = () => {
                   name="facturaDeCompra"
                   id="facturaDeCompra"
                   className="d-none"
-                  accept="image/*,.pdf"
+                  accept="image/*,.pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                   required
                   aria-label="Factura de compra"
                   onChange={(e) => setNombreArchivoFactura(e.target.files?.[0]?.name ?? '')}
                 />
+
                 <div
-                  className="bg-light bg-opacity-50 border border-2 rounded-2 px-3 py-2 d-flex align-items-center gap-2"
-                  style={{ minHeight: '84px', borderStyle: 'dashed !important' }}
+                  className="d-flex align-items-center bg-light bg-opacity-50 border-2 rounded-2 px-3 py-2"
+                  style={{ borderStyle: 'dashed', minHeight: '84px' }}
                   onClick={() => facturaInputRef.current?.click()}
                 >
-                  <button
-                    type="button"
-                    className="btn btn-sm btn-outline-primary-dark"
-                  >
-                    Subir archivo
-                  </button>
-                  <span className={`text-truncate ${nombreArchivoFactura ? 'text-dark' : 'text-muted'}`}>
-                    {nombreArchivoFactura || 'No ha seleccionado ningún archivo'}
-                  </span>
+                  <div className="d-flex align-items-center gap-2">
+                    <button
+                      type="button"
+                      className="btn btn-sm btn-outline-primary-dark"
+                    >
+                      Subir archivo
+                    </button>
+                    <span className={`text-truncate ${nombreArchivoFactura ? 'text-dark' : 'text-muted'}`}>
+                      {nombreArchivoFactura || 'No ha seleccionado ningún archivo'}
+                    </span>
+                  </div>
                 </div>
+
+                <p className="text-start small my-0 text-light fst-italic opacity-75">Tamaño máximo: 10 MB. Formatos permitidos: PDF, DOC, DOCX, PNG, JPEG, JPG, etc.</p>
               </div>
               </fieldset>
             </form>
@@ -490,7 +502,7 @@ const ContratarMovilidad = () => {
               </div>
             </div>
 
-            <div className="accordion accordion-flush panel-group mt-4" id="accordionFlushExample">
+            <div className="accordion accordion-flush panel-group mt-4 px-4" id="accordionFlushExample">
               <div className="accordion-item panel bg-transparent border border-2 border-light">
                 <h2 className="accordion-header panel-heading" id="flush-headingOne">
                   <button className="accordion-button collapsed panel-title rounded-2 text-center bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
