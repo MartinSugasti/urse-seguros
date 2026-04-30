@@ -72,6 +72,7 @@ const ContratarMovilidad = () => {
   const [valorAsegurado, setValorAsegurado] = useState();
   const [precio, setPrecio] = useState();
   const recaptchaRef = useRef();
+  const facturaInputRef = useRef();
 
   const todayStr = useMemo(() => formatLocalDate(new Date()), []);
 
@@ -152,7 +153,7 @@ const ContratarMovilidad = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:8000/emitir_movilidad.php', {
+      const response = await fetch('https://www.urseseguros.com.uy/api/emitir_movilidad.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body)
@@ -207,6 +208,7 @@ const ContratarMovilidad = () => {
         <div className="row mx-0 justify-content-center mt-4 mt-md-5">
           <div className="col-11 col-sm-10 col-md-6 p-0 text-center">
             <form id="contact-form" className="contact-form-light" onSubmit={handleSubmit}>
+              <fieldset disabled={loading} className="border-0 m-0 p-0">
               <div className="row mx-0">
                 <div className="col-12 col-md-6 ps-0 pe-0 pe-md-1">
                   <div className="input-group mb-3">
@@ -393,30 +395,35 @@ const ContratarMovilidad = () => {
                 <input type="text" name="numeroDeSerie" id="numeroDeSerie" className={inputClass} placeholder="Número de serie" required />
               </div>
 
-              <div className="input-group mb-3">
-                <span className="input-group-text bg-white">
-                  <i className="bi bi-file-earmark-arrow-up text-dark" />
-                </span>
-                <div className="position-relative flex-grow-1">
-                  <input
-                    type="file"
-                    name="facturaDeCompra"
-                    id="facturaDeCompra"
-                    className="position-absolute top-0 start-0 z-1 h-100 w-100 cursor-pointer opacity-0 rounded-start-0"
-                    accept="image/*,.pdf"
-                    required
-                    aria-label="Factura de compra"
-                    onChange={(e) => setNombreArchivoFactura(e.target.files?.[0]?.name ?? '')}
-                  />
-                  <div
-                    className={`form-control text-dark bg-white text-truncate d-flex align-items-center ${nombreArchivoFactura ? '' : 'text-secondary'} rounded-start-0`}
-                    style={{ minHeight: '38px', pointerEvents: 'none' }}
-                    aria-hidden
+              <div className="mb-3">
+                <input
+                  ref={facturaInputRef}
+                  type="file"
+                  name="facturaDeCompra"
+                  id="facturaDeCompra"
+                  className="d-none"
+                  accept="image/*,.pdf"
+                  required
+                  aria-label="Factura de compra"
+                  onChange={(e) => setNombreArchivoFactura(e.target.files?.[0]?.name ?? '')}
+                />
+                <div
+                  className="bg-light bg-opacity-50 border border-2 rounded-2 px-3 py-2 d-flex align-items-center gap-2"
+                  style={{ minHeight: '84px', borderStyle: 'dashed !important' }}
+                  onClick={() => facturaInputRef.current?.click()}
+                >
+                  <button
+                    type="button"
+                    className="btn btn-sm btn-outline-primary-dark"
                   >
-                    {nombreArchivoFactura || 'Factura de compra'}
-                  </div>
+                    Subir archivo
+                  </button>
+                  <span className={`text-truncate ${nombreArchivoFactura ? 'text-dark' : 'text-muted'}`}>
+                    {nombreArchivoFactura || 'No ha seleccionado ningún archivo'}
+                  </span>
                 </div>
               </div>
+              </fieldset>
             </form>
           </div>
 
