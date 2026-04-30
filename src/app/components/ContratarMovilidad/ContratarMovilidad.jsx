@@ -420,7 +420,7 @@ const ContratarMovilidad = () => {
                   style={{ borderStyle: 'dashed', minHeight: '84px' }}
                   onClick={() => facturaInputRef.current?.click()}
                 >
-                  <div className="d-flex align-items-center gap-2">
+                  <div className="d-flex align-items-center gap-2 overflow-auto">
                     <button
                       type="button"
                       className="btn btn-sm btn-outline-primary-dark"
@@ -440,7 +440,7 @@ const ContratarMovilidad = () => {
           </div>
 
           <div className="col-11 col-sm-10 col-md-6 px-0 ps-md-4 text-center">
-            <div className="bg-light text-dark px-3 py-3 text-start rounded-3">
+            <div className="bg-light text-dark px-3 py-3 text-start rounded-3  position-relative">
               <div className="d-block d-sm-flex justify-content-between align-items-center mb-1">
                 <h2 className="text-primary-dark fw-semibold mb-0">Cobertura</h2>
                 <h2 className="text-primary-dark fw-semibold mb-0">USD {formatIntegerWithDotThousands(precio) ?? '-'}</h2>
@@ -500,6 +500,20 @@ const ContratarMovilidad = () => {
                   <p className="small text-dark fst-italic mt-1">Política de privacidad</p>
                 </a>
               </div>
+
+              {loading && (
+                <div
+                  className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center rounded-3"
+                  style={{ backgroundColor: 'rgba(7, 22, 34, 0.55)', zIndex: 20 }}
+                >
+                  <div className="d-flex align-items-center gap-2 text-primary-light">
+                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden />
+                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden />
+                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden />
+                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden />
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="accordion accordion-flush panel-group mt-4 px-4" id="accordionFlushExample">
