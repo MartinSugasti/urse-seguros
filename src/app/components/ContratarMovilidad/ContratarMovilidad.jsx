@@ -303,7 +303,7 @@ const ContratarMovilidad = () => {
                     <span className="input-group-text bg-white">
                       <i className="bi bi-house-door-fill text-dark" />
                     </span>
-                    <input type="text" name="numeroDePuerta" id="numeroDePuerta" className={inputClass} placeholder="Número de puerta" />
+                    <input type="text" name="numeroDePuerta" id="numeroDePuerta" className={inputClass} placeholder="Número de puerta" required />
                   </div>
                 </div>
                 <div className="col-12 col-md-4 ps-0 px-md-1 pe-0">
@@ -403,31 +403,26 @@ const ContratarMovilidad = () => {
               </div>
 
               <div className="mb-3">
-                <input
-                  ref={facturaInputRef}
-                  type="file"
-                  name="facturaDeCompra"
-                  id="facturaDeCompra"
-                  className="d-none"
-                  accept="image/*,.pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                  required
-                  aria-label="Factura de compra"
-                  onChange={(e) => setNombreArchivoFactura(e.target.files?.[0]?.name ?? '')}
-                />
-
                 <div
-                  className="d-flex align-items-center bg-light bg-opacity-50 border-2 rounded-2 px-3 py-2"
+                  className="position-relative d-flex align-items-center bg-light bg-opacity-50 border-2 rounded-2 px-3 py-2"
                   style={{ borderStyle: 'dashed', minHeight: '84px' }}
-                  onClick={() => facturaInputRef.current?.click()}
                 >
-                  <div className="d-flex align-items-center gap-2 overflow-auto">
-                    <button
-                      type="button"
-                      className="btn btn-sm btn-outline-primary-dark"
-                    >
+                  <input
+                    ref={facturaInputRef}
+                    type="file"
+                    name="facturaDeCompra"
+                    id="facturaDeCompra"
+                    className="position-absolute top-0 start-0 z-1 m-0 h-100 w-100 cursor-pointer p-0 opacity-0"
+                    accept="image/*,.pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                    required
+                    aria-label="Factura de compra"
+                    onChange={(e) => setNombreArchivoFactura(e.target.files?.[0]?.name ?? '')}
+                  />
+                  <div className="d-flex align-items-center gap-2 overflow-auto pe-none">
+                    <span className="btn btn-sm btn-outline-primary-dark pointer-events-none">
                       Subir archivo
-                    </button>
-                    <span className={`text-truncate ${nombreArchivoFactura ? 'text-dark' : 'text-muted'}`}>
+                    </span>
+                    <span className={`text-truncate ${nombreArchivoFactura ? 'text-dark' : 'text-muted'} pointer-events-none`}>
                       {nombreArchivoFactura || 'No ha seleccionado ningún archivo'}
                     </span>
                   </div>
