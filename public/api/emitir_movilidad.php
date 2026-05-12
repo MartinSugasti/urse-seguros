@@ -319,20 +319,20 @@ emitir_movilidad_log('input_recibido', [
     'tiene_recaptcha' => !empty($input['g-recaptcha-response']),
 ]);
 
-// 1. Configuración de SBI
-// UAT
-// $auth_url = 'https://api-sbi-cotizador-uat.sbi.uy/partners/auth/login';
-// $refresh_url = 'https://api-sbi-cotizador-uat.sbi.uy/partners/auth/refreshtoken';
-// $emision_url = 'https://api-sbi-cotizador-uat.sbi.uy/partners/multiseguros/Emision';
-
-// PROD
-$auth_url = 'https://apimiauto.sbi.uy/partners/partners/auth/login';
-$refresh_url = 'https://apimiauto.sbi.uy/partners/partners/auth/refreshtoken';
-$emision_url = 'https://apimiauto.sbi.uy/partners/partners/multiseguros/Emision';
-
-// 2. Autenticación: credenciales desde credentials/sbi.php (fuera de public_html)
+// 1. Configuración de SBI y credenciales desde credentials/sbi.php (fuera de public_html)
 $credentials_path = emitir_movilidad_credentials_dir() . DIRECTORY_SEPARATOR . 'sbi.php';
 $credentials = is_readable($credentials_path) ? require $credentials_path : null;
+$sbi_url = is_array($credentials) && isset($credentials['url']) && is_string($credentials['url']) && trim($credentials['url']) !== ''
+    ? rtrim(trim($credentials['url']), '/')
+    : 'https://apimiauto.sbi.uy';
+
+$auth_url = $sbi_url . '/partners/auth/login';
+$refresh_url = $sbi_url . '/partners/auth/refreshtoken';
+$emision_url = $sbi_url . '/partners/multiseguros/Emision';
+$product_id = is_array($credentials) && isset($credentials['productId']) && is_string($credentials['productId']) && trim($credentials['productId']) !== ''
+    ? trim($credentials['productId'])
+    : '32347d7d-bf36-4705-b5a3-4121f335a107';
+
 $auth_data = is_array($credentials) ? [
     'u' => isset($credentials['u']) ? (string) $credentials['u'] : '',
     'p' => isset($credentials['p']) ? (string) $credentials['p'] : '',
@@ -468,7 +468,7 @@ $fechaNacInput = isset($input['fechaDeNacimiento']) ? trim((string) $input['fech
 $inicioVigInput = isset($input['inicioDeVigencia']) ? trim((string) $input['inicioDeVigencia']) : '';
 
 $emision_payload = [
-    'productoId' => $input['productoId'] ?? '32347d7d-bf36-4705-b5a3-4121f335a107',
+    'productoId' => $input['productoId'] ?? $product_id,
     'paqueteId' => $input['paqueteId'] ?? 'a7bf1344-a71d-4332-b8df-4569851b2324',
     'tipoDeDocumento' => $tipoDoc !== '' ? $tipoDoc : 'CI',
     'numeroDeDocumentoODeRut' => $numDoc !== '' ? $numDoc : '44264769',
