@@ -975,6 +975,20 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 }
 
 #contratar-movilidad {
+  fieldset:disabled {
+    input, select {
+      background-color: #0716228c !important;
+    }
+
+    #facturaDeCompra {
+      cursor: not-allowed;
+    }
+  }
+
+  #facturaDeCompra {
+    cursor: copy;
+  }
+
   .accordion-button::after {
     background-image: initial;
   };
