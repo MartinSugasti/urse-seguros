@@ -231,7 +231,7 @@ const ContratarMovilidad = () => {
               <fieldset disabled={loading} className="border-0 m-0 p-0">
               <div className="row mx-0">
                 <div className="col-12 col-md-6 ps-0 pe-0 pe-md-1">
-                  <div className="input-group mb-3">
+                  <div className="input-group mb-3 bg-light rounded">
                     <span className="input-group-text bg-white">
                       <i className="bi bi-person-fill text-dark" />
                     </span>
@@ -239,7 +239,7 @@ const ContratarMovilidad = () => {
                   </div>
                 </div>
                 <div className="col-12 col-md-6 ps-0 ps-md-1 pe-0">
-                  <div className="input-group mb-3">
+                  <div className="input-group mb-3 bg-light rounded">
                     <span className="input-group-text bg-white">
                       <i className="bi bi-person-fill text-dark" />
                     </span>
@@ -250,7 +250,7 @@ const ContratarMovilidad = () => {
 
               <div className="row mx-0">
                 <div className="col-12 col-md-6 ps-0 pe-0 pe-md-1">
-                  <div className="mb-3 input-group">
+                  <div className="mb-3 input-group bg-light rounded">
                     <span className="input-group-text bg-white">
                       <i className="bi bi-credit-card text-dark" />
                     </span>
@@ -262,7 +262,7 @@ const ContratarMovilidad = () => {
                   </div>
                 </div>
                 <div className="col-12 col-md-6 ps-0 ps-md-1 pe-0">
-                  <div className="input-group mb-3">
+                  <div className="input-group mb-3 bg-light rounded">
                     <span className="input-group-text bg-white">
                       <i className="bi bi-hash text-dark" />
                     </span>
@@ -271,8 +271,8 @@ const ContratarMovilidad = () => {
                 </div>
               </div>
 
-              <div className="input-group mb-3">
-                <span className="input-group-text bg-white">
+              <div className="input-group mb-3 bg-light rounded">
+                <span className="input-group-text bg-light">
                   <i className="bi bi-calendar-event text-dark" />
                 </span>
                 <div className="form-floating flex-grow-1">
@@ -289,21 +289,21 @@ const ContratarMovilidad = () => {
                 </div>
               </div>
 
-              <div className="input-group mb-3">
+              <div className="input-group mb-3 bg-light rounded">
                 <span className="input-group-text bg-white">
                   <i className="bi bi-envelope-fill text-dark" />
                 </span>
                 <input type="email" name="correoElectronico" id="correoElectronico" className={inputClass} placeholder="Correo electrónico" required />
               </div>
 
-              <div className="mb-3 input-group">
+              <div className="mb-3 input-group bg-light rounded">
                 <span className="input-group-text bg-white">
                   <i className="bi bi-phone-fill text-dark" />
                 </span>
                 <input type="number" name="celular" id="celular" className={inputClass} placeholder="Celular" required />
               </div>
 
-              <div className="input-group mb-3">
+              <div className="input-group mb-3 bg-light rounded">
                 <span className="input-group-text bg-white">
                   <i className="bi bi-geo-alt-fill text-dark" />
                 </span>
@@ -312,7 +312,7 @@ const ContratarMovilidad = () => {
 
               <div className="row mx-0">
                 <div className="col-12 col-md-4 ps-0 pe-0 pe-md-1">
-                  <div className="input-group mb-3">
+                  <div className="input-group mb-3 bg-light rounded">
                     <span className="input-group-text bg-white">
                       <i className="bi bi-house-door-fill text-dark" />
                     </span>
@@ -320,7 +320,7 @@ const ContratarMovilidad = () => {
                   </div>
                 </div>
                 <div className="col-12 col-md-4 ps-0 px-md-1 pe-0">
-                  <div className="input-group mb-3">
+                  <div className="input-group mb-3 bg-light rounded">
                     <span className="input-group-text bg-white">
                       <i className="bi bi-building text-dark" />
                     </span>
@@ -328,7 +328,7 @@ const ContratarMovilidad = () => {
                   </div>
                 </div>
                 <div className="col-12 col-md-4 ps-0 ps-md-1 pe-0">
-                  <div className="input-group mb-3">
+                  <div className="input-group mb-3 bg-light rounded">
                     <span className="input-group-text bg-white">
                       <i className="bi bi-mailbox text-dark" />
                     </span>
@@ -337,7 +337,7 @@ const ContratarMovilidad = () => {
                 </div>
               </div>
 
-              <div className="mb-3 input-group">
+              <div className="mb-3 input-group bg-light rounded">
                 <span className="input-group-text bg-white">
                   <i className="bi bi-map-fill text-dark" />
                 </span>
@@ -349,7 +349,7 @@ const ContratarMovilidad = () => {
                 </select>
               </div>
 
-              <div className="input-group mb-3">
+              <div className="input-group mb-3 bg-light rounded">
                 <span className="input-group-text bg-white">
                   <i className="bi bi-calendar-check text-dark" />
                 </span>
@@ -369,7 +369,7 @@ const ContratarMovilidad = () => {
 
               <div className="row mx-0">
                 <div className="col-12 col-md-6 ps-0 pe-0 pe-md-1">
-                  <div className="input-group mb-3">
+                  <div className="input-group mb-3 bg-light rounded">
                     <span className="input-group-text bg-white">
                       <i className="bi bi-tag-fill text-dark" />
                     </span>
@@ -377,7 +377,7 @@ const ContratarMovilidad = () => {
                   </div>
                 </div>
                 <div className="col-12 col-md-6 ps-0 ps-md-1 pe-0">
-                  <div className="input-group mb-3">
+                  <div className="input-group mb-3 bg-light rounded">
                     <span className="input-group-text bg-white">
                       <i className="bi bi-box-seam text-dark" />
                     </span>
@@ -386,7 +386,7 @@ const ContratarMovilidad = () => {
                 </div>
               </div>
 
-              <div className="mb-3 input-group">
+              <div className="mb-3 input-group bg-light rounded">
                 <span className="input-group-text bg-white">
                   <i className="bi bi-cash-stack text-dark" />
                 </span>
@@ -408,7 +408,7 @@ const ContratarMovilidad = () => {
                 </select>
               </div>
 
-              <div className="input-group mb-3">
+              <div className="input-group mb-3 bg-light rounded">
                 <span className="input-group-text bg-white">
                   <i className="bi bi-123 text-dark" />
                 </span>
