@@ -121,7 +121,7 @@ const Cards = () => (
         img={movilidadImage}
         title="Seguros de Movilidad Alternativa"
         to="/movilidad"
-        sectionId="intro-movilidad"
+        sectionId="contratar-movilidad"
         buttonText="Contratar"
       >
         <p className="mb-1 tooltipy">
