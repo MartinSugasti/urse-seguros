@@ -10,10 +10,10 @@ const Card = ({
   sectionId,
   buttonText
 }) => (
-  <div className="col-11 col-sm-6 col-md-4 col-lg-3 d-flex">
+  <div className="col-11 col-sm-6 col-md-4 col-xl-3 d-flex mx-xl-1">
     <div className="seguros-card text-center text-dark bg-light rounded h-100 w-100 d-flex flex-column border border-0 border-primary-dark">
       <div className="seguros-card__media my-3 my-sm-1">
-        <img src={img} className="seguros-card__img" alt="" />
+        <img src={img} className="seguros-card__img p-lg-4 p-xl-0" alt="" />
       </div>
 
       <div className="seguros-card__body">

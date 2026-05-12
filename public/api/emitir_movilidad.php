@@ -320,9 +320,15 @@ emitir_movilidad_log('input_recibido', [
 ]);
 
 // 1. Configuración de SBI
-$auth_url = 'https://api-sbi-cotizador-uat.sbi.uy/partners/auth/login';
-$refresh_url = 'https://api-sbi-cotizador-uat.sbi.uy/partners/auth/refreshtoken';
-$emision_url = 'https://api-sbi-cotizador-uat.sbi.uy/partners/multiseguros/Emision';
+// UAT
+// $auth_url = 'https://api-sbi-cotizador-uat.sbi.uy/partners/auth/login';
+// $refresh_url = 'https://api-sbi-cotizador-uat.sbi.uy/partners/auth/refreshtoken';
+// $emision_url = 'https://api-sbi-cotizador-uat.sbi.uy/partners/multiseguros/Emision';
+
+// PROD
+$auth_url = 'https://apimiauto.sbi.uy/partners/partners/auth/login';
+$refresh_url = 'https://apimiauto.sbi.uy/partners/partners/auth/refreshtoken';
+$emision_url = 'https://apimiauto.sbi.uy/partners/partners/multiseguros/Emision';
 
 // 2. Autenticación: credenciales desde credentials/sbi.php (fuera de public_html)
 $credentials_path = emitir_movilidad_credentials_dir() . DIRECTORY_SEPARATOR . 'sbi.php';
@@ -462,7 +468,7 @@ $fechaNacInput = isset($input['fechaDeNacimiento']) ? trim((string) $input['fech
 $inicioVigInput = isset($input['inicioDeVigencia']) ? trim((string) $input['inicioDeVigencia']) : '';
 
 $emision_payload = [
-    'productoId' => $input['productoId'] ?? '433d8ff5-1157-47e8-aae5-a418fbf0f375',
+    'productoId' => $input['productoId'] ?? '32347d7d-bf36-4705-b5a3-4121f335a107',
     'paqueteId' => $input['paqueteId'] ?? 'a7bf1344-a71d-4332-b8df-4569851b2324',
     'tipoDeDocumento' => $tipoDoc !== '' ? $tipoDoc : 'CI',
     'numeroDeDocumentoODeRut' => $numDoc !== '' ? $numDoc : '44264769',

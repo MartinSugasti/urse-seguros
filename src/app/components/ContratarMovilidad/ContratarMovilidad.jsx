@@ -58,13 +58,14 @@ const URUGUAY_DEPARTAMENTOS = [
 ];
 
 const PAQUETES_VALOR_VEHICULO_DISPOSITIVO = [
-  { id: '0e274bcb-df5e-481e-8c7f-d1e5ac33453a', nombre: 'Valor desde USD 0 a 400', valorAsegurado: 400, precio: 62.36 },
-  { id: 'c9eb9dfb-850c-49ca-8318-997d8a7badc6', nombre: 'Valor desde USD 401 a 700', valorAsegurado: 700, precio: 74.69 },
-  { id: 'f30fcc0f-9efe-4ac2-8809-adfcace8227e', nombre: 'Valor desde USD 701 a 1.000', valorAsegurado: 1000, precio: 83.83 },
-  { id: '021e4098-0b5b-4cf9-b016-d3138c86b1f5', nombre: 'Valor desde USD 1.001 a 1.300', valorAsegurado: 1300, precio: 123.97 },
-  { id: '90632121-4a82-4ade-9f74-543598b1ab57', nombre: 'Valor desde USD 1.301 a 1.600', valorAsegurado: 1600, precio: 153.23 },
-  { id: '8bd68a52-4057-4bd0-9696-c0f480e57c3a', nombre: 'Valor entre USD 1.601 a 2.000', valorAsegurado: 2000, precio: 184.79 },
-  { id: 'f49a994a-5063-4686-878e-949fbf99170f', nombre: 'Valor entre USD 2.001 a 2.500', valorAsegurado: 2500, precio: 223.24 }
+  { id: '5333cb3c-adfd-4ad8-92eb-365d29b7f983', nombre: 'Valor desde USD 0 a 400', valorAsegurado: 400, precio: 62.36 },
+  { id: 'bc4d5179-433d-499e-a991-3262d7981f09', nombre: 'Valor desde USD 401 a 700', valorAsegurado: 700, precio: 74.69 },
+  { id: '17455ec1-c4c6-4dd7-9e31-417241940d22', nombre: 'Valor desde USD 701 a 1.000', valorAsegurado: 1000, precio: 83.83 },
+  { id: '74e935e4-bd0d-4ea5-84d8-e217f839908e', nombre: 'Valor desde USD 1.001 a 1.300', valorAsegurado: 1300, precio: 123.97 },
+  { id: 'd3390890-1e22-4426-91e1-52b9b9aee21b', nombre: 'Valor desde USD 1.301 a 1.600', valorAsegurado: 1600, precio: 153.23 },
+  { id: 'e18da57c-9860-41a9-929c-cdf4c84d9bbc', nombre: 'Valor entre USD 1.601 a 2.000', valorAsegurado: 2000, precio: 184.79 },
+  { id: 'f7b3fe41-42ad-4e50-ae9a-ca425e521c0a', nombre: 'Valor entre USD 2.001 a 2.500', valorAsegurado: 2500, precio: 223.24 },
+  { id: '65f77d16-d8ec-46e4-94c0-3ac7bbb7c4ac', nombre: 'Valor entre USD 2.501 a 3.000', valorAsegurado: 3000, precio: 267.94 }
 ];
 
 const ContratarMovilidad = () => {
@@ -463,6 +464,11 @@ const ContratarMovilidad = () => {
                 </li>
               </ul>
 
+              <div className="border-top border-2 border-primary-dark pt-2">
+                <p className="text-primary-dark fw-medium mb-0">Información Importante</p>
+                <p className="small mb-0">Para activar la cobertura es necesario cargar la factura de compra o foto del vehículo que vas a asegurar. Coberturas sin deducible. No incluye cobertura de daños materiales para tu vehículo.</p>
+              </div>
+
               <div className="d-flex justify-content-center my-2">
                 <a
                   href={condicionesPdf}
@@ -520,7 +526,7 @@ const ContratarMovilidad = () => {
                   </button>
                 </h2>
                 <div id="flush-collapseOne" className="accordion-collapse collapse panel-collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div className="accordion-body text-light px-2 pt-0 fst-italic">Esta cobertura te brinda protección contra el riesgo de hurto total de tu vehículo. Disfrutá de tranquilidad y seguridad en tus desplazamientos, sabiendo que tu vehículo está protegido contra la apropiación ilegítima por parte de terceros.</div>
+                  <div className="accordion-body text-light px-2 pt-0 fst-italic">Esta cobertura te brinda protección contra el riesgo de hurto con <strong>intimidacion y/o violencia</strong> de tu vehículo. Disfrutá de tranquilidad y seguridad en tus desplazamientos, sabiendo que tu vehículo está protegido contra la apropiación ilegítima por parte de terceros.</div>
                 </div>
               </div>
 
@@ -533,7 +539,7 @@ const ContratarMovilidad = () => {
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" className="accordion-collapse collapse panel-collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div className="accordion-body text-light px-2 pt-0 fst-italic">Con la póliza de seguro de movilidad alternativa de SBI, obtenés una cobertura completa contra daños materiales causados como por ejemplo: incendio o explosión.</div>
+                  <div className="accordion-body text-light px-2 pt-0 fst-italic">Con la póliza de seguro de movilidad alternativa  obtenés una cobertura completa contra daños materiales causados  por incendio y/o explosión.</div>
                 </div>
               </div>
 
@@ -545,7 +551,7 @@ const ContratarMovilidad = () => {
                   </button>
                 </h2>
                 <div id="flush-collapseThree" className="accordion-collapse collapse panel-collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div className="accordion-body text-light px-2 pt-0 fst-italic">Ofrece respaldo financiero en determinado tipo de lesiones, permitiéndote viajar con la confianza de saber que estás protegido en todo momento.</div>
+                  <div className="accordion-body text-light px-2 pt-0 fst-italic">Ofrece respaldo financiero en determinado tipo de lesiones, permitiéndote viajar con la confianza de saber que estás protegido en todo momento. Esta cobertura solo aplica para personas entre 16 y 65 años.</div>
                 </div>
               </div>
 
@@ -557,7 +563,7 @@ const ContratarMovilidad = () => {
                   </button>
                 </h2>
                 <div id="flush-collapseFour" className="accordion-collapse collapse panel-collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div className="accordion-body text-light px-2 pt-0 fst-italic">En caso de que tu vehículo de propulsión asistida cause daños a terceros, esta cobertura te garantiza una indemnización. Esta protección es esencial, te asegura contra las consecuencias financieras de incidentes en los que participe tu vehículo, proporcionándote seguridad y tranquilidad.</div>
+                  <div className="accordion-body text-light px-2 pt-0 fst-italic">Estarás cubierto en caso de  que tu vehículo ocasione daños a terceros , proporcionándote seguridad y tranquilidad.</div>
                 </div>
               </div>
             </div>
