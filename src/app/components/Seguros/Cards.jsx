@@ -1,5 +1,3 @@
-import Slider from 'react-slick';
-
 import Card from './Card';
 
 import travelImage from '../../../assets/images/insurances/travel.svg';
@@ -7,33 +5,14 @@ import carImage from '../../../assets/images/insurances/car.svg';
 import homeImage from '../../../assets/images/insurances/home.svg';
 import familyLargeImage from '../../../assets/images/insurances/life.svg';
 import motosImage from '../../../assets/images/insurances/motos.svg';
-// import movilidadImage from '../../../assets/images/insurances/movilidad.svg';
+import movilidadImage from '../../../assets/images/insurances/movilidad.svg';
 import agroImage from '../../../assets/images/insurances/agro.svg';
 import businessImage from '../../../assets/images/insurances/business.svg';
 // import bicicletaImage from '../../../assets/images/insurances/bicicleta.svg';
 import othersImage from '../../../assets/images/insurances/others.svg';
 
-const Cards = () => {
-  const settings = {
-    className: "center",
-    arrows: false,
-    autoplay: true,
-    dots: true,
-    infinite: true,
-    speed: 2000,
-    autoplaySpeed: 4000000,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    initialSlide: 0,
-    pauseOnHover: true,
-    responsive: [
-      { breakpoint: 769, settings: { slidesToShow: 2, slidesToScroll: 2 } },
-      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1, autoplaySpeed: 3000 } }
-    ]
-  };
-
-  return (
-    <Slider {...settings}>
+const Cards = () => (
+    <div className="row g-4 justify-content-center">
       <Card
         img={travelImage}
         title="Seguros de Viaje"
@@ -42,7 +21,7 @@ const Cards = () => {
         buttonText="Contratar"
       >
         <p className="mb-0">
-          Cubre la asistencia médica en ocasión de un viaje, ya sea de placer, turismo o negocios. Atrevete a descubrir cada rincón del planeta, respaldado por las mejores pólizas de seguro de viaje, que te protegen en cada momento.
+          Atrevete a descubrir cada rincón del planeta, respaldado por las mejores pólizas de seguro de viaje que te protegen en cada momento
         </p>
       </Card>
 
@@ -53,24 +32,16 @@ const Cards = () => {
         sectionId="quoter-contact-form"
         buttonText="Cotizar"
       >
-        <p className="mb-0">
-          Cotizamos su vehículo con las compañías aseguradoras más importantes en nuestro país.
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Seguro Obligatorio (SOA)
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Responsabilidad Civil
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Hurto, Incendio y Daño
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
-          Pérdida Total
+        <p className="mb-0 tooltipy">
+        Cotizamos su vehículo con las compañías aseguradoras más importantes en nuestro país
+          <i className="bi bi-info-circle ms-2" />
+          <br />
+          <div className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">
+            <p className="mb-1">Seguro Obligatorio (SOA)</p>
+            <p className="mb-1">Responsabilidad Civil</p>
+            <p className="mb-1">Hurto, Incendio y Daño</p>
+            <p className="mb-0">Pérdida Total</p>
+          </div>
         </p>
       </Card>
 
@@ -82,7 +53,7 @@ const Cards = () => {
         buttonText="Cotizar"
       >
         <p className="mb-0">
-          El clima, la inseguridad y los accidentes son peligros latentes. A partir de US$100 anuales puedes asegurar tu casa y objetos contra incendios, inclemencias climáticas, daños eléctricos y más.
+          A partir de US$100 anuales puedes asegurar tu casa y objetos contra incendios, inclemencias climáticas, daños eléctricos y más
         </p>
       </Card>
 
@@ -93,11 +64,19 @@ const Cards = () => {
         sectionId="quoter-contact-form"
         buttonText="Cotizar"
       >
-        <p className="mb-0">
+        <p className="mb-0 tooltipy">
           Conocé los planes de seguros de vida, ahorro y las diferentes coberturas complementarias
+          <i className="bi bi-info-circle ms-2" />
+          <br />
+          <div className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">
+            <p className="mb-1">Ahorro y Vida</p>
+            <p className="mb-1">Renta</p>
+            <p className="mb-1">Accidente</p>
+            <p className="mb-0">Salud</p>
+          </div>
         </p>
 
-        <p className="mt-1 mb-0 tooltipy">
+        {/* <p className="mt-1 mb-0 tooltipy">
           Ahorro y Vida
           <i className="bi bi-info-circle ms-2" />
           <br />
@@ -123,7 +102,7 @@ const Cards = () => {
           <i className="bi bi-info-circle ms-2" />
           <br />
           <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">Brinda la posibilidad de complementar la cobertura de salud en caso de tener el diagnóstico de enfermedades graves</span>
-        </p>
+        </p> */}
       </Card>
 
       <Card
@@ -134,44 +113,36 @@ const Cards = () => {
         buttonText="Contratar"
       >
         <p className="mb-0">
-          Contrata tu seguro obligatorio SOA de forma sencilla y ágil.
-        </p>
-
-        <p className="mt-1 mb-0">
-          También puedes consultarnos por seguros extras
+          Contrata tu seguro obligatorio SOA de forma sencilla y ágil. También puedes consultarnos por seguros extras
         </p>
       </Card>
 
-      {/* <Card
+      <Card
         img={movilidadImage}
         title="Seguros de Movilidad Alternativa"
         to="/movilidad"
         sectionId="intro-movilidad"
         buttonText="Contratar"
       >
-        <p className="mb-0">
-          Seguros de Movilidad Alternativa
-        </p>
-
-        <p className="mt-1 mb-0 tooltipy">
+        <p className="mb-1 tooltipy">
           Hurto
         </p>
 
-        <p className="mt-1 mb-0 tooltipy">
+        <p className="mb-1 tooltipy">
           Incendio
         </p>
 
-        <p className="mt-1 mb-0 tooltipy">
+        <p className="mb-1 tooltipy">
           Accidentes Personales
           <i className="bi bi-info-circle ms-2" />
           <br />
           <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">De 16 a 65 años</span>
         </p>
 
-        <p className="mt-1 mb-0 tooltipy">
+        <p className="mb-0 tooltipy">
           Responsabilidad Civil
         </p>
-      </Card> */}
+      </Card>
 
       {/* <Card
         img={bicicletaImage}
@@ -211,11 +182,20 @@ const Cards = () => {
         sectionId="quoter-contact-form"
         buttonText="Cotizar"
       >
-        <p className="mb-0">
+        <p className="mb-0 tooltipy">
           Diferentes tipos de seguros para el sector agropecuario
+          <i className="bi bi-info-circle ms-2" />
+          <br />
+          <div className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">
+            <p className="mb-1">Agrícola</p>
+            <p className="mb-1">Vida Animal</p>
+            <p className="mb-1">Forestación</p>
+            <p className="mb-1">Responsabilidad Civil</p>
+            <p className="mb-0">Maquinaria</p>
+          </div>
         </p>
 
-        <p className="mt-1 mb-0 tooltipy">
+        {/* <p className="mt-1 mb-0 tooltipy">
           Agrícola
           <i className="bi bi-info-circle ms-2" />
           <br />
@@ -248,7 +228,7 @@ const Cards = () => {
           <i className="bi bi-info-circle ms-2" />
           <br />
           <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">Cubre los posibles daños que sufran tus maquinarias</span>
-        </p>
+        </p> */}
       </Card>
 
       <Card
@@ -259,7 +239,7 @@ const Cards = () => {
         buttonText="Cotizar"
       >
         <p className="mb-0">
-          Realiza tu actividad comercial con tranquilidad con los diferentes tipos de seguros para comercios, incluyendo flota de vehículos, transporte de mercaderías, riesgos operativos, créditos a la exportación, etc.
+          Protege tu actividad comercial, incluyendo flota de vehículos, transporte de mercaderías, riesgos operativos, etc
         </p>
       </Card>
 
@@ -270,33 +250,32 @@ const Cards = () => {
         sectionId="quoter-contact-form"
         buttonText="Cotizar"
       >
-        <p className="mb-0">
-          Consultanos por otros tipos de seguros, como por ejemplo
+        <p className="mb-1">
+          Consultanos por otros tipos de seguros
         </p>
 
-        <p className="mt-1 mb-0 tooltipy">
+        <p className="mb-1 tooltipy">
           Garantía de Alquiler
           <i className="bi bi-info-circle ms-2" />
           <br />
           <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">Este seguro es una garantía de arrendamiento para quien alquila una casa, apartamento o local comercial, protegiéndose a sí mismo y al propietario del inmueble del posible incumplimiento en el pago del alquiler</span>
         </p>
 
-        <p className="mt-1 mb-0 tooltipy">
+        <p className="mb-1 tooltipy">
           Vehículos Náuticos
           <i className="bi bi-info-circle ms-2" />
           <br />
           <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">Seguro destinado a cubrir motos náuticas, jet sky, gomones, kayaks, etc.</span>
         </p>
 
-        <p className="mt-1 mb-0 tooltipy">
+        <p className="mb-1 tooltipy">
           Embarcaciones
           <i className="bi bi-info-circle ms-2" />
           <br />
           <span className="tooltiptext px-3 py-2 mb-2 rounded-2 shadow w-100">Este seguro está destinado a cubrir todos aquellos barcos que sean utilizados sin fines de lucro (veleros, lanchas, botes, etc.)</span>
         </p>
       </Card>
-    </Slider>
-  );
-};
+    </div>
+);
 
 export default Cards;

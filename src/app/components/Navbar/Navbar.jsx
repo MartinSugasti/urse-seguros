@@ -85,15 +85,15 @@ const Navbar = () => {
                   </LinkWithLoaderAndScrolling>
                 </li>
                 <li>
+                  <LinkWithLoaderAndScrolling to="/movilidad" className="dropdown-item" sectionId="intro-movilidad">
+                    MOVILIDAD ALTERNATIVA
+                  </LinkWithLoaderAndScrolling>
+                </li>
+                <li>
                   <LinkWithLoaderAndScrolling to="/motos" className="dropdown-item" sectionId="intro-motos">
                     SOA MOTOS
                   </LinkWithLoaderAndScrolling>
                 </li>
-                {/* <li>
-                  <LinkWithLoaderAndScrolling to="/movilidad" className="dropdown-item" sectionId="intro-movilidad">
-                    MOVILIDAD
-                  </LinkWithLoaderAndScrolling>
-                </li> */}
               </ul>
             </li>
 

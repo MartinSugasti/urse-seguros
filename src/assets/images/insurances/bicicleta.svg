@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" style="enable-background:new 0 0 3710 3710;" xml:space="preserve" viewBox="0 0 3710 3710">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" style="enable-background:new 0 0 3710 3710;" xml:space="preserve" viewBox="466.07 455 2769.41 2782.36">
 
 <g id="Illustration">
 	<g>
 		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="3595.5696" y1="4058.5598" x2="1119.795" y2="983.8031">
-			<stop offset="0" style="stop-color:#DAE3FE"/>
-			<stop offset="1" style="stop-color:#E9EFFD"/>
+			<stop offset="0" style="stop-color:#e5ebfb"/>
+			<stop offset="1" style="stop-color:#e5ebfb"/>
 		</linearGradient>
 		<path style="fill:url(#SVGID_1_);" d="M2914.468,2845.987c-56.868,59.868-110.675,98.476-153.188,128.979    c-499.724,358.557-1091.029,254.04-1216.699,228.515c-185.574-37.691-544.284-110.547-803.625-415.527    c-392.362-461.409-331.265-1188.346-26.923-1668.208c55.669-87.775,349.729-574.945,947.403-653.072    c361.706-47.281,783.339,48.08,1088.675,303.89C3391.037,1307.533,3345.41,2392.305,2914.468,2845.987z"/>
 		<g>
