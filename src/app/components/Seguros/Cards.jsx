@@ -32,7 +32,7 @@ const Cards = () => (
         sectionId="quoter-contact-form"
         buttonText="Cotizar"
       >
-        <p className="mb-0 tooltipy">
+        <div className="mb-0 tooltipy">
         Cotizamos su vehículo con las compañías aseguradoras más importantes en nuestro país
           <i className="bi bi-info-circle ms-2" />
           <br />
@@ -42,7 +42,7 @@ const Cards = () => (
             <p className="mb-1">Hurto, Incendio y Daño</p>
             <p className="mb-0">Pérdida Total</p>
           </div>
-        </p>
+        </div>
       </Card>
 
       <Card
@@ -64,7 +64,7 @@ const Cards = () => (
         sectionId="quoter-contact-form"
         buttonText="Cotizar"
       >
-        <p className="mb-0 tooltipy">
+        <div className="mb-0 tooltipy">
           Conocé los planes de seguros de vida, ahorro y las diferentes coberturas complementarias
           <i className="bi bi-info-circle ms-2" />
           <br />
@@ -74,7 +74,7 @@ const Cards = () => (
             <p className="mb-1">Accidente</p>
             <p className="mb-0">Salud</p>
           </div>
-        </p>
+        </div>
 
         {/* <p className="mt-1 mb-0 tooltipy">
           Ahorro y Vida
@@ -182,7 +182,7 @@ const Cards = () => (
         sectionId="quoter-contact-form"
         buttonText="Cotizar"
       >
-        <p className="mb-0 tooltipy">
+        <div className="mb-0 tooltipy">
           Diferentes tipos de seguros para el sector agropecuario
           <i className="bi bi-info-circle ms-2" />
           <br />
@@ -193,7 +193,7 @@ const Cards = () => (
             <p className="mb-1">Responsabilidad Civil</p>
             <p className="mb-0">Maquinaria</p>
           </div>
-        </p>
+        </div>
 
         {/* <p className="mt-1 mb-0 tooltipy">
           Agrícola
