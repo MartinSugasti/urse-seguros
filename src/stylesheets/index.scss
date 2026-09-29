@@ -156,26 +156,86 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
   .partners-container {
     .cuaprose-img {
-      max-width: 130px;
-
-      @media (min-width: 400px) {
-        max-width: 150px;
-      }
-
-      @media (min-width: 768px) {
-        max-width: 190px;
-      }
-    }
-
-    .aproase-img {
       max-width: 90px;
 
-      @media (min-width: 400px) {
+      @media (min-width: 370px) {
+        max-width: 100px;
+      }
+
+      @media (min-width: 450px) {
+        max-width: 130px;
+      }
+
+      @media (min-width: 576px) {
+        max-width: 90px;
+      }
+
+      @media (min-width: 695px) {
         max-width: 100px;
       }
 
       @media (min-width: 768px) {
-        max-width: 140px;
+        max-width: 130px;
+      }
+
+      @media (min-width: 1200px) {
+        max-width: 150px;
+      }
+    }
+
+    .aproase-img {
+      max-width: 75px;
+
+      @media (min-width: 370px) {
+        max-width: 85px;
+      }
+
+      @media (min-width: 450px) {
+        max-width: 115px;
+      }
+
+      @media (min-width: 576px) {
+        max-width: 75px;
+      }
+
+      @media (min-width: 695px) {
+        max-width: 85px;
+      }
+
+      @media (min-width: 768px) {
+        max-width: 115px;
+      }
+
+      @media (min-width: 1200px) {
+        max-width: 135px;
+      }
+    }
+
+    .faprosu-img {
+      max-width: 75px;
+
+      @media (min-width: 370px) {
+        max-width: 85px;
+      }
+
+      @media (min-width: 450px) {
+        max-width: 115px;
+      }
+
+      @media (min-width: 576px) {
+        max-width: 75px;
+      }
+
+      @media (min-width: 695px) {
+        max-width: 85px;
+      }
+
+      @media (min-width: 768px) {
+        max-width: 115px;
+      }
+
+      @media (min-width: 1200px) {
+        max-width: 135px;
       }
     }
   }
